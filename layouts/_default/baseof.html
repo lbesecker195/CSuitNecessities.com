@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.Locale "en" }}" class="dark">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="page-{{ .Kind }}{{ with .Type }} type-{{ . }}{{ end }}">
+  {{ if site.Params.readingProgressBar }}<div id="read-progress" aria-hidden="true"><span></span></div>{{ end }}
+
+  {{ partial "header.html" . }}
+
+  <main id="content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  {{ partial "sticky-cta.html" . }}
+
+  {{ $js := resources.Get "js/engagement.js" | js.Build (dict "minify" true) }}
+  <script src="{{ $js.RelPermalink }}" defer
+          data-ev-image="{{ site.Params.analytics.imageClickEvent }}"
+          data-ev-anchor="{{ site.Params.analytics.anchorClickEvent }}"
+          data-ev-scroll="{{ site.Params.analytics.scrollDepthEvent }}"
+          data-ev-read="{{ site.Params.analytics.readCompleteEvent }}"
+          data-sticky-after="{{ site.Params.stickyCtaAfterScroll }}"></script>
+</body>
+</html>

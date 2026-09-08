@@ -1,0 +1,18 @@
+{{ if and site.Params.stickyToc (gt (len .TableOfContents) 60) }}
+<aside class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  {{ .TableOfContents }}
+  {{ with .Params.offer }}
+    {{ $o := index hugo.Data.offers (string .) }}
+    {{ with $o }}
+      <a class="btn btn-primary btn-block toc-cta"
+         href="{{ (partial "amzn.html" .) | safeURL }}"
+         target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}"
+         rel="{{ site.Params.affiliateRel }}"
+         data-affiliate="{{ .name }}"
+         data-cta="toc">{{ with .cta }}{{ . }}{{ else }}{{ site.Params.ctaText }}{{ end }}</a>
+      {{ with .deal }}<p class="toc-deal">{{ . }}</p>{{ end }}
+    {{ end }}
+  {{ end }}
+</aside>
+{{ end }}

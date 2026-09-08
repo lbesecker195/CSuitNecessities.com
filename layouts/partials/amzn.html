@@ -1,0 +1,24 @@
+{{- /* ---------------------------------------------------------------------------
+   partials/amzn.html — build an Amazon affiliate URL for a product entry.
+
+   Pass a product dict (an entry from data/offers.yaml). Returns a URL string.
+
+   ►►  TO SWAP THE AFFILIATE ID FOR THE WHOLE SITE: edit ONE value,
+       [params].amazonTag in hugo.toml. Nothing else to touch.
+
+   Per-product resolution order:
+     1. product.url    — an explicit full URL (already contains its own tag)
+     2. product.asin   — https://www.amazon.com/dp/<ASIN>?tag=<amazonTag>
+     3. product.search — https://www.amazon.com/s?k=<search>&tag=<amazonTag>
+   --------------------------------------------------------------------------- */ -}}
+{{- $p := . -}}
+{{- $tag := or site.Params.amazonTag "REPLACE-WITH-YOUR-AMAZON-TAG" -}}
+{{- $url := "" -}}
+{{- if $p.url -}}
+  {{- $url = $p.url -}}
+{{- else if $p.asin -}}
+  {{- $url = printf "https://www.amazon.com/dp/%s?tag=%s&linkCode=ll1&language=en_US" $p.asin $tag -}}
+{{- else if $p.search -}}
+  {{- $url = printf "https://www.amazon.com/s?k=%s&tag=%s&linkCode=ll2" ($p.search | urlquery) $tag -}}
+{{- end -}}
+{{- return $url -}}

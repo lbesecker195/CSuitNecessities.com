@@ -1,0 +1,28 @@
+{{/* Content card — whole card is a link; image + headline are the two hit targets we optimise. */}}
+{{ $p := .page }}
+{{ $featured := .featured | default false }}
+<article class="card{{ if $featured }} card-featured{{ end }}">
+  <a class="card-media" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true" data-cta="card-image">
+    {{ $photo := partial "page-photo.html" $p }}
+    {{ $img := "" }}
+    {{ with $photo.src }}{{ $img = $p.Resources.GetMatch . | default (resources.Get .) }}{{ end }}
+    {{ if and $img (in (slice "jpeg" "png" "webp" "tiff" "bmp") $img.MediaType.SubType) }}
+      {{ $x := $img.Fill "760x430 Center q82 webp" }}
+      <img src="{{ $x.RelPermalink }}" alt="" width="760" height="430" loading="lazy">
+    {{ else if $img }}
+      <img src="{{ $img.RelPermalink }}" alt="" loading="lazy">
+    {{ else if $photo.src }}
+      {{/* remote URL or plain /static path — serve it as-is */}}
+      <img src="{{ $photo.src | relURL }}" alt="" loading="lazy">
+    {{ else }}
+      <span class="card-media-fallback">{{ $p.LinkTitle }}</span>
+    {{ end }}
+    <span class="card-media-cue">{{ $p.Params.cardCue | default "Read the breakdown →" }}</span>
+  </a>
+  <div class="card-body">
+    {{ with $p.Params.categories }}<a class="card-kicker" href="{{ (printf "/categories/%s" (index . 0 | urlize)) | relURL }}">{{ index . 0 }}</a>{{ end }}
+    <h3 class="card-title"><a href="{{ $p.RelPermalink }}" data-cta="card-title">{{ $p.Params.headline | default $p.LinkTitle }}</a></h3>
+    <p class="card-dek">{{ with $p.Params.dek }}{{ . | plainify | truncate 130 }}{{ else }}{{ with $p.Description }}{{ . | plainify | truncate 130 }}{{ end }}{{ end }}</p>
+    <p class="card-meta muted">{{ $p.ReadingTime }} min read{{ with $p.Params.verdict }} · {{ . }}{{ end }}</p>
+  </div>
+</article>

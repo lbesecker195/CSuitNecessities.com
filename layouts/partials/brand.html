@@ -1,0 +1,17 @@
+{{- /* Renders the brand mark. Set `params.logo` to an asset path:
+       - an .svg asset is inlined so its wordmark follows the theme via currentColor
+       - any other image is emitted as <img>
+       - unset falls back to the brand name as text */ -}}
+{{- $brand := site.Params.brand -}}
+{{- with site.Params.logo -}}
+  {{- $l := resources.Get . -}}
+  {{- if and $l (eq $l.MediaType.SubType "svg") -}}
+    {{- ($l | minify).Content | safeHTML -}}
+  {{- else if $l -}}
+    <img src="{{ $l.RelPermalink }}" alt="{{ $brand }}" height="30">
+  {{- else -}}
+    <img src="{{ . | relURL }}" alt="{{ $brand }}" height="30">
+  {{- end -}}
+{{- else -}}
+  <span class="brand-text">{{ $brand }}</span>
+{{- end -}}

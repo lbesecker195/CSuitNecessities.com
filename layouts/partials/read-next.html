@@ -1,0 +1,10 @@
+{{ if site.Params.showReadNext }}
+  {{ $next := .NextInSection }}
+  {{ $prev := .PrevInSection }}
+  {{ if or $next $prev }}
+  <nav class="read-next" aria-label="Continue in this series">
+    {{ with $prev }}<a class="read-next-item" href="{{ .RelPermalink }}" data-cta="read-prev"><span class="muted">← Previous</span><strong>{{ .Params.headline | default .LinkTitle }}</strong></a>{{ end }}
+    {{ with $next }}<a class="read-next-item is-next" href="{{ .RelPermalink }}" data-cta="read-next"><span class="muted">Next up →</span><strong>{{ .Params.headline | default .LinkTitle }}</strong></a>{{ end }}
+  </nav>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,7 @@
+{{- /* {{< callout type="tip" >}}Body markdown, links allowed.{{< /callout >}}  type: tip|deal|warn */ -}}
+{{- $t := .Get "type" | default "tip" -}}
+{{- $icon := dict "tip" "💡" "deal" "🔥" "warn" "⚠️" -}}
+<aside class="callout callout-{{ $t }}">
+  <span class="callout-ico" aria-hidden="true">{{ index $icon $t }}</span>
+  <div>{{ .Inner | .Page.RenderString }}</div>
+</aside>

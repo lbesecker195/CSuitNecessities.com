@@ -1,0 +1,15 @@
+{{- /* Summary box placed near the top. Gives skimmers a reason to stay + an early anchor.
+       {{< key-takeaways offer="databox" >}}
+       - Point one
+       - Point two
+       {{< /key-takeaways >}} */ -}}
+{{- $o := "" -}}
+{{- with .Get "offer" -}}{{- $o = index hugo.Data.offers (string .) -}}{{- end -}}
+<aside class="takeaways">
+  <p class="takeaways-h">The 30-second verdict</p>
+  {{ .Inner | .Page.RenderString }}
+  {{ with $o }}
+  <a class="btn btn-primary" href="{{ (partial "amzn.html" .) | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="takeaways">{{ with .cta }}{{ . }}{{ else }}{{ site.Params.ctaText }}{{ end }}</a>
+  <a class="takeaways-jump" href="#full-review">Or read the full breakdown ↓</a>
+  {{ end }}
+</aside>

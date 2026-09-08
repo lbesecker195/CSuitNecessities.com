@@ -1,0 +1,20 @@
+{{- /* Usage — separate the two lists with a line containing only  vs
+{{< pros-cons >}}
+- Board-ready dashboards in minutes
+- 100+ native integrations
+vs
+- Custom metrics need a paid tier
+- No on-prem option
+{{< /pros-cons >}}
+*/ -}}
+{{- $halves := split .Inner "\nvs\n" -}}
+<div class="proscons">
+  <div class="pros">
+    <p class="proscons-h">👍 What executives love</p>
+    {{ .Page.RenderString (index $halves 0) }}
+  </div>
+  <div class="cons">
+    <p class="proscons-h">👎 Where it falls short</p>
+    {{ if gt (len $halves) 1 }}{{ .Page.RenderString (index $halves 1) }}{{ end }}
+  </div>
+</div>

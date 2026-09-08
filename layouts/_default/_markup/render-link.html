@@ -1,0 +1,34 @@
+{{- $dest := .Destination -}}
+{{- $isExternal := or (strings.HasPrefix $dest "http://") (strings.HasPrefix $dest "https://") -}}
+{{- $u := urls.Parse $dest -}}
+{{- $site := urls.Parse site.BaseURL -}}
+{{- $isOutbound := and $isExternal (ne $u.Hostname $site.Hostname) -}}
+{{- $isAmazon := and $isOutbound (strings.Contains $u.Hostname "amazon.") -}}
+
+{{- /* Bare Amazon links get the affiliate tag appended if it's missing. */ -}}
+{{- if and $isAmazon (not (strings.Contains $dest "tag=")) -}}
+  {{- $sep := cond (strings.Contains $dest "?") "&" "?" -}}
+  {{- $dest = printf "%s%stag=%s" $dest $sep (or site.Params.amazonTag "REPLACE-WITH-YOUR-AMAZON-TAG") -}}
+{{- end -}}
+
+{{- /* Match a non-Amazon outbound host against a known offer domain. */ -}}
+{{- $offer := "" -}}{{- $hasOffer := false -}}
+{{- range $k, $v := hugo.Data.offers -}}
+  {{- if and $isOutbound $v.domain (in $u.Hostname $v.domain) -}}{{- $offer = $v -}}{{- $hasOffer = true -}}{{- end -}}
+{{- end -}}
+{{- $isMoney := or $isAmazon $hasOffer -}}
+
+{{- if $isOutbound -}}
+  {{- $n := add (or (.Page.Store.Get "moneyLinks") 0) 1 -}}
+  {{- .Page.Store.Set "moneyLinks" $n -}}
+  {{- $primary := and site.Params.firstLinkEmphasis $isMoney (eq $n 1) -}}
+  <a href="{{ $dest | safeURL }}"
+     class="out{{ if $isMoney }} aff{{ end }}{{ if $primary }} is-primary{{ end }}"
+     target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}"
+     rel="{{ if $isMoney }}{{ site.Params.affiliateRel }}{{ else }}nofollow noopener{{ end }}"
+     data-affiliate="{{ with $offer }}{{ .name }}{{ else }}{{ if $isAmazon }}Amazon{{ end }}{{ end }}"
+     data-cta="in-content"
+     {{ with .Title }}title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}<svg class="out-ico" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+{{- else -}}
+  <a href="{{ $dest | safeURL }}" class="in"{{ with .Title }} title="{{ . }}"{{ end }} data-cta="internal">{{ .Text | safeHTML }}</a>
+{{- end -}}

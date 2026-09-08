@@ -1,0 +1,9 @@
+{{ $related := site.RegularPages.Related . | first (site.Params.relatedCount | default 6) }}
+{{ with $related }}
+<section class="related" aria-label="Keep reading">
+  <h2 class="section-head">Executives who read this also compared…</h2>
+  <div class="card-grid">
+    {{ range . }}{{ partial "card.html" (dict "page" .) }}{{ end }}
+  </div>
+</section>
+{{ end }}

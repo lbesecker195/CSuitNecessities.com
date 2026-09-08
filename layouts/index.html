@@ -1,0 +1,66 @@
+{{ define "main" }}
+<section class="home-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ site.Params.brand }} · Hands-on reviews</p>
+    <h1>{{ .Params.heroTitle | default "The gear that earns its place on an executive's desk — reviewed, ranked, and linked." }}</h1>
+    <p class="dek">{{ .Params.heroDek | default site.Params.description }}</p>
+    <div class="hero-actions">
+      {{ with site.GetPage "/reviews" }}<a class="btn btn-primary btn-lg" href="{{ .RelPermalink }}" data-cta="hero-primary">Browse every review →</a>{{ end }}
+      {{ with site.GetPage "/compare" }}<a class="btn btn-ghost btn-lg" href="{{ .RelPermalink }}" data-cta="hero-secondary">See the head-to-heads</a>{{ end }}
+    </div>
+  </div>
+</section>
+
+{{ with .Content }}<div class="wrap prose home-intro">{{ . }}</div>{{ end }}
+
+{{ with .Params.topPicks }}
+<section class="wrap home-picks">
+  <h2 class="section-head">This month's picks</h2>
+  <div class="picks-grid">
+    {{ range . }}
+      {{ $o := index hugo.Data.offers (string .) }}
+      {{ with $o }}
+      {{ $url := partial "amzn.html" . }}
+      <div class="pick">
+        <a class="pick-media" href="{{ $url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="home-pick-image" aria-hidden="true" tabindex="-1">
+          {{ with .image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}
+          <span class="pick-cue">{{ .cta | default site.Params.ctaText }} →</span>
+        </a>
+        <div class="pick-body">
+          <p class="pick-name">{{ .name }}</p>
+          {{ with .rating }}<span class="rating">★ {{ . }}</span>{{ end }}
+          {{ with .tagline }}<p class="muted">{{ . }}</p>{{ end }}
+          <a class="btn btn-primary btn-block" href="{{ $url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="home-pick-button">{{ .cta | default site.Params.ctaText }}</a>
+          {{ with .reviewRef }}{{ with $.Site.GetPage . }}<a class="pick-review-link" href="{{ .RelPermalink }}" data-cta="home-pick-review">Read the full {{ $o.name }} review →</a>{{ end }}{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ range site.Sections }}
+  {{ $items := first 8 .RegularPages.ByWeight }}
+  {{ with $items }}
+  <section class="wrap home-row">
+    <div class="home-row-head">
+      <h2 class="section-head">Latest in {{ (index . 0).CurrentSection.Title }}</h2>
+      <a href="{{ (index . 0).CurrentSection.RelPermalink }}" class="see-all" data-cta="see-all">See all →</a>
+    </div>
+    <div class="card-grid">
+      {{ range . }}{{ partial "card.html" (dict "page" .) }}{{ end }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ with .Params.categoryNav }}
+<section class="wrap home-row">
+  <h2 class="section-head">Shop by category</h2>
+  <ul class="link-list">
+    {{ range . }}<li><a href="{{ (printf "/categories/%s" (. | urlize)) | relURL }}" data-cta="home-category">{{ . }} →</a></li>{{ end }}
+  </ul>
+</section>
+{{ end }}
+{{ end }}

@@ -1,0 +1,38 @@
+{{- /* {{< comparison offers="saddleback-briefcase,bellroy-tokyo,leatherology-padfolio,tumi-alpha3-brief"
+                       rows="Best for,Material,Weight,Warranty,Rating" >}}
+       Sticky-header comparison table. Every product name + every CTA is an affiliate link.
+       `rows` is optional — defaults to the keys of the first product's `compare` map. */ -}}
+{{- $keys := split (.Get "offers") "," -}}
+{{- $rows := slice -}}
+{{- with .Get "rows" -}}{{- $rows = split . "," -}}
+{{- else -}}
+  {{- $first := index hugo.Data.offers (trim (index $keys 0) " ") -}}
+  {{- with $first.compare -}}{{- range $k, $v := . -}}{{- $rows = $rows | append $k -}}{{- end -}}{{- end -}}
+{{- end -}}
+<div class="cmp-wrap">
+<table class="cmp">
+  <thead><tr><th></th>
+    {{ range $keys }}{{ $o := index hugo.Data.offers (trim . " ") }}{{ with $o }}
+      <th>
+        {{ with .image }}<a class="cmp-thumb" href="{{ (partial "amzn.html" $o) | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ $o.name }}" data-cta="cmp-image" aria-hidden="true" tabindex="-1"><img src="{{ . | relURL }}" alt="" loading="lazy"></a>{{ end }}
+        <a href="{{ (partial "amzn.html" $o) | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ $o.name }}" data-cta="cmp-header">{{ $o.name }}</a>
+      </th>
+    {{ end }}{{ end }}
+  </tr></thead>
+  <tbody>
+    {{ range $field := $rows }}
+      {{ $field = trim $field " " }}
+      <tr><th scope="row">{{ $field }}</th>
+        {{ range $keys }}{{ $o := index hugo.Data.offers (trim . " ") }}
+          <td>{{ with $o.compare }}{{ index . $field }}{{ end }}</td>
+        {{ end }}
+      </tr>
+    {{ end }}
+    <tr class="cmp-cta-row"><th scope="row"></th>
+      {{ range $keys }}{{ $o := index hugo.Data.offers (trim . " ") }}{{ with $o }}
+        <td><a class="btn btn-primary btn-sm" href="{{ (partial "amzn.html" $o) | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="cmp-button">{{ .cta | default site.Params.ctaText }}</a></td>
+      {{ end }}{{ end }}
+    </tr>
+  </tbody>
+</table>
+</div>

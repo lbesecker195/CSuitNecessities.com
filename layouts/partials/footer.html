@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand brand-footer" href="{{ "/" | relURL }}" aria-label="{{ site.Params.brand }}">{{ partial "brand.html" . }}</a>
+        <p class="muted">{{ site.Params.description }}</p>
+      </div>
+      {{ range site.Sections }}
+        <nav aria-label="{{ .Title }}">
+          <h4>{{ .Title }}</h4>
+          {{ range first 5 .Pages }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+        </nav>
+      {{ end }}
+    </div>
+    <p class="disclosure muted">{{ site.Params.disclosure }}</p>
+    <p class="muted">© {{ now.Year }} {{ site.Params.brand }}. All trademarks belong to their respective owners.</p>
+  </div>
+</footer>

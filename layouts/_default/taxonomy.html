@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="wrap">
+  {{ partial "breadcrumbs.html" . }}
+  <header class="list-header">
+    <h1>{{ .Title }}</h1>
+    <p class="dek">{{ len .Pages }} reviews and comparisons in this category.</p>
+  </header>
+
+  <div class="card-grid">
+    {{ range .Pages.ByWeight }}{{ partial "card.html" (dict "page" .) }}{{ end }}
+  </div>
+
+  <section class="list-more-links" aria-label="Other categories">
+    <h2 class="section-head">Other categories</h2>
+    <ul class="link-list">
+      {{ $cur := .Title | urlize }}
+      {{ range $slug, $term := site.Taxonomies.categories }}
+        {{ if ne $slug $cur }}
+          <li><a href="{{ (printf "/categories/%s" $slug) | relURL }}" data-cta="category-link">{{ index (index $term.Pages 0).Params.categories 0 }} →</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+</div>
+{{ end }}

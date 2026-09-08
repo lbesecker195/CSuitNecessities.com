@@ -1,0 +1,10 @@
+{{- /* Inline affiliate text link.
+       {{< buy "saddleback-briefcase" >}}see the current price on Amazon{{< /buy >}}
+       {{< buy "saddleback-briefcase" />}}   (uses the product's own cta label)   */ -}}
+{{- $p := index hugo.Data.offers (string (.Get 0)) -}}
+{{- with $p -}}
+  {{- $url := partial "amzn.html" . -}}
+  {{- $txt := $.Inner | strings.TrimSpace -}}
+  {{- if not $txt -}}{{- $txt = or .cta site.Params.ctaText -}}{{- end -}}
+  <a href="{{ $url | safeURL }}" class="out aff" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="in-content">{{ $txt }}<svg class="out-ico" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+{{- end -}}

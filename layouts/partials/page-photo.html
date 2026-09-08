@@ -1,0 +1,21 @@
+{{- /* Resolve the lead photo for a page.
+
+   Precedence: the page's own `image` front matter, else the image on the product
+   named by `offer` in data/offers.yaml. That means a single Unsplash fetch that
+   rewrites offers.yaml updates hero images, cards, and og:image everywhere.
+
+   Returns a dict: { src, alt, credit, creditUrl }
+   `credit` is set only for photos that require attribution (Unsplash API guidelines).
+*/ -}}
+{{- $src := .Params.image -}}
+{{- $alt := .Params.imageAlt -}}
+{{- $credit := "" -}}{{- $creditUrl := "" -}}
+{{- with .Params.offer -}}
+  {{- with index hugo.Data.offers (string .) -}}
+    {{- if not $src -}}{{- $src = .image -}}{{- end -}}
+    {{- if not $alt -}}{{- $alt = or .imageAlt .name -}}{{- end -}}
+    {{- $credit = .photoCredit -}}
+    {{- $creditUrl = .photoCreditUrl -}}
+  {{- end -}}
+{{- end -}}
+{{- return (dict "src" (or $src "") "alt" (or $alt .Title) "credit" (or $credit "") "creditUrl" (or $creditUrl "")) -}}

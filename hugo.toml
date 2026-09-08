@@ -1,0 +1,94 @@
+# =============================================================================
+#  C-Suite Recurring Affiliate — Hugo configuration
+#  Layout goal: maximize CTR on images + anchor text, maximize dwell time.
+# =============================================================================
+baseURL = "https://www.CSuitNecessities.com/"
+locale = "en-us"
+title = "C-Suit Necessities"
+enableRobotsTXT = true
+enableInlineShortcodes = true
+enableGitInfo = false
+
+# Keep readers on-site: generous related-content graph.
+[related]
+  threshold = 40
+  includeNewer = true
+  toLower = true
+  [[related.indices]]
+    name = "keywords"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 70
+  [[related.indices]]
+    name = "tags"
+    weight = 40
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# -----------------------------------------------------------------------------
+#  Site params — tune CTR behaviour without touching templates.
+# -----------------------------------------------------------------------------
+[params]
+  description = "Hands-on reviews of the leather, pens, audio, chairs, luggage and desk gear that belong in an executive's daily kit."
+  brand = "C-Suit Necessities"
+  logo = "img/logo3.png"                                 # asset path; .svg is inlined + theme-aware. Unset -> brand shows as text.
+
+  # ►►► AFFILIATE ID — change this ONE value to swap the Amazon Associates tag site-wide.
+  amazonTag = "csuitnec-20"
+
+  # Affiliate / outbound link behaviour
+  affiliateRel = "sponsored nofollow noopener"       # rel applied to outbound money links
+  affiliateNewTab = true                              # open money links in a new tab (keeps this tab alive = dwell time)
+  disclosure = "C-Suit Necessities is reader-supported. When you buy through links on this page we may earn an Amazon commission — it never changes what you pay."
+  priceNote = "Amazon prices move constantly — the link always shows the current listing and any live coupon."
+  # CTR levers
+  ctaText = "Check Price on Amazon"                   # default anchor/button label
+  imageOverlayText = "Check price on Amazon →"        # hover caption injected on content images
+  firstLinkEmphasis = true                            # visually boost the first in-content money link
+  stickyCtaAfterScroll = 18                           # % scrolled before the sticky bottom CTA appears
+  inlineCtaEveryHeadings = 3                          # auto-suggest an inline CTA cadence (used by editors)
+  # Dwell-time levers
+  readingProgressBar = true
+  stickyToc = true
+  relatedCount = 6
+  showReadNext = true
+  autoAppendFaqSchema = true
+  # Analytics event names (wire these to GA4 / Plausible / PostHog)
+  [params.analytics]
+    imageClickEvent = "image_click"
+    anchorClickEvent = "affiliate_click"
+    scrollDepthEvent = "scroll_depth"
+    readCompleteEvent = "read_complete"
+
+[menus]
+  [[menus.main]]
+    name = "All Reviews"
+    pageRef = "/reviews"
+    weight = 10
+  [[menus.main]]
+    name = "Head-to-Head"
+    pageRef = "/compare"
+    weight = 20
+  [[menus.main]]
+    name = "Categories"
+    pageRef = "/categories"
+    weight = 30

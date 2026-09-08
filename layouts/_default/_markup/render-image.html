@@ -1,0 +1,69 @@
+{{- /* Every in-content image becomes an affiliate hit target.
+       Markdown syntax:
+         ![alt](img.png)                              -> links to the page's `offer` product
+         ![alt](img.png "Caption text")                -> caption + links to the page's `offer`
+         ![alt](img.png "https://amazon.com/... | Caption")  -> explicit link + caption
+*/ -}}
+{{- $src := .Destination -}}
+{{- $title := .Title -}}
+{{- $link := "" -}}
+{{- $caption := $title -}}
+{{- if strings.Contains $title "|" -}}
+  {{- $parts := split $title "|" -}}
+  {{- $link = trim (index $parts 0) " " -}}
+  {{- $caption = trim (index $parts 1) " " -}}
+{{- else if or (strings.HasPrefix $title "http://") (strings.HasPrefix $title "https://") -}}
+  {{- $link = trim $title " " -}}{{- $caption = "" -}}
+{{- end -}}
+
+{{- $offer := "" -}}
+{{- with .Page.Params.offer -}}{{- $offer = index hugo.Data.offers (string .) -}}{{- end -}}
+
+{{- /* No explicit link -> use the page's configured product. */ -}}
+{{- if and (not $link) $offer -}}{{- $link = partial "amzn.html" $offer -}}{{- end -}}
+
+{{- /* Explicit link that points at an offer domain -> tag it as that product. */ -}}
+{{- if $link -}}
+  {{- $lu := urls.Parse $link -}}
+  {{- if strings.Contains $lu.Hostname "amazon." -}}
+    {{- if not (strings.Contains $link "tag=") -}}
+      {{- $sep := cond (strings.Contains $link "?") "&" "?" -}}
+      {{- $link = printf "%s%stag=%s" $link $sep (or site.Params.amazonTag "REPLACE-WITH-YOUR-AMAZON-TAG") -}}
+    {{- end -}}
+  {{- else -}}
+    {{- range $k, $v := hugo.Data.offers -}}{{- if and $v.domain (in $lu.Hostname $v.domain) -}}{{- $offer = $v -}}{{- end -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Resolve + resize the image. */ -}}
+{{- $img := .Page.Resources.GetMatch $src -}}
+{{- if not $img -}}{{- $img = resources.Get $src -}}{{- end -}}
+{{- $rendered := $src | relURL -}}
+{{- $w := 0 -}}{{- $h := 0 -}}
+{{- with $img -}}
+  {{- $raster := in (slice "jpeg" "png" "webp" "tiff" "bmp") .MediaType.SubType -}}
+  {{- $r := . -}}
+  {{- if and $raster (gt .Width 1280) -}}{{- $r = .Resize "1280x webp q82" -}}{{- end -}}
+  {{- $rendered = $r.RelPermalink -}}
+  {{- if $raster -}}{{- $w = $r.Width -}}{{- $h = $r.Height -}}{{- end -}}
+{{- end -}}
+
+{{- $name := "" -}}{{- with $offer -}}{{- $name = .name -}}{{- end -}}
+{{- $overlay := or .Page.Params.imageOverlayText site.Params.imageOverlayText -}}
+<figure class="content-fig{{ if $link }} is-linked{{ end }}">
+{{- if $link -}}
+  <a class="fig-link{{ if $link }} aff{{ end }}"
+     href="{{ $link | safeURL }}"
+     target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}"
+     rel="{{ site.Params.affiliateRel }}"
+     data-affiliate="{{ or $name "Amazon" }}"
+     data-cta="content-image"
+     aria-label="{{ with $caption }}{{ . }}{{ else }}{{ .Text }}{{ end }} — {{ $overlay }}">
+    <img src="{{ $rendered }}" alt="{{ .Text }}"{{ if $w }} width="{{ $w }}" height="{{ $h }}"{{ end }} loading="lazy" decoding="async">
+    <span class="fig-cue">{{ $overlay }}</span>
+  </a>
+{{- else -}}
+  <img src="{{ $rendered }}" alt="{{ .Text }}"{{ if $w }} width="{{ $w }}" height="{{ $h }}"{{ end }} loading="lazy" decoding="async">
+{{- end -}}
+{{- with $caption }}<figcaption>{{ . | safeHTML }}{{ if $link }} <span class="fig-caption-link">— {{ site.Params.ctaText }} →</span>{{ end }}</figcaption>{{ end -}}
+</figure>

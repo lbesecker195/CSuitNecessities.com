@@ -1,0 +1,90 @@
+{{ define "main" }}
+{{ $offer := "" }}{{ with .Params.offer }}{{ $offer = index hugo.Data.offers (string .) }}{{ end }}
+{{ $offerURL := "" }}{{ with $offer }}{{ $offerURL = partial "amzn.html" . }}{{ end }}
+<article class="post wrap" itemscope itemtype="https://schema.org/Article">
+  {{ partial "breadcrumbs.html" . }}
+
+  <header class="post-header">
+    {{ with .Params.categories }}<a class="kicker" href="{{ (printf "/categories/%s" (index . 0 | urlize)) | relURL }}">{{ index . 0 }}</a>{{ end }}
+    <h1 itemprop="headline">{{ .Params.headline | default .Title }}</h1>
+    {{ with .Params.dek }}<p class="dek">{{ . }}</p>{{ end }}
+    <div class="post-meta muted">
+      <span>{{ with .Params.author }}By {{ . }}{{ else }}By the {{ site.Params.brand }} desk{{ end }}</span>
+      <span>·</span>
+      <span>Updated {{ .Lastmod.Format "Jan 2, 2006" }}</span>
+      <span>·</span>
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
+    <p class="disclosure-inline muted">{{ site.Params.disclosure }}</p>
+  </header>
+
+  {{ $photo := partial "page-photo.html" . }}
+  {{ with $photo.src }}
+    {{ $img := $.Resources.GetMatch . | default (resources.Get .) }}
+    {{ $src := . | relURL }}{{ $w := "" }}{{ $ht := "" }}
+    {{ with $img }}
+      {{ $src = .RelPermalink }}
+      {{ if in (slice "jpeg" "png" "webp" "tiff" "bmp") .MediaType.SubType }}
+        {{ $r := cond (gt .Width 1600) (.Resize "1600x webp q82") . }}
+        {{ $src = $r.RelPermalink }}{{ $w = $r.Width }}{{ $ht = $r.Height }}
+      {{ end }}
+    {{ end }}
+    <figure class="post-hero{{ if $offerURL }} is-linked{{ end }}">
+      {{ if $offerURL }}
+        <a class="fig-link aff" href="{{ $offerURL | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ $offer.name }}" data-cta="hero-image">
+          <img src="{{ $src }}" alt="{{ $photo.alt }}"{{ with $w }} width="{{ . }}"{{ end }}{{ with $ht }} height="{{ . }}"{{ end }} fetchpriority="high">
+          <span class="fig-cue">{{ $offer.cta | default site.Params.ctaText }} →</span>
+        </a>
+      {{ else }}
+        <img src="{{ $src }}" alt="{{ $photo.alt }}"{{ with $w }} width="{{ . }}"{{ end }}{{ with $ht }} height="{{ . }}"{{ end }} fetchpriority="high">
+      {{ end }}
+      {{ partial "photo-credit.html" $photo }}
+    </figure>
+  {{ end }}
+
+  <div class="post-layout">
+    <div class="post-body" itemprop="articleBody" id="full-review">
+      {{ .Content }}
+
+      {{ with .Params.faq }}
+      <section class="faq" aria-label="Frequently asked questions">
+        <h2 class="section-head">Before you buy — quick answers</h2>
+        {{ range . }}
+        <details class="faq-item"><summary>{{ .q }}</summary><div class="faq-a">{{ $.RenderString .a }}</div></details>
+        {{ end }}
+      </section>
+      {{ end }}
+
+      {{ with $offer }}
+      <div class="post-final-cta">
+        <p class="post-final-cta-h">{{ $.Params.finalCta | default (printf "Bottom line: the %s is worth a look." .name) }}</p>
+        {{ with .deal }}<p class="muted">{{ . }}</p>{{ end }}
+        <a class="btn btn-primary btn-lg" href="{{ $offerURL | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="final">{{ .cta | default site.Params.ctaText }}</a>
+        <p class="muted post-final-cta-note">{{ site.Params.priceNote | default "Prices and availability change often — the link shows the current Amazon listing." }}</p>
+      </div>
+      {{ end }}
+
+      {{ partial "read-next.html" . }}
+    </div>
+
+    <aside class="post-side">
+      <div class="post-side-sticky">
+        {{ with $offer }}
+        <div class="side-offer">
+          {{ with (or .image "") }}<a href="{{ $offerURL | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ $offer.name }}" data-cta="side-image" class="side-offer-media"><img src="{{ . | relURL }}" alt="{{ $offer.name }}" loading="lazy"><span class="fig-cue">{{ $offer.cta | default site.Params.ctaText }} →</span></a>{{ end }}
+          <p class="side-offer-name">{{ .name }}</p>
+          {{ with .rating }}<p class="rating">★ {{ . }}</p>{{ end }}
+          <a class="btn btn-primary btn-block" href="{{ $offerURL | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="side">{{ .cta | default site.Params.ctaText }}</a>
+          {{ with .deal }}<p class="side-offer-deal">{{ . }}</p>{{ end }}
+        </div>
+        {{ end }}
+        {{ partial "toc.html" . }}
+      </div>
+    </aside>
+  </div>
+
+  {{ partial "related.html" . }}
+</article>
+
+<a href="#content" class="to-top" aria-label="Back to top">↑</a>
+{{ end }}

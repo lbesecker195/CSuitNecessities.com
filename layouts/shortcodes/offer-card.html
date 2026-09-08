@@ -1,0 +1,27 @@
+{{- /* {{< offer-card "saddleback-briefcase" >}}  — pulls from data/offers.yaml
+       Full product card: clickable image + button, both affiliate-linked. */ -}}
+{{- $o := dict -}}
+{{- with .Get 0 -}}{{- $o = index hugo.Data.offers (string .) -}}{{- end -}}
+{{- if not $o -}}
+  {{- $o = dict "name" (.Get "name") "url" (.Get "url") "rating" (.Get "rating") "deal" (.Get "deal") "image" (.Get "image") "tagline" (.Get "tagline") "cta" (.Get "cta") "bullets" (slice) -}}
+{{- end -}}
+{{- $url := partial "amzn.html" $o -}}
+<div class="offer-card" data-offer="{{ $o.name }}">
+  <a class="offer-card-media" href="{{ $url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ $o.name }}" data-cta="offer-card-image" aria-hidden="true" tabindex="-1">
+    {{ with $o.image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}
+    <span class="offer-card-cue">{{ with $o.cta }}{{ . }}{{ else }}{{ site.Params.ctaText }}{{ end }} →</span>
+  </a>
+  <div class="offer-card-body">
+    <div class="offer-card-head">
+      <div>
+        <p class="offer-card-name">{{ $o.name }}</p>
+        {{ with $o.tagline }}<p class="muted">{{ . }}</p>{{ end }}
+      </div>
+      {{ with $o.rating }}<span class="rating" aria-label="Rated {{ . }} out of 5">★ {{ . }}</span>{{ end }}
+    </div>
+    {{ with $o.bullets }}<ul class="offer-card-bullets">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+    {{ with $o.deal }}<p class="offer-card-deal">🎁 {{ . }}</p>{{ end }}
+    <a class="btn btn-primary btn-block" href="{{ $url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ $o.name }}" data-cta="offer-card-button">{{ with $o.cta }}{{ . }}{{ else }}{{ site.Params.ctaText }}{{ end }}</a>
+    <p class="offer-card-fineprint muted">{{ site.Params.disclosure }}</p>
+  </div>
+</div>

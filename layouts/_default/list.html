@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="wrap">
+  {{ if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
+
+  <header class="list-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.dek }}<p class="dek">{{ . }}</p>{{ else }}{{ with .Description }}<p class="dek">{{ . }}</p>{{ end }}{{ end }}
+  </header>
+
+  {{ with .Content }}<div class="prose list-intro">{{ . }}</div>{{ end }}
+
+  {{ $section := .Section }}
+  {{ $pages := .RegularPages.ByWeight }}
+  {{ $featured := .Params.featured }}
+
+  {{ with $featured }}
+    {{ with $.Site.GetPage . }}
+      <section class="featured-slot" aria-label="Editor's pick">
+        <p class="eyebrow">★ Editor's pick</p>
+        {{ partial "card.html" (dict "page" . "featured" true) }}
+      </section>
+    {{ end }}
+  {{ end }}
+
+  {{ if gt (len $pages) 12 }}
+    {{/* Long sections read better grouped by category. */}}
+    {{ range $slug, $term := site.Taxonomies.categories }}
+      {{ $inSection := where $term.Pages "Section" $section }}
+      {{ with $inSection }}
+        {{ $name := index (index . 0).Params.categories 0 }}
+        <section class="home-row">
+          <div class="home-row-head">
+            <h2 class="section-head">{{ $name }}</h2>
+            <a class="see-all" href="{{ (printf "/categories/%s" $slug) | relURL }}" data-cta="list-category">Everything in {{ $name }} →</a>
+          </div>
+          <div class="card-grid">
+            {{ range .ByWeight }}{{ partial "card.html" (dict "page" .) }}{{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    <div class="card-grid">
+      {{ range $pages }}
+        {{ if not (eq .RelPermalink ($featured | relURL)) }}
+          {{ partial "card.html" (dict "page" .) }}
+        {{ end }}
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{ $other := cond (eq $section "reviews") "compare" "reviews" }}
+  {{ with site.GetPage (printf "/%s" $other) }}
+    <section class="list-more-links" aria-label="More">
+      <h2 class="section-head">{{ if eq $other "compare" }}Already have a shortlist?{{ else }}Want the full review?{{ end }}</h2>
+      <ul class="link-list">
+        {{ range first 10 .RegularPages.ByWeight }}<li><a href="{{ .RelPermalink }}" data-cta="cross-section">{{ .Params.headline | default .LinkTitle }} →</a></li>{{ end }}
+      </ul>
+    </section>
+  {{ end }}
+</div>
+{{ end }}

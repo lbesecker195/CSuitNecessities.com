@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Plus Jakarta Sans, system-ui, sans-serif">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0f1b33"/><stop offset="1" stop-color="#0b1120"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect x="0" y="0" width="10" height="500" fill="#c2410c"/>
+  <text x="60" y="90" fill="#c2410c" font-size="18" font-weight="700" letter-spacing="2">BREVILLE</text>
+  <text fill="#f7f9fc" font-size="40" font-weight="800" letter-spacing="-1"><tspan x="60" y="266">Nespresso Creatista</tspan><tspan x="60" y="312">Pro by Breville</tspan></text>
+  <text x="60" y="418" fill="#93a1bd" font-size="19" font-weight="500">Barista-grade flat whites in under two minutes</text>
+  <g transform="translate(600,360)" fill="none" stroke="#c2410c" stroke-width="6" stroke-linecap="round">
+    <rect x="0" y="0" width="120" height="86" rx="10"/><path d="M20 86 L20 30 M50 86 L50 12 M80 86 L80 44 M110 86 L110 22"/>
+  </g>
+  <text x="60" y="462" fill="#5b6a86" font-size="15">C-Suit Necessities · Desk Coffee</text>
+</svg>

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="wrap error-page">
+  <h1>That page moved.</h1>
+  <p class="dek">The review you were after is probably one of these:</p>
+  <div class="card-grid">
+    {{ range first 6 (where site.RegularPages "Section" "reviews").ByWeight }}
+      {{ partial "card.html" (dict "page" .) }}
+    {{ end }}
+  </div>
+  <p><a class="btn btn-primary" href="{{ "/" | relURL }}" data-cta="404-home">Back to the homepage →</a></p>
+</section>
+{{ end }}

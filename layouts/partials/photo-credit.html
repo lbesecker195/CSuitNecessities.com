@@ -1,0 +1,5 @@
+{{- /* Unsplash API Guidelines require crediting the photographer and Unsplash,
+       with referral params on both links. Takes the dict from page-photo.html. */ -}}
+{{- with .credit -}}
+<figcaption class="photo-credit">Photo by <a href="{{ $.creditUrl | safeURL }}" rel="nofollow noopener" target="_blank">{{ . }}</a> on <a href="https://unsplash.com/?utm_source=C-Suit%20Necessities&amp;utm_medium=referral" rel="nofollow noopener" target="_blank">Unsplash</a></figcaption>
+{{- end -}}

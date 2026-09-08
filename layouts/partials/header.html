@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ "/" | relURL }}" aria-label="{{ site.Params.brand }} — home">{{ partial "brand.html" . }}</a>
+    <nav class="main-nav" aria-label="Primary">
+      {{ range site.Menus.main }}
+        <a href="{{ .PageRef | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </nav>
+    {{ with site.GetPage "/compare" }}
+      <a class="btn btn-header" href="{{ .RelPermalink }}" data-cta="header">Compare the top picks →</a>
+    {{ end }}
+  </div>
+</header>

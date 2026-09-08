@@ -1,0 +1,26 @@
+{{- /* Clickable image that links to the product on Amazon.
+       {{< img-link src="/img/products/saddleback-briefcase.svg" offer="saddleback-briefcase"
+                    caption="The full-grain front pocket" cue="Check the price →" >}}
+       `src` may be a page-bundle resource, an asset path, or a /static path. */ -}}
+{{- $src := .Get "src" -}}
+{{- $offerKey := .Get "offer" -}}
+{{- $href := .Get "href" -}}
+{{- $name := "" -}}
+{{- with $offerKey -}}{{- with index hugo.Data.offers (string .) -}}{{- $href = partial "amzn.html" . -}}{{- $name = .name -}}{{- end -}}{{- end -}}
+{{- $img := .Page.Resources.GetMatch $src -}}
+{{- if not $img -}}{{- $img = resources.Get $src -}}{{- end -}}
+{{- $out := $src | relURL -}}{{- $w := 0 -}}{{- $h := 0 -}}
+{{- with $img -}}
+  {{- $out = .RelPermalink -}}
+  {{- if in (slice "jpeg" "png" "webp" "tiff" "bmp") .MediaType.SubType -}}
+    {{- $r := cond (gt .Width 1280) (.Resize "1280x webp q82") . -}}
+    {{- $out = $r.RelPermalink -}}{{- $w = $r.Width -}}{{- $h = $r.Height -}}
+  {{- end -}}
+{{- end -}}
+<figure class="content-fig is-linked">
+  <a class="fig-link{{ if $name }} aff{{ end }}" href="{{ $href | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}"{{ with $name }} data-affiliate="{{ . }}"{{ end }} data-cta="content-image">
+    <img src="{{ $out }}" alt="{{ .Get "alt" | default (.Get "caption") }}"{{ if $w }} width="{{ $w }}" height="{{ $h }}"{{ end }} loading="lazy" decoding="async">
+    <span class="fig-cue">{{ .Get "cue" | default site.Params.imageOverlayText }}</span>
+  </a>
+  {{ with .Get "caption" }}<figcaption>{{ . }} <span class="fig-caption-link">— {{ site.Params.ctaText }} →</span></figcaption>{{ end }}
+</figure>

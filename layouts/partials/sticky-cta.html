@@ -1,0 +1,22 @@
+{{/* Bottom sticky bar — appears after N% scroll, one persistent affiliate anchor. */}}
+{{ if .IsPage }}
+  {{ $offer := "" }}{{ with .Params.offer }}{{ $offer = index hugo.Data.offers (string .) }}{{ end }}
+  {{ with $offer }}
+  {{ $url := partial "amzn.html" . }}
+  <div id="sticky-cta" hidden>
+    <div class="wrap sticky-cta-inner">
+      {{ with .image }}<a href="{{ $url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ $offer.name }}" data-cta="sticky-image" class="sticky-cta-thumb"><img src="{{ . | relURL }}" alt="{{ $offer.name }}" width="34" height="34" loading="lazy"></a>{{ end }}
+      <div class="sticky-cta-copy">
+        <strong>{{ .name }}</strong>
+        <span class="muted">{{ with .tagline }}{{ . }}{{ else }}{{ with .deal }}{{ . }}{{ end }}{{ end }}</span>
+      </div>
+      <a class="btn btn-primary"
+         href="{{ $url | safeURL }}"
+         target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}"
+         rel="{{ site.Params.affiliateRel }}"
+         data-affiliate="{{ .name }}"
+         data-cta="sticky">{{ .cta | default site.Params.ctaText }}</a>
+    </div>
+  </div>
+  {{ end }}
+{{ end }}

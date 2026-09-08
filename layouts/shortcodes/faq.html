@@ -1,0 +1,13 @@
+{{- /* Reads page front-matter `faq:` list ({q, a}) and renders expandable items.
+       Interaction (expanding) is a dwell-time signal; answers can contain money links. */ -}}
+{{- with .Page.Params.faq -}}
+<section class="faq" aria-label="Frequently asked questions">
+  <h2 class="section-head">Questions executives ask before buying</h2>
+  {{ range . }}
+  <details class="faq-item">
+    <summary>{{ .q }}</summary>
+    <div class="faq-a">{{ $.Page.RenderString .a }}</div>
+  </details>
+  {{ end }}
+</section>
+{{- end -}}

@@ -1,0 +1,15 @@
+{{- /* {{< cta "saddleback-briefcase" >}}   — pull product from data/offers.yaml
+       {{< cta "saddleback-briefcase" text="Grab it on Amazon" >}}
+       {{< cta url="https://..." text="Check price" note="ships free" >}} */ -}}
+{{- $url := .Get "url" -}}{{- $text := .Get "text" -}}{{- $note := .Get "note" -}}{{- $name := .Get "name" -}}
+{{- with .Get 0 -}}
+  {{- with index hugo.Data.offers (string .) -}}
+    {{- $url = partial "amzn.html" . -}}{{- $name = .name -}}
+    {{- if not $text -}}{{- $text = .cta -}}{{- end -}}
+    {{- if not $note -}}{{- $note = .deal -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+<p class="inline-cta">
+  <a class="btn btn-primary" href="{{ $url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}"{{ with $name }} data-affiliate="{{ . }}"{{ end }} data-cta="inline-shortcode">{{ with $text }}{{ . }}{{ else }}{{ site.Params.ctaText }}{{ end }}</a>
+  {{ with $note }}<span class="inline-cta-note muted">{{ . }}</span>{{ end }}
+</p>

@@ -1,0 +1,1304 @@
+# =============================================================================
+#  PRODUCT CATALOG  —  every entry is an Amazon product.
+#
+#  AFFILIATE ID:  do NOT put your tag here. Set [params].amazonTag in hugo.toml
+#  ONCE and it flows into every link, button and image site-wide.
+#
+#  asin: ""   ->  links resolve to a tagged Amazon SEARCH for `search:` (works now)
+#  asin: "B0..." ->  links resolve to that exact product page (better conversion)
+#  Fill in asin values as you confirm them; nothing else needs to change.
+# =============================================================================
+
+saddleback-briefcase:
+  name: Saddleback Leather Thin Front Pocket Briefcase
+  brand: Saddleback Leather Co.
+  domain: amazon.com
+  asin: ''
+  search: Saddleback Leather Thin Front Pocket Briefcase
+  rating: '4.8'
+  tagline: Full-grain boot leather, zero zippers to break
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1473188588951-666fce8e7c68?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8YnJvd24lMjBsZWF0aGVyJTIwYnJpZWZjYXNlfGVufDF8MHx8fDE3ODg4OTQ1Mzh8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Thick full-grain leather that only looks better scuffed
+  - No zippers, no fragile hardware — buckles and rivets only
+  - Fits most 15-inch laptops with room for a legal pad
+  compare:
+    Best for: Buy-it-once ruggedness
+    Leather / shell: Full-grain "boot" leather
+    Weight: ~4.5 lb empty
+    Laptop fit: Up to 15 in
+    Warranty: 100 years
+    Rating: 4.8 / 5
+  deal: 100-year leather — often ships with a free hobo bag
+  reviewRef: /reviews/saddleback-briefcase
+  imageAlt: Brown leather satchel bag on gray concrete surface near green plant at daytime
+  photoCredit: Álvaro Serrano
+  photoCreditUrl: https://unsplash.com/@alvaroserrano?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: pFLNV4gkXsc
+bellroy-tokyo:
+  name: Bellroy Tokyo Work Bag (Premium)
+  brand: Bellroy
+  domain: amazon.com
+  asin: ''
+  search: Bellroy Tokyo Work Bag Premium leather
+  rating: '4.6'
+  tagline: The minimalist's board-meeting-to-boarding-gate bag
+  cta: Check Price on Amazon
+  image: /img/products/bellroy-tokyo.svg
+  bullets:
+  - Weather-resistant leather with a clean, low-profile silhouette
+  - Dedicated slots for two phones, cables and a charger
+  - Luggage pass-through sleeve for airport transit
+  compare:
+    Best for: Slim modern organization
+    Leather / shell: Env. certified leather
+    Weight: ~2.4 lb empty
+    Laptop fit: Up to 16 in
+    Warranty: 3 years
+    Rating: 4.6 / 5
+  reviewRef: /reviews/bellroy-tokyo
+leatherology-padfolio:
+  name: Leatherology Zip-Around Executive Padfolio
+  brand: Leatherology
+  domain: amazon.com
+  asin: ''
+  search: Leatherology Zip Around Executive Padfolio full grain
+  rating: '4.7'
+  tagline: Full-grain Italian leather for device-free rooms
+  cta: Check Price on Amazon
+  image: /img/products/leatherology-padfolio.svg
+  bullets:
+  - Full-grain leather that ages into a personal patina
+  - Gusset expands for pitch decks; fits letter or A4 pads
+  - Smooth perimeter zip and a clear pen-loop
+  compare:
+    Best for: Paper-only executive sessions
+    Leather / shell: Full-grain Italian
+    Weight: ~1.6 lb
+    Laptop fit: Tablet only
+    Warranty: 1 year
+    Rating: 4.7 / 5
+  deal: Free monogramming on most orders
+  reviewRef: /reviews/leatherology-padfolio
+shinola-valet-tray:
+  name: Shinola Detroit Large Leather Catchall Tray
+  brand: Shinola
+  domain: amazon.com
+  asin: ''
+  search: Shinola Detroit Large Leather Catchall Valet Tray
+  rating: '4.7'
+  tagline: Structured veg-tan leather that ends desk clutter
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1625757607957-1ed81bd69247?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8bGVhdGhlciUyMHZhbGV0JTIwdHJheSUyMHdhdGNoJTIwa2V5c3xlbnwxfDB8fHwxNzg4ODk0NTQxfDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Vegetable-tanned leather with firm, snap-stud corners
+  - Deep enough to hold a watch, rings, keys and AirPods
+  - Small footprint that fits beside a keyboard
+  compare:
+    Best for: Watch + EDC landing zone
+    Leather / shell: Vegetable-tanned
+    Weight: ~0.5 lb
+    Laptop fit: n/a
+    Warranty: Lifetime (defects)
+    Rating: 4.7 / 5
+  reviewRef: /reviews/shinola-valet-tray
+  imageAlt: Black and silver round analog watch
+  photoCredit: Juliano Chaves
+  photoCreditUrl: https://unsplash.com/@xulian?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: 2K5mfUgdilg
+tumi-alpha3-brief:
+  name: Tumi Alpha 3 Compact Brief
+  brand: Tumi
+  domain: amazon.com
+  asin: ''
+  search: Tumi Alpha 3 Compact Laptop Brief
+  rating: '4.7'
+  tagline: Ballistic-nylon brief with technical pockets everywhere
+  cta: Check Price on Amazon
+  image: /img/products/tumi-alpha3-brief.svg
+  bullets:
+  - FXT ballistic nylon shrugs off airport abuse
+  - Add-a-bag sleeve and dedicated tech organization
+  - Lighter than a leather brief of the same volume
+  compare:
+    Best for: Max organization, min weight
+    Leather / shell: FXT ballistic nylon
+    Weight: ~2.9 lb empty
+    Laptop fit: Up to 15 in
+    Warranty: 5 years
+    Rating: 4.7 / 5
+  deal: Tumi Tracer registration included
+montblanc-149:
+  name: Montblanc Meisterstück 149 Fountain Pen
+  brand: Montblanc
+  domain: amazon.com
+  asin: ''
+  search: Montblanc Meisterstuck 149 Fountain Pen
+  rating: '4.8'
+  tagline: The signature that closes the deal
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1603796846097-bee99e4a601f?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Zm91bnRhaW4lMjBwZW4lMjBzaWduaW5nJTIwZG9jdW1lbnR8ZW58MXwwfHx8MTc4ODg5NDU0Mnww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Hand-ground 18K gold nib with a touch of spring
+  - Piston filler holds a huge ink reserve for signing marathons
+  - Substantial barrel that photographs like status
+  compare:
+    Best for: Public-facing prestige
+    Type: Fountain
+    Nib / tip: 18K gold
+    Maintenance: Flush monthly
+    Refill cost: Bottled ink, cheap
+    Rating: 4.8 / 5
+  reviewRef: /reviews/montblanc-149
+  imageAlt: Person in orange long sleeve shirt writing on white paper
+  photoCredit: Romain Dancre
+  photoCreditUrl: https://unsplash.com/@romaindancre?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: doplSDELX7E
+waterman-carene:
+  name: Waterman Carène Rollerball
+  brand: Waterman
+  domain: amazon.com
+  asin: ''
+  search: Waterman Carene Rollerball Pen Black Sea
+  rating: '4.7'
+  tagline: Fountain-pen elegance, zero fuss
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1781835073328-ef72734874ae?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8bHV4dXJ5JTIwcGVuJTIwb24lMjBkZXNrfGVufDF8MHx8fDE3ODg4OTQ1NDR8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Lacquered, contoured body with a real brass core
+  - Instant ink laydown — grab it and sign
+  - Firm cap snap that survives a jacket pocket
+  compare:
+    Best for: Low-maintenance daily driver
+    Type: Rollerball
+    Nib / tip: Steel rollerball
+    Maintenance: None
+    Refill cost: $8–12 each
+    Rating: 4.7 / 5
+  reviewRef: /reviews/waterman-carene
+  imageAlt: Colorful fountain pens displayed neatly in a grey leather case
+  photoCredit: jason hu
+  photoCreditUrl: https://unsplash.com/@hujason?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: lsIPKrfTVFU
+lamy-2000:
+  name: Lamy 2000 Fountain Pen (Makrolon)
+  brand: Lamy
+  domain: amazon.com
+  asin: ''
+  search: Lamy 2000 Fountain Pen Makrolon
+  rating: '4.8'
+  tagline: Bauhaus restraint for the discreet founder
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1767547109500-db6a9d411ae9?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8bWluaW1hbGlzdCUyMGZvdW50YWluJTIwcGVufGVufDF8MHx8fDE3ODg4OTQ1NDV8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Seamless Makrolon and brushed-steel body from 1966
+  - Hooded 14K gold nib, spring-loaded clip
+  - Disappears in the hand on long strategy memos
+  compare:
+    Best for: Understated design lovers
+    Type: Fountain
+    Nib / tip: 14K hooded gold
+    Maintenance: Flush monthly
+    Refill cost: Bottled ink, cheap
+    Rating: 4.8 / 5
+  reviewRef: /reviews/lamy-2000
+  imageAlt: A fountain pen and inkwell on a notebook
+  photoCredit: atelierbyvineeth ...
+  photoCreditUrl: https://unsplash.com/@atelierbyvineeth?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: bBV9kt-rC4c
+leuchtturm-master:
+  name: Leuchtturm1917 Master Slim A4+ Notebook
+  brand: Leuchtturm1917
+  domain: amazon.com
+  asin: ''
+  search: Leuchtturm1917 Master Slim A4 Hardcover Notebook
+  rating: '4.7'
+  tagline: A full sheet of thinking room, archival paper
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8b3BlbiUyMG5vdGVib29rJTIwZm91bnRhaW4lMjBwZW4lMjBkZXNrfGVufDF8MHx8fDE3ODg4OTQ1NDZ8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Oversized A4+ pages for real mind-mapping
+  - 100 g/m² paper resists fountain-ink bleed and ghosting
+  - Numbered pages, index and lay-flat thread binding
+  compare:
+    Best for: Strategic planning at scale
+    Type: Notebook
+    Nib / tip: 100 g/m² paper
+    Maintenance: n/a
+    Refill cost: Whole notebook
+    Rating: 4.7 / 5
+  reviewRef: /reviews/leuchtturm-master
+  imageAlt: Fountain pen on spiral book
+  photoCredit: Aaron Burden
+  photoCreditUrl: https://unsplash.com/@aaronburden?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: xG8IQMqMITM
+parker-duofold:
+  name: Parker Duofold Prestige Centennial
+  brand: Parker
+  domain: amazon.com
+  asin: ''
+  search: Parker Duofold Prestige Centennial Fountain Pen
+  rating: '4.6'
+  tagline: Heritage prestige at a saner price than Montblanc
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1518674660708-0e2c0473e68e?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8dmludGFnZSUyMGZvdW50YWluJTIwcGVuJTIwY2xvc2V1cHxlbnwxfDB8fHwxNzg4ODk0NTQ3fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Solid 18K/22K gold nib with a classic profile
+  - Cartridge/converter fill for travel convenience
+  - Grippy, secure clip
+  compare:
+    Best for: Prestige without the 149 tax
+    Type: Fountain
+    Nib / tip: 18K gold
+    Maintenance: Flush monthly
+    Refill cost: Cartridges or ink
+    Rating: 4.6 / 5
+  imageAlt: A gold fountain pen with an engraved nib on a white surface
+  photoCredit: Art Lasovsky
+  photoCreditUrl: https://unsplash.com/@artlasovsky?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: 8XddFc6NkBY
+sony-xm5:
+  name: Sony WH-1000XM5 Noise-Canceling Headphones
+  brand: Sony
+  domain: amazon.com
+  asin: ''
+  search: Sony WH-1000XM5 Wireless Noise Canceling Headphones
+  rating: '4.7'
+  tagline: The desk sanctuary for investor calls
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8b3ZlciUyMGVhciUyMGhlYWRwaG9uZXMlMjBkZXNrfGVufDF8MHx8fDE3ODg4OTQ1NDh8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Class-leading low-frequency (cabin / HVAC) cancellation
+  - 8-mic beamforming keeps your voice clean on calls
+  - ~30 hr battery and fast multipoint switching
+  compare:
+    Best for: Calls + focus at the desk
+    Mic on calls: Excellent
+    ANC: Class-leading
+    Battery: ~30 hr
+    Multipoint: Yes (2)
+    Rating: 4.7 / 5
+  deal: Frequent Amazon price drops — check today's
+  reviewRef: /reviews/sony-xm5
+  imageAlt: Black wireless headphones between apple keyboard and apple magic mouse on white surface
+  photoCredit: Tomasz Gawłowski
+  photoCreditUrl: https://unsplash.com/@gawlowski?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: YDZPdqv3FcA
+bose-qc-ultra:
+  name: Bose QuietComfort Ultra Headphones
+  brand: Bose
+  domain: amazon.com
+  asin: ''
+  search: Bose QuietComfort Ultra Headphones over ear
+  rating: '4.6'
+  tagline: Red-eye comfort with the best clamp balance
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1484704849700-f032a568e944?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8aGVhZHBob25lcyUyMGFpcnBsYW5lJTIwdHJhdmVsfGVufDF8MHx8fDE3ODg4OTQ1NDl8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Lightest long-haul clamp pressure of the flagships
+  - Immersive spatial audio for hybrid conference calls
+  - Compact fold-flat travel case
+  compare:
+    Best for: Long-haul travel comfort
+    Mic on calls: Very good
+    ANC: Excellent
+    Battery: ~24 hr
+    Multipoint: Yes (2)
+    Rating: 4.6 / 5
+  reviewRef: /reviews/bose-qc-ultra
+  imageAlt: Gray and brown corded headphones
+  photoCredit: Lee  Campbell
+  photoCreditUrl: https://unsplash.com/@leecampbell?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: GI6L2pkiZgQ
+jabra-speak2-75:
+  name: Jabra Speak2 75 Conference Speakerphone
+  brand: Jabra
+  domain: amazon.com
+  asin: ''
+  search: Jabra Speak2 75 Speakerphone
+  rating: '4.6'
+  tagline: Turns any hotel room into a boardroom
+  cta: Check Price on Amazon
+  image: /img/products/jabra-speak2-75.svg
+  bullets:
+  - Full-duplex — nobody gets clipped when two people talk
+  - Acoustic voice-leveling normalizes near/far speakers
+  - USB-C and Bluetooth with a carry pouch
+  compare:
+    Best for: Room calls off a laptop
+    Mic on calls: 360° room pickup
+    ANC: Noise suppression
+    Battery: ~32 hr
+    Multipoint: USB + BT
+    Rating: 4.6 / 5
+  reviewRef: /reviews/jabra-speak2-75
+snooz:
+  name: SNOOZ Real-Fan White Noise Machine
+  brand: SNOOZ
+  domain: amazon.com
+  asin: ''
+  search: SNOOZ White Noise Sound Machine fan
+  rating: '4.6'
+  tagline: Sound-masking so hallway ears hear nothing
+  cta: Check Price on Amazon
+  image: /img/products/snooz.svg
+  bullets:
+  - Real mechanical fan — no looping digital hiss
+  - Tunable tone and volume; app schedules
+  - Small enough to hide on a credenza
+  compare:
+    Best for: Office confidentiality masking
+    Mic on calls: n/a
+    ANC: Sound masking
+    Battery: AC powered
+    Multipoint: n/a
+    Rating: 4.6 / 5
+  reviewRef: /reviews/snooz
+airpods-max:
+  name: Apple AirPods Max
+  brand: Apple
+  domain: amazon.com
+  asin: ''
+  search: Apple AirPods Max
+  rating: '4.7'
+  tagline: Seamless in an all-Apple executive stack
+  cta: Check Price on Amazon
+  image: /img/products/airpods-max.svg
+  bullets:
+  - Instant switching across iPhone, iPad and Mac
+  - Excellent ANC and build; heavier on the head
+  - Best-in-class transparency mode
+  compare:
+    Best for: All-Apple households
+    Mic on calls: Very good
+    ANC: Excellent
+    Battery: ~20 hr
+    Multipoint: Apple devices
+    Rating: 4.7 / 5
+sennheiser-momentum-4:
+  name: Sennheiser Momentum 4 Wireless
+  brand: Sennheiser
+  domain: amazon.com
+  asin: ''
+  search: Sennheiser Momentum 4 Wireless Headphones
+  rating: '4.5'
+  tagline: Marathon 60-hour battery and warm tuning
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1783118975868-5c746e0480e8?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8aGVhZHBob25lcyUyMG9uJTIwd29vZGVuJTIwZGVza3xlbnwxfDB8fHwxNzg4ODk0NTUzfDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - ~60 hr battery outlasts any travel week
+  - Comfortable, low-profile fit
+  - Rich sound signature; ANC a step behind Sony/Bose
+  compare:
+    Best for: Battery life above all
+    Mic on calls: Good
+    ANC: Very good
+    Battery: ~60 hr
+    Multipoint: Yes (2)
+    Rating: 4.5 / 5
+  imageAlt: Open notebook, pens, and headphones on a rustic wooden desk
+  photoCredit: Gabriel Cox
+  photoCreditUrl: https://unsplash.com/@pendulumphotographs?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: SGQoTK5-ZrU
+herman-miller-aeron:
+  name: Herman Miller Aeron (PostureFit SL)
+  brand: Herman Miller
+  domain: amazon.com
+  asin: ''
+  search: Herman Miller Aeron Chair PostureFit SL size B
+  rating: '4.7'
+  tagline: The corner-office standard for 12-hour days
+  cta: Check Price on Amazon
+  image: /img/products/herman-miller-aeron.svg
+  bullets:
+  - 8Z Pellicle mesh — no sweat build-up over long sessions
+  - PostureFit SL stabilizes the sacrum and lumbar together
+  - Forward-tilt for heads-down review work
+  compare:
+    Best for: All-day desk marathons
+    Support type: Suspended mesh
+    Cooling: Excellent
+    Key adjustments: Tilt, PostureFit, arms
+    Warranty: 12 years
+    Rating: 4.7 / 5
+  deal: Certified-refurb units on Amazon cost far less
+  reviewRef: /reviews/herman-miller-aeron
+steelcase-gesture:
+  name: Steelcase Gesture Office Chair
+  brand: Steelcase
+  domain: amazon.com
+  asin: ''
+  search: Steelcase Gesture Office Chair with Headrest
+  rating: '4.7'
+  tagline: Arms that follow you to every device
+  cta: Check Price on Amazon
+  image: /img/products/steelcase-gesture.svg
+  bullets:
+  - 360° arms support phone, tablet and keyboard postures
+  - Deep recline with weight-activated tracking
+  - Cushioned seat contours without going soft
+  compare:
+    Best for: Phone/tablet-heavy days
+    Support type: Cushioned contour
+    Cooling: Moderate
+    Key adjustments: 4D arms, depth, recline
+    Warranty: 12 years
+    Rating: 4.7 / 5
+  reviewRef: /reviews/steelcase-gesture
+ergotron-hx:
+  name: Ergotron HX Heavy-Duty Monitor Arm
+  brand: Ergotron
+  domain: amazon.com
+  asin: ''
+  search: Ergotron HX Desk Monitor Arm
+  rating: '4.7'
+  tagline: Holds a 49-inch ultrawide with zero sag
+  cta: Check Price on Amazon
+  image: /img/products/ergotron-hx.svg
+  bullets:
+  - Rated for large, heavy panels up to ~42 lb
+  - CF (Constant Force) lift repositions with a fingertip
+  - Clean internal cable routing
+  compare:
+    Best for: Big curved ultrawides
+    Support type: Desk clamp arm
+    Cooling: n/a
+    Key adjustments: Height, tilt, pan
+    Warranty: 10 years
+    Rating: 4.7 / 5
+  reviewRef: /reviews/ergotron-hx
+flexispot-e7-pro:
+  name: FlexiSpot E7 Pro Standing Desk
+  brand: FlexiSpot
+  domain: amazon.com
+  asin: ''
+  search: FlexiSpot E7 Pro Commercial Standing Desk Frame
+  rating: '4.7'
+  tagline: Rock-solid at standing height while you type fast
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1622131278701-eb225474ffd2?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8c3RhbmRpbmclMjBkZXNrJTIwb2ZmaWNlfGVufDF8MHx8fDE3ODg4OTQ1NTh8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Dual motors and heavy-gauge steel kill monitor wobble
+  - Quiet lift with accurate memory presets
+  - Anti-collision sensing and a wide height range
+  compare:
+    Best for: Shake-free sit/stand
+    Support type: Dual-motor base
+    Cooling: n/a
+    Key adjustments: Height presets
+    Warranty: 15 yr frame
+    Rating: 4.7 / 5
+  reviewRef: /reviews/flexispot-e7-pro
+  imageAlt: Man in pink dress shirt and blue denim jeans standing beside brown wooden table
+  photoCredit: TheStandingDesk
+  photoCreditUrl: https://unsplash.com/@thestandingdesk?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: frGKNJe4sHY
+haworth-fern:
+  name: Haworth Fern Executive
+  brand: Haworth
+  domain: amazon.com
+  asin: ''
+  search: Haworth Fern Office Chair
+  rating: '4.6'
+  tagline: Flexible 'digital knit' back that moves with the spine
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1595846723416-99a641e1231a?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8ZGVzaWduZXIlMjBvZmZpY2UlMjBjaGFpcnxlbnwxfDB8fHwxNzg4ODk0NTU5fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Wave-suspension back flexes segment by segment
+  - Warm, residential look for a client-facing office
+  - Lighter recline feel than the Aeron
+  compare:
+    Best for: Spinal-flex comfort
+    Support type: Flexible knit back
+    Cooling: Good
+    Key adjustments: Tilt, lumbar, arms
+    Warranty: 12 years
+    Rating: 4.6 / 5
+  imageAlt: Black and brown wooden table near blue padded chair
+  photoCredit: Gian Paolo Aliatis
+  photoCreditUrl: https://unsplash.com/@gianpaoloaliatis?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: EJSNrTzz6xk
+tumi-alpha3-carryon:
+  name: Tumi Alpha 3 Continental Dual Access Carry-On
+  brand: Tumi
+  domain: amazon.com
+  asin: ''
+  search: Tumi Alpha 3 Continental Dual Access 4 Wheeled Carry On
+  rating: '4.7'
+  tagline: Ballistic-nylon tank with top + front access
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1687992176093-6417a93fa3d0?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Y2FycnklMjBvbiUyMGx1Z2dhZ2UlMjBhaXJwb3J0fGVufDF8MHx8fDE3ODg4OTQ1NjB8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - FXT ballistic nylon survives a decade of gate-checks
+  - Dual access — grab the laptop without unpacking
+  - Internal suiter brackets and add-a-bag sleeve
+  compare:
+    Best for: Frequent mixed-carrier flying
+    Shell: FXT ballistic nylon
+    Empty weight: ~9.9 lb
+    Warranty: 5 yr + 1 full
+    Wheels: Dual spinner
+    Rating: 4.7 / 5
+  deal: Tumi Tracer registration included
+  reviewRef: /reviews/tumi-alpha3-carryon
+  imageAlt: A man and a woman walking through an airport
+  photoCredit: Cameron Cox
+  photoCreditUrl: https://unsplash.com/@cameroncox?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: KbeiZcW5byM
+samsonite-cosmolite:
+  name: Samsonite Black Label Cosmolite 3.0 Spinner
+  brand: Samsonite
+  domain: amazon.com
+  asin: ''
+  search: Samsonite Cosmolite 3.0 Spinner
+  rating: '4.6'
+  tagline: Curv shell armor under 4.5 lb
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1639598003276-8a70fcaaad6c?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8aGFyZCUyMHNoZWxsJTIwc3VpdGNhc2UlMjB0cmF2ZWx8ZW58MXwwfHx8MTc4ODg5NDU2MXww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Curv thermoplastic — huge impact resistance for the weight
+  - Shell flexes and springs back instead of cracking
+  - More packing allowance before you hit weight limits
+  compare:
+    Best for: Packing heavy without penalty
+    Shell: Curv composite
+    Empty weight: ~4.4 lb
+    Warranty: 10 years
+    Wheels: Dual spinner
+    Rating: 4.6 / 5
+  reviewRef: /reviews/samsonite-cosmolite
+  imageAlt: Three pieces of blue luggage sitting next to each other
+  photoCredit: American Green Travel
+  photoCreditUrl: https://unsplash.com/@americangreentravel?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: ji5XMfO3dXY
+anker-prime-240w:
+  name: Anker Prime 240W GaN Desktop Charger
+  brand: Anker
+  domain: amazon.com
+  asin: ''
+  search: Anker Prime 240W GaN Desktop Charger 4 port
+  rating: '4.7'
+  tagline: One plug for the laptop, tablet, phone and buds
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1572721546624-05bf65ad7679?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8dXNiJTIwYyUyMGNoYXJnZXIlMjBjYWJsZXMlMjBkZXNrfGVufDF8MHx8fDE3ODg4OTQ1NjJ8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - 240W across 4 ports — full-speed MacBook Pro plus 3 more
+  - Smart power reallocation as devices come and go
+  - Tiny footprint for the wattage; retains its cable
+  compare:
+    Best for: Killing the brick pile
+    Shell: n/a
+    Empty weight: ~1.3 lb
+    Warranty: 2 years
+    Wheels: n/a
+    Rating: 4.7 / 5
+  reviewRef: /reviews/anker-prime-240w
+  imageAlt: Orange usb cables
+  photoCredit: Lucian Alexe
+  photoCreditUrl: https://unsplash.com/@lucian_alexe?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: yh0UtueiZ-I
+peak-design-tech-pouch:
+  name: Peak Design Tech Pouch
+  brand: Peak Design
+  domain: amazon.com
+  asin: ''
+  search: Peak Design Tech Pouch
+  rating: '4.8'
+  tagline: Origami organizer that opens flat on the tray table
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1634839763121-58fcfed2a94a?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8dHJhdmVsJTIwdGVjaCUyMG9yZ2FuaXplciUyMHBvdWNoJTIwY2FibGVzfGVufDF8MHx8fDE3ODg4OTQ1NjN8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Folding pocket geometry keeps every dongle visible
+  - Weatherproof recycled shell and smooth zips
+  - Holds its shape stuffed to capacity
+  compare:
+    Best for: Cable + adapter control
+    Shell: Weatherproof nylon
+    Empty weight: ~0.5 lb
+    Warranty: Lifetime
+    Wheels: n/a
+    Rating: 4.8 / 5
+  reviewRef: /reviews/peak-design-tech-pouch
+  imageAlt: A black case with a bunch of cords in it
+  photoCredit: Tai Bui
+  photoCreditUrl: https://unsplash.com/@agforl24?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: 01aRENy6Nlg
+rimowa-original-cabin:
+  name: Rimowa Original Cabin (Aluminum)
+  brand: Rimowa
+  domain: amazon.com
+  asin: ''
+  search: Rimowa Original Cabin aluminum suitcase
+  rating: '4.6'
+  tagline: Anodized aluminum status — dents and all
+  cta: Check Price on Amazon
+  image: https://images.unsplash.com/photo-1707061697902-0e6f5f4a67c5?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8YWx1bWluaXVtJTIwc3VpdGNhc2UlMjB0cmF2ZWx8ZW58MXwwfHx8MTc4ODg5NDU2NHww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
+  bullets:
+  - Grooved aluminum shell; a lifetime of character marks
+  - Heavier and pricier than composites
+  - 5-year warranty, global service network
+  compare:
+    Best for: Status + repairability
+    Shell: Anodized aluminum
+    Empty weight: ~9.7 lb
+    Warranty: 5 years
+    Wheels: Dual spinner
+    Rating: 4.6 / 5
+  imageAlt: A person walking down a path with a suitcase
+  photoCredit: Vital Sinkevich
+  photoCreditUrl: https://unsplash.com/@vitsinkevich?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: CO0AFExTMVk
+briggs-riley-baseline:
+  name: Briggs & Riley Baseline Essential Carry-On
+  brand: Briggs & Riley
+  domain: amazon.com
+  asin: ''
+  search: Briggs Riley Baseline Essential Carry On Spinner
+  rating: '4.8'
+  tagline: The 'if it breaks we fix it, forever' bag
+  cta: Check Price on Amazon
+  image: /img/products/briggs-riley-baseline.svg
+  bullets:
+  - Unconditional lifetime repair — even airline damage
+  - Outsider handle frees up all interior space
+  - CX compression-expansion for overpackers
+  compare:
+    Best for: Zero-hassle warranty
+    Shell: Ballistic nylon
+    Empty weight: ~8.0 lb
+    Warranty: Lifetime, unconditional
+    Wheels: Dual spinner
+    Rating: 4.8 / 5
+insta360-link2:
+  name: Insta360 Link 2 4K AI Webcam
+  brand: Insta360
+  domain: amazon.com
+  asin: ''
+  search: Insta360 Link 2 4K AI Webcam gimbal
+  rating: '4.6'
+  tagline: A camera operator that follows you to the whiteboard
+  cta: Check Price on Amazon
+  image: /img/products/insta360-link2.svg
+  bullets:
+  - 1/2-inch sensor with real optical-look depth
+  - Physical 2-axis gimbal tracks you across the room
+  - 'Privacy: lens physically drops when you''re muted'
+  compare:
+    Best for: Presenting on camera
+    Sensor / optics: 1/2" + gimbal
+    Tracking: Mechanical PTZ
+    Mic: Dual noise-canceled
+    Setup: Plug-and-play
+    Rating: 4.6 / 5
+  reviewRef: /reviews/insta360-link2
+benq-screenbar-pro:
+  name: BenQ ScreenBar Pro Monitor Light
+  brand: BenQ
+  domain: amazon.com
+  asin: ''
+  search: BenQ ScreenBar Pro Monitor Light Bar
+  rating: '4.7'
+  tagline: Desk light with zero screen glare
+  cta: Check Price on Amazon
+  image: /img/products/benq-screenbar-pro.svg
+  bullets:
+  - Asymmetric optics put light on the desk, not the panel
+  - Auto-dims to ambient; auto color temperature
+  - Clamps on thin and curved monitors, no screws
+  compare:
+    Best for: Evening reading light on camera
+    Sensor / optics: Asymmetric LED
+    Tracking: n/a
+    Mic: n/a
+    Setup: Clip-on
+    Rating: 4.7 / 5
+  reviewRef: /reviews/benq-screenbar-pro
+caldigit-ts4:
+  name: CalDigit TS4 Thunderbolt 4 Dock
+  brand: CalDigit
+  domain: amazon.com
+  asin: ''
+  search: CalDigit TS4 Thunderbolt 4 Dock
+  rating: '4.6'
+  tagline: 'One cable: dual displays, 10GbE-class LAN, 98W'
+  cta: Check Price on Amazon
+  image: /img/products/caldigit-ts4.svg
+  bullets:
+  - 18 ports including 2.5GbE and front SD/USB
+  - 98W charging drives a 16-inch laptop under load
+  - Stable sleep/wake on macOS and Windows
+  compare:
+    Best for: Single-cable command center
+    Sensor / optics: n/a
+    Tracking: n/a
+    Mic: Audio in/out
+    Setup: 1 cable
+    Rating: 4.6 / 5
+  reviewRef: /reviews/caldigit-ts4
+remarkable-paper-pro:
+  name: reMarkable Paper Pro
+  brand: reMarkable
+  domain: amazon.com
+  asin: ''
+  search: reMarkable Paper Pro tablet
+  rating: '4.4'
+  tagline: PDF markup and strategy drafts with no notifications
+  cta: Check Price on Amazon
+  image: /img/products/remarkable-paper-pro.svg
+  bullets:
+  - Color e-ink with a frontlight for any room
+  - Very low pen latency; paper-like drag
+  - Locked-down device — nothing to distract you
+  compare:
+    Best for: Distraction-free document review
+    Sensor / optics: Color e-ink
+    Tracking: n/a
+    Mic: n/a
+    Setup: Account + sync
+    Rating: 4.4 / 5
+  reviewRef: /reviews/remarkable-paper-pro
+obsbot-tiny-2:
+  name: OBSBOT Tiny 2 AI Webcam
+  brand: OBSBOT
+  domain: amazon.com
+  asin: ''
+  search: OBSBOT Tiny 2 4K AI Webcam
+  rating: '4.4'
+  tagline: Gesture-controlled AI PTZ with a big sensor
+  cta: Check Price on Amazon
+  image: /img/products/obsbot-tiny-2.svg
+  bullets:
+  - 1/1.5-inch sensor; strong low light
+  - Gesture control for zoom and tracking
+  - Voice-control add-ons via app
+  compare:
+    Best for: Solo presenters who move
+    Sensor / optics: 1/1.5" + gimbal
+    Tracking: AI PTZ
+    Mic: Dual
+    Setup: App recommended
+    Rating: 4.4 / 5
+logitech-brio-4k:
+  name: Logitech Brio 4K Webcam
+  brand: Logitech
+  domain: amazon.com
+  asin: ''
+  search: Logitech Brio 4K Pro Webcam
+  rating: '4.4'
+  tagline: The safe fixed-lens 4K default
+  cta: Check Price on Amazon
+  image: /img/products/logitech-brio-4k.svg
+  bullets:
+  - Reliable 4K with HDR in backlit offices
+  - No moving parts to fail
+  - Windows Hello face login
+  compare:
+    Best for: Set-and-forget reliability
+    Sensor / optics: Fixed wide
+    Tracking: Digital crop
+    Mic: Dual
+    Setup: Plug-and-play
+    Rating: 4.4 / 5
+ember-mug-2:
+  name: Ember Temperature Control Smart Mug 2 (14 oz)
+  brand: Ember
+  domain: amazon.com
+  asin: ''
+  search: Ember Mug 2 14 oz temperature control
+  rating: '4.5'
+  tagline: Coffee held at your exact temperature for 90 minutes
+  cta: Check Price on Amazon
+  image: /img/products/ember-mug-2.svg
+  bullets:
+  - Set a precise temp; it holds there on the coaster
+  - ~80 min battery off the coaster
+  - Preset temp works even without the app
+  compare:
+    Best for: Long meetings at the desk
+    How it heats: Active electronic
+    Portable: Short trips
+    Cleaning: Hand wash
+    Battery: ~80 min
+    Rating: 4.5 / 5
+  reviewRef: /reviews/ember-mug-2
+nespresso-creatista-pro:
+  name: Nespresso Creatista Pro by Breville
+  brand: Breville
+  domain: amazon.com
+  asin: ''
+  search: Nespresso Creatista Pro espresso machine
+  rating: '4.6'
+  tagline: Barista-grade flat whites in under two minutes
+  cta: Check Price on Amazon
+  image: /img/products/nespresso-creatista-pro.svg
+  bullets:
+  - ThermoJet heats in ~3 seconds
+  - Automatic steam wand textures real microfoam
+  - Touchscreen programs custom drinks
+  compare:
+    Best for: An office espresso bar
+    How it heats: ThermoJet boiler
+    Portable: 'No'
+    Cleaning: Auto steam purge
+    Battery: AC
+    Rating: 4.6 / 5
+  reviewRef: /reviews/nespresso-creatista-pro
+fellow-stagg-ekg-pro:
+  name: Fellow Stagg EKG Pro Electric Kettle
+  brand: Fellow
+  domain: amazon.com
+  asin: ''
+  search: Fellow Stagg EKG Pro Electric Gooseneck Kettle
+  rating: '4.7'
+  tagline: Design-object kettle with to-the-degree control
+  cta: Check Price on Amazon
+  image: /img/products/fellow-stagg-ekg-pro.svg
+  bullets:
+  - Variable temperature with a 60-minute hold
+  - Restricted gooseneck spout for a controlled pour
+  - Genuinely handsome on a credenza
+  compare:
+    Best for: Specialty tea & pour-over
+    How it heats: Element + hold
+    Portable: 'No'
+    Cleaning: Wipe / descale
+    Battery: AC
+    Rating: 4.7 / 5
+  reviewRef: /reviews/fellow-stagg-ekg-pro
+zojirushi-sm-khe48:
+  name: Zojirushi SM-KHE48 Vacuum Insulated Mug (16 oz)
+  brand: Zojirushi
+  domain: amazon.com
+  asin: ''
+  search: Zojirushi SM-KHE48 stainless mug 16 oz
+  rating: '4.7'
+  tagline: Passive vacuum insulation that just refuses to quit
+  cta: Check Price on Amazon
+  image: /img/products/zojirushi-sm-khe48.svg
+  bullets:
+  - Holds heat for hours with no battery
+  - Flip-lock lid — genuinely leakproof in a bag
+  - Slick interior wipes clean
+  compare:
+    Best for: Commutes and flights
+    How it heats: Passive vacuum
+    Portable: Excellent
+    Cleaning: Easy
+    Battery: None
+    Rating: 4.7 / 5
+  reviewRef: /reviews/zojirushi-sm-khe48
+cauldryn-coffee:
+  name: Cauldryn Coffee Pro Heated Bottle
+  brand: Cauldryn
+  domain: amazon.com
+  asin: ''
+  search: Cauldryn Coffee Pro heated travel mug
+  rating: '4.2'
+  tagline: Battery mug that can actually boil water
+  cta: Check Price on Amazon
+  image: /img/products/cauldryn-coffee.svg
+  bullets:
+  - Heats and re-boils on the go with swappable batteries
+  - Bulky; more thermos than mug
+  - Best for field days away from outlets
+  compare:
+    Best for: Off-grid heating
+    How it heats: Active battery
+    Portable: Yes (bulky)
+    Cleaning: Hand wash
+    Battery: Swappable
+    Rating: 4.2 / 5
+fellow-carter-move:
+  name: Fellow Carter Move Mug
+  brand: Fellow
+  domain: amazon.com
+  asin: ''
+  search: Fellow Carter Move Mug vacuum
+  rating: '4.6'
+  tagline: The nicest-drinking passive travel mug
+  cta: Check Price on Amazon
+  image: /img/products/fellow-carter-move.svg
+  bullets:
+  - Ceramic-coated interior — no metallic taste
+  - Splash-safe lid, tapered to fit cup holders
+  - Passive, so no charging ever
+  compare:
+    Best for: Taste + portability
+    How it heats: Passive vacuum
+    Portable: Excellent
+    Cleaning: Easy
+    Battery: None
+    Rating: 4.6 / 5
+theragun-pro-plus:
+  name: Theragun PRO Plus Multi-Therapy Device
+  brand: Therabody
+  domain: amazon.com
+  asin: ''
+  search: Theragun PRO Plus percussive therapy device
+  rating: '4.5'
+  tagline: Melts neck and upper-back tension between meetings
+  cta: Check Price on Amazon
+  image: /img/products/theragun-pro-plus.svg
+  bullets:
+  - 16 mm stroke reaches deep muscle, not just surface
+  - Near-infrared and heat/vibration modes built in
+  - Quiet enough to use with someone in the room
+  compare:
+    Best for: Acute desk-tension relief
+    What it does: Deep percussion
+    Time per day: 5–10 min
+    Noise: Whisper-quiet
+    Data: Basic app
+    Rating: 4.5 / 5
+  reviewRef: /reviews/theragun-pro-plus
+kingsmith-walkingpad-x21:
+  name: KingSmith WalkingPad X21 Under-Desk Treadmill
+  brand: KingSmith
+  domain: amazon.com
+  asin: ''
+  search: KingSmith WalkingPad X21 folding treadmill
+  rating: '4.4'
+  tagline: Folds flat behind a credenza; 10k steps on calls
+  cta: Check Price on Amazon
+  image: /img/products/kingsmith-walkingpad-x21.svg
+  bullets:
+  - Double-fold design stores in a slim gap
+  - Quiet motor — fine on a muted video call
+  - Remote / app speed control
+  compare:
+    Best for: Step count during calls
+    What it does: Low-intensity cardio
+    Time per day: 30–60 min
+    Noise: Low hum
+    Data: App steps
+    Rating: 4.4 / 5
+  reviewRef: /reviews/kingsmith-walkingpad-x21
+gunnar-vertex:
+  name: Gunnar Optiks Vertex Computer Glasses
+  brand: Gunnar
+  domain: amazon.com
+  asin: ''
+  search: Gunnar Optiks Vertex blue light glasses
+  rating: '4.5'
+  tagline: Cuts glare and dry-eye on 12-hour screen days
+  cta: Check Price on Amazon
+  image: /img/products/gunnar-vertex.svg
+  bullets:
+  - Blocks a high share of artificial blue light
+  - Distortion-free lens; subtle tint on camera
+  - Comfortable arms for all-day wear
+  compare:
+    Best for: Screen-fatigue reduction
+    What it does: Blue-light + AR
+    Time per day: All day
+    Noise: n/a
+    Data: None
+    Rating: 4.5 / 5
+  reviewRef: /reviews/gunnar-vertex
+coway-airmega-400s:
+  name: Coway Airmega 400S Smart Air Purifier
+  brand: Coway
+  domain: amazon.com
+  asin: ''
+  search: Coway Airmega 400S air purifier
+  rating: '4.7'
+  tagline: Keeps a sealed office at near-zero PM2.5
+  cta: Check Price on Amazon
+  image: /img/products/coway-airmega-400s.svg
+  bullets:
+  - Covers a large private office / suite
+  - Real-time sensor ramps up for cleaning-spray VOCs
+  - Quiet on sleep mode; app + scheduling
+  compare:
+    Best for: Cognitive stamina in sealed buildings
+    What it does: HEPA + carbon
+    Time per day: 24/7
+    Noise: Very low on sleep
+    Data: App AQI
+    Rating: 4.7 / 5
+  reviewRef: /reviews/coway-airmega-400s
+hyperice-hypervolt-2-pro:
+  name: Hyperice Hypervolt 2 Pro
+  brand: Hyperice
+  domain: amazon.com
+  asin: ''
+  search: Hyperice Hypervolt 2 Pro massage gun
+  rating: '4.6'
+  tagline: Lighter percussion gun with more top-end power
+  cta: Check Price on Amazon
+  image: /img/products/hyperice-hypervolt-2-pro.svg
+  bullets:
+  - 5 speeds, strong stall force, lighter in hand
+  - Bluetooth guided routines
+  - Louder than the Theragun at max
+  compare:
+    Best for: Power + light weight
+    What it does: Deep percussion
+    Time per day: 5–10 min
+    Noise: Moderate
+    Data: App routines
+    Rating: 4.6 / 5
+oura-ring-horizon:
+  name: Oura Ring Horizon (Gen 3)
+  brand: Oura
+  domain: amazon.com
+  asin: ''
+  search: Oura Ring Horizon Gen 3 smart ring
+  rating: '4.2'
+  tagline: Invisible sleep and readiness tracking
+  cta: Check Price on Amazon
+  image: /img/products/oura-ring-horizon.svg
+  bullets:
+  - Sleep, HRV and readiness with no wrist device
+  - Week-plus battery
+  - Subscription required for full insights
+  compare:
+    Best for: Discreet recovery data
+    What it does: Passive tracking
+    Time per day: 0 (passive)
+    Noise: Silent
+    Data: Deep, subscription
+    Rating: 4.2 / 5
+  deal: Requires a membership
+whoop-4:
+  name: WHOOP 4.0
+  brand: WHOOP
+  domain: amazon.com
+  asin: ''
+  search: WHOOP 4.0 fitness tracker
+  rating: '4.1'
+  tagline: Strain and recovery coaching, screenless
+  cta: Check Price on Amazon
+  image: /img/products/whoop-4.svg
+  bullets:
+  - Continuous strain / recovery / sleep coaching
+  - No screen; wear it anywhere
+  - Membership pricing model
+  compare:
+    Best for: Coached strain management
+    What it does: Passive tracking
+    Time per day: 0 (passive)
+    Noise: Silent
+    Data: Deep, subscription
+    Rating: 4.1 / 5
+  deal: Membership-based
+howard-miller-burton:
+  name: Howard Miller Burton Mantel Clock
+  brand: Howard Miller
+  domain: amazon.com
+  asin: ''
+  search: Howard Miller Burton Mantel Clock
+  rating: '4.7'
+  tagline: Traditional gravitas for a credenza
+  cta: Check Price on Amazon
+  image: /img/products/howard-miller-burton.svg
+  bullets:
+  - Warm hardwood case with brass accents
+  - Dual chime with an automatic night shut-off
+  - The look of permanence behind a desk
+  compare:
+    Best for: Classic executive presence
+    Movement: Quartz dual-chime
+    Material: Hardwood + brass
+    Noise: Chime (defeatable)
+    Statement level: High
+    Rating: 4.7 / 5
+  reviewRef: /reviews/howard-miller-burton
+dalvey-grand-sedan:
+  name: Dalvey Grand Sedan Desk Clock
+  brand: Dalvey
+  domain: amazon.com
+  asin: ''
+  search: Dalvey Grand Sedan desk clock
+  rating: '4.6'
+  tagline: Scottish pocket-watch engineering, shrunk
+  cta: Check Price on Amazon
+  image: /img/products/dalvey-grand-sedan.svg
+  bullets:
+  - Convex glass, spun metal dial, jewel-like scale
+  - Weighted base sits firm on a leather blotter
+  - Tarnish-resistant finish
+  compare:
+    Best for: Refined small-footprint piece
+    Movement: Quartz
+    Material: Stainless / brass
+    Noise: Silent
+    Statement level: Medium
+    Rating: 4.6 / 5
+  reviewRef: /reviews/dalvey-grand-sedan
+authentic-models-sandtimer:
+  name: Authentic Models 60-Minute Brass Sand Timer
+  brand: Authentic Models
+  domain: amazon.com
+  asin: ''
+  search: Authentic Models 60 minute brass hourglass sand timer
+  rating: '4.6'
+  tagline: A silent, tactile deep-work timer
+  cta: Check Price on Amazon
+  image: /img/products/authentic-models-sandtimer.svg
+  bullets:
+  - Flip it to start a distraction-free work block
+  - Heavy brass frame; no phone, no beep
+  - Runs within a minute of a true hour
+  compare:
+    Best for: Analog time-blocking
+    Movement: Sand
+    Material: Brass + glass
+    Noise: Silent
+    Statement level: Medium
+    Rating: 4.6 / 5
+  reviewRef: /reviews/authentic-models-sandtimer
+carrara-bookends:
+  name: Solid Carrara Marble Bookends
+  brand: Craftsman
+  domain: amazon.com
+  asin: ''
+  search: solid Carrara white marble bookends heavy
+  rating: '4.7'
+  tagline: 5+ lb of stone that never lets a binder lean
+  cta: Check Price on Amazon
+  image: /img/products/carrara-bookends.svg
+  bullets:
+  - Each block is heavy enough for hardbound volumes
+  - Felt base protects the shelf and stops slipping
+  - Natural veining — no two pairs alike
+  compare:
+    Best for: Anchoring heavy books
+    Movement: n/a
+    Material: Carrara marble
+    Noise: Silent
+    Statement level: Medium
+    Rating: 4.7 / 5
+  reviewRef: /reviews/carrara-bookends
+jaeger-atmos-homage:
+  name: Luxury Glass Mechanical Mantel Clock
+  brand: (various)
+  domain: amazon.com
+  asin: ''
+  search: luxury glass mechanical mantel clock skeleton
+  rating: '4.3'
+  tagline: Kinetic mechanical theater on the shelf
+  cta: Check Price on Amazon
+  image: /img/products/jaeger-atmos-homage.svg
+  bullets:
+  - Visible mechanical movement as a talking piece
+  - Far cheaper than a real Atmos
+  - Needs occasional adjustment
+  compare:
+    Best for: Kinetic conversation piece
+    Movement: Mechanical
+    Material: Glass + metal
+    Noise: Soft tick
+    Statement level: High
+    Rating: 4.3 / 5
+yubikey-5c-nfc:
+  name: Yubico YubiKey 5C NFC
+  brand: Yubico
+  domain: amazon.com
+  asin: ''
+  search: Yubico YubiKey 5C NFC security key
+  rating: '4.8'
+  tagline: A phishing-proof lock for executive email
+  cta: Check Price on Amazon
+  image: /img/products/yubikey-5c-nfc.svg
+  bullets:
+  - FIDO2 / WebAuthn stops credential phishing cold
+  - USB-C plus NFC tap for phones
+  - Also does TOTP, Smart Card, OpenPGP
+  compare:
+    Best for: Account takeover defense
+    Protects against: Phishing / credential theft
+    Standard: FIDO2, FIPS opt.
+    Daily friction: Low (a tap)
+    Travel: Keychain
+    Rating: 4.8 / 5
+  deal: Buy two — one primary, one backup
+  reviewRef: /reviews/yubikey-5c-nfc
+3m-gold-privacy-filter:
+  name: 3M Gold Privacy Filter
+  brand: 3M
+  domain: amazon.com
+  asin: ''
+  search: 3M Gold Privacy Filter laptop
+  rating: '4.6'
+  tagline: Blacks out your screen for the seat next to you
+  cta: Check Price on Amazon
+  image: /img/products/3m-gold-privacy-filter.svg
+  bullets:
+  - Gold micro-louvers — sharper cutoff than matte film
+  - Screen stays bright and clear head-on
+  - Slide-mount tabs; reversible matte side
+  compare:
+    Best for: Lounge / plane visual privacy
+    Protects against: Shoulder-surfing
+    Standard: —
+    Daily friction: Very low
+    Travel: Fits in the sleeve
+    Rating: 4.6 / 5
+  reviewRef: /reviews/3m-gold-privacy-filter
+mission-darkness-faraday:
+  name: Mission Darkness Dry Shield Faraday Laptop Bag
+  brand: Mission Darkness
+  domain: amazon.com
+  asin: ''
+  search: Mission Darkness Dry Shield Faraday Bag laptop
+  rating: '4.7'
+  tagline: True RF isolation for hostile-jurisdiction travel
+  cta: Check Price on Amazon
+  image: /img/products/mission-darkness-faraday.svg
+  bullets:
+  - Blocks cellular, Wi-Fi, Bluetooth and GPS
+  - Waterproof roll-top; rugged exterior
+  - Stops remote wipe and tracking in transit
+  compare:
+    Best for: High-risk travel
+    Protects against: Remote tracking / wipe
+    Standard: MIL-STD-188-125 tested
+    Daily friction: Medium
+    Travel: Purpose-built
+    Rating: 4.7 / 5
+  reviewRef: /reviews/mission-darkness-faraday
+fellowes-99ci:
+  name: Fellowes Powershred 99Ci Micro-Cut Shredder
+  brand: Fellowes
+  domain: amazon.com
+  asin: ''
+  search: Fellowes Powershred 99Ci micro cut shredder
+  rating: '4.7'
+  tagline: Turns M&A printouts into confetti, jam-free
+  cta: Check Price on Amazon
+  image: /img/products/fellowes-99ci.svg
+  bullets:
+  - 100% jam-proof feed for mixed stacks
+  - Micro-cut particles — effectively unreconstructable
+  - Long runtime before cool-down
+  compare:
+    Best for: Physical document destruction
+    Protects against: Dumpster recovery
+    Standard: P-4 micro-cut
+    Daily friction: Low
+    Travel: No (desk-side)
+    Rating: 4.7 / 5
+  reviewRef: /reviews/fellowes-99ci
+kingston-ironkey-vp80:
+  name: Kingston IronKey Vault Privacy 80 Encrypted SSD
+  brand: Kingston
+  domain: amazon.com
+  asin: ''
+  search: Kingston IronKey Vault Privacy 80 external SSD
+  rating: '4.5'
+  tagline: FIPS-grade encrypted drive with an on-device PIN
+  cta: Check Price on Amazon
+  image: /img/products/kingston-ironkey-vp80.svg
+  bullets:
+  - Hardware AES-256, on-screen PIN pad — no host software
+  - Brute-force lockout and BadUSB defense
+  - Carries sensitive files air-gapped from the laptop
+  compare:
+    Best for: Encrypted data at rest
+    Protects against: Drive theft / loss
+    Standard: FIPS 197 / 140-3 L3
+    Daily friction: Medium
+    Travel: Pocket SSD
+    Rating: 4.5 / 5

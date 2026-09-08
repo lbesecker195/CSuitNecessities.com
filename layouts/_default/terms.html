@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="wrap">
+  <header class="list-header">
+    <h1>{{ .Title }}</h1>
+    <p class="dek">{{ .Params.dek | default "Every review, grouped by the problem it solves." }}</p>
+  </header>
+
+  {{ range .Pages.ByTitle }}
+    {{ $term := . }}
+    <section class="home-row">
+      <div class="home-row-head">
+        <h2 class="section-head">{{ .LinkTitle }}</h2>
+        <a href="{{ .RelPermalink }}" class="see-all" data-cta="term-see-all">All {{ len .Pages }} →</a>
+      </div>
+      <div class="card-grid">
+        {{ range first 4 .Pages.ByWeight }}{{ partial "card.html" (dict "page" .) }}{{ end }}
+      </div>
+    </section>
+  {{ end }}
+</div>
+{{ end }}

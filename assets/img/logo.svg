@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 40" role="img" aria-label="C-Suit Necessities">
+  <title>C-Suit Necessities</title>
+  <defs>
+    <linearGradient id="csn-badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <!-- monogram badge: ascending KPI bars -->
+  <rect x="0" y="0" width="40" height="40" rx="11" fill="url(#csn-badge)"/>
+  <rect x="8.5" y="29" width="23" height="2.4" rx="1.2" fill="#ffffff" opacity="0.38"/>
+  <rect x="9"    y="21" width="5.5" height="8"  rx="1.6" fill="#ffffff" opacity="0.55"/>
+  <rect x="17.25" y="15" width="5.5" height="14" rx="1.6" fill="#ffffff" opacity="0.8"/>
+  <rect x="25.5" y="9"  width="5.5" height="20" rx="1.6" fill="#ffffff"/>
+  <!-- wordmark: inherits page text colour via currentColor -->
+  <text x="51" y="19.5" font-family="'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif"
+        font-size="17" font-weight="800" letter-spacing="-0.5" fill="currentColor">C&#8209;Suit</text>
+  <text x="51.5" y="32" font-family="'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif"
+        font-size="8" font-weight="600" letter-spacing="3.05" fill="currentColor" opacity="0.62">NECESSITIES</text>
+</svg>
