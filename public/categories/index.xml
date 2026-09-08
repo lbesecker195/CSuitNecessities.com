@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Categories on C-Suit Necessities</title>
-		<link>http://localhost:3001/categories/</link>
+		<link>https://www.CSuitNecessities.com/categories/</link>
 		<description>Recent content in Categories on C-Suit Necessities</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,75 +12,75 @@
 		
 			<lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:3001/categories/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://www.CSuitNecessities.com/categories/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Hardware Security</title>
-				<link>http://localhost:3001/categories/hardware-security/</link>
+				<link>https://www.CSuitNecessities.com/categories/hardware-security/</link>
 				<pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/hardware-security/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/hardware-security/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Office Decor</title>
-				<link>http://localhost:3001/categories/office-decor/</link>
+				<link>https://www.CSuitNecessities.com/categories/office-decor/</link>
 				<pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/office-decor/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/office-decor/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Wellness and Recovery</title>
-				<link>http://localhost:3001/categories/wellness-and-recovery/</link>
+				<link>https://www.CSuitNecessities.com/categories/wellness-and-recovery/</link>
 				<pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/wellness-and-recovery/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/wellness-and-recovery/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Desk Coffee</title>
-				<link>http://localhost:3001/categories/desk-coffee/</link>
+				<link>https://www.CSuitNecessities.com/categories/desk-coffee/</link>
 				<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/desk-coffee/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/desk-coffee/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Desk Technology</title>
-				<link>http://localhost:3001/categories/desk-technology/</link>
+				<link>https://www.CSuitNecessities.com/categories/desk-technology/</link>
 				<pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/desk-technology/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/desk-technology/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Travel Gear</title>
-				<link>http://localhost:3001/categories/travel-gear/</link>
+				<link>https://www.CSuitNecessities.com/categories/travel-gear/</link>
 				<pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/travel-gear/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/travel-gear/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Ergonomic Furniture</title>
-				<link>http://localhost:3001/categories/ergonomic-furniture/</link>
+				<link>https://www.CSuitNecessities.com/categories/ergonomic-furniture/</link>
 				<pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/ergonomic-furniture/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/ergonomic-furniture/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Acoustic Privacy</title>
-				<link>http://localhost:3001/categories/acoustic-privacy/</link>
+				<link>https://www.CSuitNecessities.com/categories/acoustic-privacy/</link>
 				<pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/acoustic-privacy/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/acoustic-privacy/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Writing Instruments</title>
-				<link>http://localhost:3001/categories/writing-instruments/</link>
+				<link>https://www.CSuitNecessities.com/categories/writing-instruments/</link>
 				<pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/writing-instruments/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/writing-instruments/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Executive Leather</title>
-				<link>http://localhost:3001/categories/executive-leather/</link>
+				<link>https://www.CSuitNecessities.com/categories/executive-leather/</link>
 				<pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:3001/categories/executive-leather/</guid>
+				<guid>https://www.CSuitNecessities.com/categories/executive-leather/</guid>
 				<description></description>
 			</item>
 	</channel>
