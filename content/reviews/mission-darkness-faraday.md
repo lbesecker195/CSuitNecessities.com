@@ -34,7 +34,7 @@ In some jurisdictions, a device out of your hands — or even in your bag — ca
 
 Cheap RF pouches lose their seal as the fabric creases and wears. Mission Darkness uses tested shielding fabric with a roll-top that maintains attenuation, plus a waterproof, tough outer. Security and legal travelers {{< buy "mission-darkness-faraday" >}}buy the laptop size on Amazon{{< /buy >}}.
 
-![Mission Darkness Dry Shield Faraday Laptop Bag](/img/products/mission-darkness-faraday.svg "Best Faraday bag for travel — Mission Darkness Dry Shield Faraday Laptop Bag")
+{{< img-link offer="mission-darkness-faraday" caption="Best Faraday bag for travel" >}}
 
 ## Sizing and use
 

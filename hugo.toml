@@ -36,9 +36,10 @@ enableGitInfo = false
   disableXML = true
   minifyOutput = true
 
+# No RSS — this site's audience arrives from the newsletter, not a feed reader.
 [outputs]
-  home = ["HTML", "RSS"]
-  section = ["HTML", "RSS"]
+  home = ["HTML"]
+  section = ["HTML"]
 
 [taxonomies]
   category = "categories"

@@ -34,7 +34,7 @@ A built-in laptop mic makes you sound distant, echoey and small — not the impr
 
 Cheap speakerphones are half-duplex — when the far side talks, your mic ducks, so interruptions and quick agreement get lost. This one is full-duplex, so the conversation flows naturally. It also normalizes levels so the person leaning back isn't inaudible. Road warriors {{< buy "jabra-speak2-75" >}}buy one on Amazon{{< /buy >}} and leave it in the bag permanently.
 
-![Jabra Speak2 75 Conference Speakerphone](/img/products/jabra-speak2-75.svg "Best portable conference speakerphone — Jabra Speak2 75 Conference Speakerphone")
+{{< img-link offer="jabra-speak2-75" caption="Best portable conference speakerphone" >}}
 
 ## Connectivity and battery
 

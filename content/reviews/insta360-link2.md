@@ -34,7 +34,7 @@ Software 'auto-framing' just crops a wide sensor, so you lose resolution as you 
 
 The bigger sensor means less noise in a dim conference room and a natural depth of field that makes you look lit even when you aren't. Gestures let you trigger a zoom-in on a document or lock framing mid-call. Executives who run webinars {{< buy "insta360-link2" >}}buy it on Amazon{{< /buy >}}.
 
-![Insta360 Link 2 4K AI Webcam](/img/products/insta360-link2.svg "Best webcam for presenting — Insta360 Link 2 4K AI Webcam")
+{{< img-link offer="insta360-link2" caption="Best webcam for presenting" >}}
 
 ## Privacy and setup
 

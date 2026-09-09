@@ -34,7 +34,7 @@ Green tea wants ~175°F, a light-roast pour-over ~205°F, black tea a full boil.
 
 The gooseneck is restricted so you get a thin, steady, aimable stream — which is the whole game in pour-over and matters for blooming tea too. The counterweighted handle keeps it balanced as it empties. Ritual-minded drinkers {{< buy "fellow-stagg-ekg-pro" >}}buy it on Amazon{{< /buy >}}.
 
-![Fellow Stagg EKG Pro Electric Kettle](/img/products/fellow-stagg-ekg-pro.svg "Best pour-over kettle — Fellow Stagg EKG Pro Electric Kettle")
+{{< img-link offer="fellow-stagg-ekg-pro" caption="Best pour-over kettle" >}}
 
 ## Pro vs standard EKG
 

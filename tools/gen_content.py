@@ -5,7 +5,7 @@ import os, json, datetime
 
 SITE = "/Users/logan/Documents/businesses/C-Suit Reccuring Affiliate/site"
 SP = "/private/tmp/claude-501/-Users-logan-Documents-businesses-C-Suit-Reccuring-Affiliate/ad900b6b-0d6d-40ab-a72c-343857693d26/scratchpad"
-cat = json.load(open(os.path.join(SP, "catalog.json")))
+cat = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "catalog.json")))
 CATS, ROWS = cat["cats"], cat["rows"]
 PRODUCTS = cat["products"]
 
@@ -66,8 +66,8 @@ def write_single(key, S, order):
     body.append(offercard(key))
     # section 2
     body.append(f"## {secs[1][0]}\n\n{secs[1][1]}\n")
-    # optional inline image linking to product
-    body.append(f'![{p["name"]}](/img/products/{key}.svg "{S["verdict"]} — {p["name"]}")\n')
+    # in-content product photo, links to Amazon (image comes from data/offers.yaml)
+    body.append(f'{{{{< img-link offer="{key}" caption="{S["verdict"]}" >}}}}\n')
     # section 3
     body.append(f"## {secs[2][0]}\n\n{secs[2][1]}\n")
     body.append(proscons(S["pros"], S["cons"]))
@@ -83,8 +83,8 @@ def write_single(key, S, order):
         "categories": [ctitle],
         "tags": S.get("tags", []),
         "keywords": S.get("keywords", []),
-        "image": f"/img/products/{key}.svg",
-        "imageAlt": p["name"],
+        # no image/imageAlt here — the lead photo is resolved from data/offers.yaml
+        # via partials/page-photo.html (set by tools/fetch_unsplash.py)
         "offer": key,
         "verdict": S["verdict"],
         "cardCue": S.get("cardCue", "Read the review →"),
@@ -121,8 +121,7 @@ def write_compare(slug, C, order):
         "categories": [ctitle],
         "tags": C.get("tags", []),
         "keywords": C.get("keywords", []),
-        "image": f"/img/products/{conts[0]}.svg",
-        "imageAlt": C["title"],
+        # lead photo derived from the `offer` product via data/offers.yaml
         "offer": C["offer"],
         "verdict": C["verdict_short"],
         "cardCue": "See the winner →",

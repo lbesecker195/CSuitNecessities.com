@@ -34,7 +34,7 @@ A strip-cut shredder produces ribbons a determined person can tape back together
 
 The reason shredders sit unused is jams. The 99Ci's feed is designed to reject over-thick stacks before they jam and power through staples and cards. A shredder that always works is a shredder people actually use. Offices handling deal flow {{< buy "fellowes-99ci" >}}buy the 99Ci on Amazon{{< /buy >}}.
 
-![Fellowes Powershred 99Ci Micro-Cut Shredder](/img/products/fellowes-99ci.svg "Best executive-office shredder — Fellowes Powershred 99Ci Micro-Cut Shredder")
+{{< img-link offer="fellowes-99ci" caption="Best executive-office shredder" >}}
 
 ## Runtime, capacity, noise
 

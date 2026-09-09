@@ -34,7 +34,7 @@ A phone tells the time. A substantial clock on the credenza tells a visitor that
 
 It offers Westminster or Ave Maria chimes with volume control and — crucially — an automatic night shut-off so it doesn't chime at 3am if the clock is in a home office. You can also silence it entirely. Buyers furnishing a study {{< buy "howard-miller-burton" >}}order it on Amazon{{< /buy >}}.
 
-![Howard Miller Burton Mantel Clock](/img/products/howard-miller-burton.svg "Best traditional executive clock — Howard Miller Burton Mantel Clock")
+{{< img-link offer="howard-miller-burton" caption="Best traditional executive clock" >}}
 
 ## Movement and care
 

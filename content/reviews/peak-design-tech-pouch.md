@@ -34,7 +34,7 @@ A normal zip pouch is a bucket — you dig, you dump, you lose the USB-C-to-A ad
 
 The shell is weatherproof, the zips glide, and there's an internal pass-through so you can charge a battery inside without opening it. It survives being crammed into a full bag. People who've tried cheaper pouches {{< buy "peak-design-tech-pouch" >}}upgrade to this one on Amazon{{< /buy >}}.
 
-![Peak Design Tech Pouch](/img/products/peak-design-tech-pouch.svg "Best cable and adapter organizer — Peak Design Tech Pouch")
+{{< img-link offer="peak-design-tech-pouch" caption="Best cable and adapter organizer" >}}
 
 ## Capacity and dimensions
 

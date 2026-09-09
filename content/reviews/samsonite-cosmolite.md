@@ -34,7 +34,7 @@ If your case weighs 8+ pounds empty, you've spent a tenth of your allowance befo
 
 Curv is a self-reinforced polypropylene composite — it takes a hit, deforms, and recovers, where polycarbonate can crack and ABS can stay dented. For checked use especially, that resilience shows over years. Frequent travelers {{< buy "samsonite-cosmolite" >}}buy the Cosmolite on Amazon{{< /buy >}}.
 
-![Samsonite Black Label Cosmolite 3.0 Spinner](/img/products/samsonite-cosmolite.svg "Best ultralight hard-shell — Samsonite Black Label Cosmolite 3.0 Spinner")
+{{< img-link offer="samsonite-cosmolite" caption="Best ultralight hard-shell" >}}
 
 ## Handles, wheels, interior
 

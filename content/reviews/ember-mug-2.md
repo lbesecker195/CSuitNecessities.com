@@ -34,7 +34,7 @@ You make a good coffee, you get pulled into something, you come back to a lukewa
 
 The 10 oz is an espresso-sized mug; the 14 oz holds a proper filter coffee or a large milk drink and has better battery. For a desk mug, get the 14. People who've owned the small one {{< buy "ember-mug-2" >}}get the 14 oz on Amazon{{< /buy >}}.
 
-![Ember Temperature Control Smart Mug 2 (14 oz)](/img/products/ember-mug-2.svg "Best desk smart mug — Ember Temperature Control Smart Mug 2 (14 oz)")
+{{< img-link offer="ember-mug-2" caption="Best desk smart mug" >}}
 
 ## Battery, app, care
 

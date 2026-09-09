@@ -34,7 +34,7 @@ A fountain pen is a small commitment — flushing, ink choice, the occasional ha
 
 The rollerball refill is wet and dark, so notes and signatures both look substantial. The center of gravity sits low toward the grip, which keeps long note-taking sessions from tiring your hand. It also lays down cleanly on carbon-copy and thermal paper where a fountain pen would feather. Fast note-takers tend to {{< buy "waterman-carene" >}}order one on Amazon{{< /buy >}}.
 
-![Waterman Carène Rollerball](/img/products/waterman-carene.svg "Best low-maintenance executive pen — Waterman Carène Rollerball")
+{{< img-link offer="waterman-carene" caption="Best low-maintenance executive pen" >}}
 
 ## Cap, clip, refills
 

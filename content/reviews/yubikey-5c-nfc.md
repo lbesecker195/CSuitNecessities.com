@@ -34,7 +34,7 @@ A one-time code from an app can still be typed into a fake login page — that's
 
 USB-C plugs into the laptop; NFC taps against the back of a phone, usually through the case. It covers Google, Microsoft, Okta, Duo, password managers and more. Security-conscious leaders {{< buy "yubikey-5c-nfc" >}}buy a pair on Amazon{{< /buy >}} — always a pair.
 
-![Yubico YubiKey 5C NFC](/img/products/yubikey-5c-nfc.svg "Best hardware security key — Yubico YubiKey 5C NFC")
+{{< img-link offer="yubikey-5c-nfc" caption="Best hardware security key" >}}
 
 ## The backup rule
 

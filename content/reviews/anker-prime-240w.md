@@ -34,7 +34,7 @@ A travelling executive carries four chargers and a tangle of cables. This one un
 
 When you plug the laptop in alone it gets the full wattage; add an iPad and phone and the station reallocates intelligently so everything still charges fast. There's a small display showing per-port output. Frequent travelers {{< buy "anker-prime-240w" >}}buy it on Amazon{{< /buy >}} and standardize on USB-C cables.
 
-![Anker Prime 240W GaN Desktop Charger](/img/products/anker-prime-240w.svg "Best all-in-one desktop charger — Anker Prime 240W GaN Desktop Charger")
+{{< img-link offer="anker-prime-240w" caption="Best all-in-one desktop charger" >}}
 
 ## Build and cable
 

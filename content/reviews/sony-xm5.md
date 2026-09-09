@@ -34,7 +34,7 @@ For a desk-and-travel executive, the XM5 hits the widest set of needs: it kills 
 
 Most noise-canceling headphones cancel noise *for you* and let a jet of background through *to your callers*. The XM5's array is genuinely good at suppressing keyboard clatter and room chatter on the transmit side, which matters when you're the one presenting numbers. If you live on video calls, {{< buy "sony-xm5" >}}get them on Amazon{{< /buy >}}.
 
-![Sony WH-1000XM5 Noise-Canceling Headphones](/img/products/sony-xm5.svg "Best headphones for calls + focus — Sony WH-1000XM5 Noise-Canceling Headphones")
+{{< img-link offer="sony-xm5" caption="Best headphones for calls + focus" >}}
 
 ## Comfort and battery over a real day
 

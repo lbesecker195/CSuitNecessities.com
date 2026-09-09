@@ -34,7 +34,7 @@ A timer on your phone means picking up the device that has every notification on
 
 The brass frame has real heft, the glass is thick, and the sand flows without clumping. It looks like something that belongs on an executive desk, not a novelty. People serious about time-blocking {{< buy "authentic-models-sandtimer" >}}buy it on Amazon{{< /buy >}}.
 
-![Authentic Models 60-Minute Brass Sand Timer](/img/products/authentic-models-sandtimer.svg "Best analog focus timer — Authentic Models 60-Minute Brass Sand Timer")
+{{< img-link offer="authentic-models-sandtimer" caption="Best analog focus timer" >}}
 
 ## Accuracy and use
 

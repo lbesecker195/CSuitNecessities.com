@@ -34,7 +34,7 @@ Board sessions, deal rooms, certain government and legal settings — devices go
 
 The zip-around gusset expands a couple of inches, so a 40-page printed deck, a notepad and a few reference documents all fit without bulging. Inside: card slots, a document sleeve, a pen loop with real clearance for a fat-barreled pen. If you present from paper, {{< buy "leatherology-padfolio" >}}grab it on Amazon{{< /buy >}} before your next off-site.
 
-![Leatherology Zip-Around Executive Padfolio](/img/products/leatherology-padfolio.svg "Best padfolio for device-free sessions — Leatherology Zip-Around Executive Padfolio")
+{{< img-link offer="leatherology-padfolio" caption="Best padfolio for device-free sessions" >}}
 
 ## The details that age well
 

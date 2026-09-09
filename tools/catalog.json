@@ -1,0 +1,408 @@
+{
+ "cats": {
+  "leather-edc": [
+   "Executive Leather",
+   "#b45309"
+  ],
+  "writing": [
+   "Writing Instruments",
+   "#7c3aed"
+  ],
+  "audio": [
+   "Acoustic Privacy",
+   "#0ea5e9"
+  ],
+  "furniture": [
+   "Ergonomic Furniture",
+   "#059669"
+  ],
+  "travel": [
+   "Travel Gear",
+   "#dc2626"
+  ],
+  "video": [
+   "Desk Technology",
+   "#2563eb"
+  ],
+  "beverage": [
+   "Desk Coffee",
+   "#c2410c"
+  ],
+  "wellness": [
+   "Wellness and Recovery",
+   "#16a34a"
+  ],
+  "decor": [
+   "Office Decor",
+   "#a16207"
+  ],
+  "security": [
+   "Hardware Security",
+   "#475569"
+  ]
+ },
+ "rows": {
+  "leather-edc": [
+   "Best for",
+   "Leather / shell",
+   "Weight",
+   "Laptop fit",
+   "Warranty",
+   "Rating"
+  ],
+  "writing": [
+   "Best for",
+   "Type",
+   "Nib / tip",
+   "Maintenance",
+   "Refill cost",
+   "Rating"
+  ],
+  "audio": [
+   "Best for",
+   "Mic on calls",
+   "ANC",
+   "Battery",
+   "Multipoint",
+   "Rating"
+  ],
+  "furniture": [
+   "Best for",
+   "Support type",
+   "Cooling",
+   "Key adjustments",
+   "Warranty",
+   "Rating"
+  ],
+  "travel": [
+   "Best for",
+   "Shell",
+   "Empty weight",
+   "Warranty",
+   "Wheels",
+   "Rating"
+  ],
+  "video": [
+   "Best for",
+   "Sensor / optics",
+   "Tracking",
+   "Mic",
+   "Setup",
+   "Rating"
+  ],
+  "beverage": [
+   "Best for",
+   "How it heats",
+   "Portable",
+   "Cleaning",
+   "Battery",
+   "Rating"
+  ],
+  "wellness": [
+   "Best for",
+   "What it does",
+   "Time per day",
+   "Noise",
+   "Data",
+   "Rating"
+  ],
+  "decor": [
+   "Best for",
+   "Movement",
+   "Material",
+   "Noise",
+   "Statement level",
+   "Rating"
+  ],
+  "security": [
+   "Best for",
+   "Protects against",
+   "Standard",
+   "Daily friction",
+   "Travel",
+   "Rating"
+  ]
+ },
+ "products": {
+  "saddleback-briefcase": {
+   "name": "Saddleback Leather Thin Front Pocket Briefcase",
+   "category": "leather-edc",
+   "target": true
+  },
+  "bellroy-tokyo": {
+   "name": "Bellroy Tokyo Work Bag (Premium)",
+   "category": "leather-edc",
+   "target": true
+  },
+  "leatherology-padfolio": {
+   "name": "Leatherology Zip-Around Executive Padfolio",
+   "category": "leather-edc",
+   "target": true
+  },
+  "shinola-valet-tray": {
+   "name": "Shinola Detroit Large Leather Catchall Tray",
+   "category": "leather-edc",
+   "target": true
+  },
+  "tumi-alpha3-brief": {
+   "name": "Tumi Alpha 3 Compact Brief",
+   "category": "leather-edc",
+   "target": false
+  },
+  "montblanc-149": {
+   "name": "Montblanc Meisterst\u00fcck 149 Fountain Pen",
+   "category": "writing",
+   "target": true
+  },
+  "waterman-carene": {
+   "name": "Waterman Car\u00e8ne Rollerball",
+   "category": "writing",
+   "target": true
+  },
+  "lamy-2000": {
+   "name": "Lamy 2000 Fountain Pen (Makrolon)",
+   "category": "writing",
+   "target": true
+  },
+  "leuchtturm-master": {
+   "name": "Leuchtturm1917 Master Slim A4+ Notebook",
+   "category": "writing",
+   "target": true
+  },
+  "parker-duofold": {
+   "name": "Parker Duofold Prestige Centennial",
+   "category": "writing",
+   "target": false
+  },
+  "sony-xm5": {
+   "name": "Sony WH-1000XM5 Noise-Canceling Headphones",
+   "category": "audio",
+   "target": true
+  },
+  "bose-qc-ultra": {
+   "name": "Bose QuietComfort Ultra Headphones",
+   "category": "audio",
+   "target": true
+  },
+  "jabra-speak2-75": {
+   "name": "Jabra Speak2 75 Conference Speakerphone",
+   "category": "audio",
+   "target": true
+  },
+  "snooz": {
+   "name": "SNOOZ Real-Fan White Noise Machine",
+   "category": "audio",
+   "target": true
+  },
+  "airpods-max": {
+   "name": "Apple AirPods Max",
+   "category": "audio",
+   "target": false
+  },
+  "sennheiser-momentum-4": {
+   "name": "Sennheiser Momentum 4 Wireless",
+   "category": "audio",
+   "target": false
+  },
+  "herman-miller-aeron": {
+   "name": "Herman Miller Aeron (PostureFit SL)",
+   "category": "furniture",
+   "target": true
+  },
+  "steelcase-gesture": {
+   "name": "Steelcase Gesture Office Chair",
+   "category": "furniture",
+   "target": true
+  },
+  "ergotron-hx": {
+   "name": "Ergotron HX Heavy-Duty Monitor Arm",
+   "category": "furniture",
+   "target": true
+  },
+  "flexispot-e7-pro": {
+   "name": "FlexiSpot E7 Pro Standing Desk",
+   "category": "furniture",
+   "target": true
+  },
+  "haworth-fern": {
+   "name": "Haworth Fern Executive",
+   "category": "furniture",
+   "target": false
+  },
+  "tumi-alpha3-carryon": {
+   "name": "Tumi Alpha 3 Continental Dual Access Carry-On",
+   "category": "travel",
+   "target": true
+  },
+  "samsonite-cosmolite": {
+   "name": "Samsonite Black Label Cosmolite 3.0 Spinner",
+   "category": "travel",
+   "target": true
+  },
+  "anker-prime-240w": {
+   "name": "Anker Prime 240W GaN Desktop Charger",
+   "category": "travel",
+   "target": true
+  },
+  "peak-design-tech-pouch": {
+   "name": "Peak Design Tech Pouch",
+   "category": "travel",
+   "target": true
+  },
+  "rimowa-original-cabin": {
+   "name": "Rimowa Original Cabin (Aluminum)",
+   "category": "travel",
+   "target": false
+  },
+  "briggs-riley-baseline": {
+   "name": "Briggs & Riley Baseline Essential Carry-On",
+   "category": "travel",
+   "target": false
+  },
+  "insta360-link2": {
+   "name": "Insta360 Link 2 4K AI Webcam",
+   "category": "video",
+   "target": true
+  },
+  "benq-screenbar-pro": {
+   "name": "BenQ ScreenBar Pro Monitor Light",
+   "category": "video",
+   "target": true
+  },
+  "caldigit-ts4": {
+   "name": "CalDigit TS4 Thunderbolt 4 Dock",
+   "category": "video",
+   "target": true
+  },
+  "remarkable-paper-pro": {
+   "name": "reMarkable Paper Pro",
+   "category": "video",
+   "target": true
+  },
+  "obsbot-tiny-2": {
+   "name": "OBSBOT Tiny 2 AI Webcam",
+   "category": "video",
+   "target": false
+  },
+  "logitech-brio-4k": {
+   "name": "Logitech Brio 4K Webcam",
+   "category": "video",
+   "target": false
+  },
+  "ember-mug-2": {
+   "name": "Ember Temperature Control Smart Mug 2 (14 oz)",
+   "category": "beverage",
+   "target": true
+  },
+  "nespresso-creatista-pro": {
+   "name": "Nespresso Creatista Pro by Breville",
+   "category": "beverage",
+   "target": true
+  },
+  "fellow-stagg-ekg-pro": {
+   "name": "Fellow Stagg EKG Pro Electric Kettle",
+   "category": "beverage",
+   "target": true
+  },
+  "zojirushi-sm-khe48": {
+   "name": "Zojirushi SM-KHE48 Vacuum Insulated Mug (16 oz)",
+   "category": "beverage",
+   "target": true
+  },
+  "cauldryn-coffee": {
+   "name": "Cauldryn Coffee Pro Heated Bottle",
+   "category": "beverage",
+   "target": false
+  },
+  "fellow-carter-move": {
+   "name": "Fellow Carter Move Mug",
+   "category": "beverage",
+   "target": false
+  },
+  "theragun-pro-plus": {
+   "name": "Theragun PRO Plus Multi-Therapy Device",
+   "category": "wellness",
+   "target": true
+  },
+  "kingsmith-walkingpad-x21": {
+   "name": "KingSmith WalkingPad X21 Under-Desk Treadmill",
+   "category": "wellness",
+   "target": true
+  },
+  "gunnar-vertex": {
+   "name": "Gunnar Optiks Vertex Computer Glasses",
+   "category": "wellness",
+   "target": true
+  },
+  "coway-airmega-400s": {
+   "name": "Coway Airmega 400S Smart Air Purifier",
+   "category": "wellness",
+   "target": true
+  },
+  "hyperice-hypervolt-2-pro": {
+   "name": "Hyperice Hypervolt 2 Pro",
+   "category": "wellness",
+   "target": false
+  },
+  "oura-ring-horizon": {
+   "name": "Oura Ring Horizon (Gen 3)",
+   "category": "wellness",
+   "target": false
+  },
+  "whoop-4": {
+   "name": "WHOOP 4.0",
+   "category": "wellness",
+   "target": false
+  },
+  "howard-miller-burton": {
+   "name": "Howard Miller Burton Mantel Clock",
+   "category": "decor",
+   "target": true
+  },
+  "dalvey-grand-sedan": {
+   "name": "Dalvey Grand Sedan Desk Clock",
+   "category": "decor",
+   "target": true
+  },
+  "authentic-models-sandtimer": {
+   "name": "Authentic Models 60-Minute Brass Sand Timer",
+   "category": "decor",
+   "target": true
+  },
+  "carrara-bookends": {
+   "name": "Solid Carrara Marble Bookends",
+   "category": "decor",
+   "target": true
+  },
+  "jaeger-atmos-homage": {
+   "name": "Luxury Glass Mechanical Mantel Clock",
+   "category": "decor",
+   "target": false
+  },
+  "yubikey-5c-nfc": {
+   "name": "Yubico YubiKey 5C NFC",
+   "category": "security",
+   "target": true
+  },
+  "3m-gold-privacy-filter": {
+   "name": "3M Gold Privacy Filter",
+   "category": "security",
+   "target": true
+  },
+  "mission-darkness-faraday": {
+   "name": "Mission Darkness Dry Shield Faraday Laptop Bag",
+   "category": "security",
+   "target": true
+  },
+  "fellowes-99ci": {
+   "name": "Fellowes Powershred 99Ci Micro-Cut Shredder",
+   "category": "security",
+   "target": true
+  },
+  "kingston-ironkey-vp80": {
+   "name": "Kingston IronKey Vault Privacy 80 Encrypted SSD",
+   "category": "security",
+   "target": false
+  }
+ }
+}

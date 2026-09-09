@@ -34,7 +34,7 @@ QUERY = {
  # Executive Leather
  "saddleback-briefcase":      "brown leather briefcase",
  "bellroy-tokyo":             "canvas messenger bag commuter",
- "leatherology-padfolio":     "leather folio meeting notes",
+ "leatherology-padfolio":     "leather notebook pen desk",
  "shinola-valet-tray":        "leather valet tray watch keys",
  "tumi-alpha3-brief":         "business laptop bag",
  # Writing Instruments
@@ -86,10 +86,10 @@ QUERY = {
  "oura-ring-horizon":         "smart ring wearable",
  "whoop-4":                   "fitness tracker wrist band",
  # Office Decor
- "howard-miller-burton":      "wooden mantel clock",
+ "howard-miller-burton":      "antique clock shelf",
  "dalvey-grand-sedan":        "brass desk clock",
- "authentic-models-sandtimer":"hourglass sand timer desk",
- "carrara-bookends":          "marble bookends books shelf",
+ "authentic-models-sandtimer":"hourglass sand timer",
+ "carrara-bookends":          "books on shelf minimalist",
  "jaeger-atmos-homage":       "glass skeleton clock",
  # Hardware Security
  "yubikey-5c-nfc":            "security key usb authentication",

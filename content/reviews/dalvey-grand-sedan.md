@@ -34,7 +34,7 @@ Not every executive wants a large chiming clock. The Grand Sedan makes its point
 
 The convex crystal, the spun concentric dial, the weight in the hand — it's built like a small instrument. It reads clearly from across a desk despite the size. People buying a considered gift {{< buy "dalvey-grand-sedan" >}}order it on Amazon{{< /buy >}}.
 
-![Dalvey Grand Sedan Desk Clock](/img/products/dalvey-grand-sedan.svg "Best compact desk clock — Dalvey Grand Sedan Desk Clock")
+{{< img-link offer="dalvey-grand-sedan" caption="Best compact desk clock" >}}
 
 ## Placement and finish
 

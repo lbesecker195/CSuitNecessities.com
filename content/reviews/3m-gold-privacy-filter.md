@@ -34,7 +34,7 @@ Airport lounges, the middle seat, open conference rooms, a coffee shop with your
 
 Budget privacy films dim your own view noticeably and have a soft cutoff you can still peek past. 3M's gold micro-louver filter has a crisper angle cutoff and keeps more brightness for you. Executives who travel with sensitive material {{< buy "3m-gold-privacy-filter" >}}buy the right size on Amazon{{< /buy >}}.
 
-![3M Gold Privacy Filter](/img/products/3m-gold-privacy-filter.svg "Best laptop privacy filter — 3M Gold Privacy Filter")
+{{< img-link offer="3m-gold-privacy-filter" caption="Best laptop privacy filter" >}}
 
 ## Fitting it
 

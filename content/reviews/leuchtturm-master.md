@@ -34,7 +34,7 @@ A pocket notebook is fine for a to-do list. It's the wrong tool for laying out a
 
 At 100 g/m² this stock takes a broad, wet fountain nib with minimal ghosting and effectively no bleed-through — you can use both sides. If you've been avoiding fountain pens because your notebook can't handle them, this fixes it. Fountain-pen users {{< buy "leuchtturm-master" >}}pick these up in multipacks on Amazon{{< /buy >}}.
 
-![Leuchtturm1917 Master Slim A4+ Notebook](/img/products/leuchtturm-master.svg "Best large-format planning notebook — Leuchtturm1917 Master Slim A4+ Notebook")
+{{< img-link offer="leuchtturm-master" caption="Best large-format planning notebook" >}}
 
 ## Built to be referenced later
 

@@ -34,7 +34,7 @@ One long day at a screen is fine. Weeks of them cause dry eye, blur toward eveni
 
 Cheap blue-light glasses often have distorted lenses and a heavy yellow tint. The Vertex uses proper optical lenses and a restrained tint, so text stays crisp and you look normal on a call. People polishing decks at 11pm {{< buy "gunnar-vertex" >}}buy them on Amazon{{< /buy >}}.
 
-![Gunnar Optiks Vertex Computer Glasses](/img/products/gunnar-vertex.svg "Best computer glasses for executives — Gunnar Optiks Vertex Computer Glasses")
+{{< img-link offer="gunnar-vertex" caption="Best computer glasses for executives" >}}
 
 ## Fit and prescription
 

@@ -34,7 +34,7 @@ A soft-side carry-on flexes into a tight bin and absorbs impacts a hard shell wo
 
 The front panel opens independently for a laptop and documents, so security and the seat-back become one-handed. The main clamshell has compression straps and a suiter to keep a jacket unwrinkled. Road warriors {{< buy "tumi-alpha3-carryon" >}}buy the Continental on Amazon{{< /buy >}} and stop thinking about luggage.
 
-![Tumi Alpha 3 Continental Dual Access Carry-On](/img/products/tumi-alpha3-carryon.svg "Best premium soft-side carry-on — Tumi Alpha 3 Continental Dual Access Carry-On")
+{{< img-link offer="tumi-alpha3-carryon" caption="Best premium soft-side carry-on" >}}
 
 ## Fit, wheels, warranty
 

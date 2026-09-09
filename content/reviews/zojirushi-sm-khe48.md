@@ -34,7 +34,7 @@ You don't need a battery to keep coffee hot — you need excellent vacuum insula
 
 Most 'leakproof' mugs leak eventually. This one has a flip lid with a locking tab — throw it in a briefcase sideways and nothing comes out. The open button is thumb-operated for one-handed use walking through an airport. Commuters {{< buy "zojirushi-sm-khe48" >}}buy it on Amazon{{< /buy >}}.
 
-![Zojirushi SM-KHE48 Vacuum Insulated Mug (16 oz)](/img/products/zojirushi-sm-khe48.svg "Best insulated travel mug — Zojirushi SM-KHE48 Vacuum Insulated Mug (16 oz)")
+{{< img-link offer="zojirushi-sm-khe48" caption="Best insulated travel mug" >}}
 
 ## Cleaning and size
 

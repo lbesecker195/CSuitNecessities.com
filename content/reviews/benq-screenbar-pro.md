@@ -34,7 +34,7 @@ A normal desk lamp behind or beside your monitor bounces off the panel and washe
 
 The Pro model adds an ambient sensor that dims it as the room changes and a presence sensor that switches it on when you arrive. Set it once and it's just correct. People doing late document reviews {{< buy "benq-screenbar-pro" >}}buy it on Amazon{{< /buy >}}.
 
-![BenQ ScreenBar Pro Monitor Light](/img/products/benq-screenbar-pro.svg "Best monitor light bar — BenQ ScreenBar Pro Monitor Light")
+{{< img-link offer="benq-screenbar-pro" caption="Best monitor light bar" >}}
 
 ## Fit and controls
 

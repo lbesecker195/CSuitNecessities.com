@@ -103,13 +103,12 @@ Shortcodes:
 | `{{< buy "key" >}}anchor text{{< /buy >}}` | inline affiliate text link |
 | `{{< offer-card "key" >}}` | big clickable image + bullets + button |
 | `{{< cta "key" >}}` | button + deal note |
-| `{{< img-link src="…" offer="key" caption="…" cue="…" >}}` | explicit clickable image |
+| `{{< img-link offer="key" caption="…" >}}` | clickable product photo (image pulled from `offers.yaml`; add `src="…"` to override) |
 | `{{< comparison offers="a,b,c" rows="Best for,Weight,…" >}}` | comparison table, everything linked |
 | `{{< pros-cons >}}` … `vs` … `{{< /pros-cons >}}` | two-column pros/cons |
 | `{{< callout type="tip\|deal\|warn" >}}…{{< /callout >}}` | highlighted aside |
 
-Plain markdown works too — `![alt](/img/products/x.svg "Caption")` auto-links to the
-page's product.
+Plain markdown images work too — `![alt](url "Caption")` auto-links to the page's product.
 
 **Dates must be in the past** or Hugo will hide the page as future content.
 
@@ -122,12 +121,31 @@ page's product.
 
 That `surface` field is how you A/B whether images or anchor text are earning the clicks.
 
-## 7. Placeholder images
+## 7. Images
 
-`static/img/products/*.svg` are generated placeholders — brand, product name, tagline
-on a category-colored card. **Replace them with real product photography** (same
-filenames, or update `image:` in `offers.yaml`). Note Amazon's Associates terms on
-product-image usage; use the Product Advertising API or your own photos.
+Every product's lead photo lives in **one place**: the `image` field in
+`data/offers.yaml`. `layouts/partials/page-photo.html` resolves it for the hero,
+the in-content `img-link`, cards, the sidebar, the sticky bar and `og:image` — so
+changing one line updates every surface.
+
+**Current photos are editorial stock from Unsplash**, not product shots. Each carries
+the photographer + Unsplash credit the API licence requires (rendered by
+`partials/photo-credit.html`). They're contextual — a leather-briefcase scene on the
+Saddleback review, not the Saddleback itself.
+
+- `tools/fetch_unsplash.py` — pulls a photo per product. Needs `UNSPLASH_ACCESS_KEY`
+  (env var, never committed). Resumable: skips products that already have a `photoId`;
+  `--force` re-fetches. De-dupes so no two products share an image. Edit the `QUERY`
+  dict to change what a product searches for, blank its `photoId` in `offers.yaml`,
+  and re-run just that key: `python3 tools/fetch_unsplash.py sony-xm5`.
+- `tools/fetch_unsplash_all.sh` — runs the above in passes, sleeping out the
+  50-req/hour demo-app rate limit. A registered production app raises that ceiling.
+
+**To use real product photos instead:** generate image links from Amazon SiteStripe
+(Associates dashboard → the product → Get Link → Image), paste the URL into that
+product's `image:` in `offers.yaml`, and blank its `photoId`/`photoCredit` so no
+Unsplash credit renders. Or use the Product Advertising API once you qualify.
+`static/img/products/*.svg` remain as the fallback if `image:` is ever empty.
 
 ## 8. Run
 
@@ -137,7 +155,8 @@ hugo server --source site
 
 ## 9. Seed scripts
 
-`tools/gen_products.py` and `tools/gen_content.py` are the one-time generators that
-produced `data/offers.yaml`, the placeholder SVGs and all 50 articles. The markdown
-and YAML are now the source of truth — **re-running the scripts overwrites them.**
-They're kept only as a template if you want to bulk-add another category.
+`tools/gen_products.py` and `tools/gen_content.py` generated `data/offers.yaml`, the
+fallback SVGs and all 50 articles. The markdown and YAML are the source of truth now —
+**re-running overwrites them**, though `gen_products.py` preserves `asin`, `image` and
+the `photo*` fields so a re-run won't wipe your fetched photos. Kept as a template for
+bulk-adding a category.

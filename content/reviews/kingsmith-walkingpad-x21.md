@@ -34,7 +34,7 @@ The reason executives don't walk more isn't willpower, it's the calendar. A walk
 
 Most walking pads are a flat slab you shove under a couch. The X21 folds in the middle and stands upright, so it fits behind a credenza or in a closet gap. That's the difference between using it and tripping over it. Home-office execs {{< buy "kingsmith-walkingpad-x21" >}}buy the X21 on Amazon{{< /buy >}}.
 
-![KingSmith WalkingPad X21 Under-Desk Treadmill](/img/products/kingsmith-walkingpad-x21.svg "Best folding under-desk treadmill — KingSmith WalkingPad X21 Under-Desk Treadmill")
+{{< img-link offer="kingsmith-walkingpad-x21" caption="Best folding under-desk treadmill" >}}
 
 ## Noise, controls, limits
 

@@ -34,7 +34,7 @@ Mechanically, a $40 pen can lay down ink. The 149 sells something else: a hand-f
 
 Ink flow is generous and consistent, even on heavier stock. Unposted it's balanced; posted it's long and back-heavy for most hands. The wide barrel is comfortable for a page of signatures but a little much for dense note-taking — that's not what it's for. Check nib width options (a medium is the safe default) on the {{< buy "montblanc-149" >}}Amazon listing{{< /buy >}}.
 
-![Montblanc Meisterstück 149 Fountain Pen](/img/products/montblanc-149.svg "Best status fountain pen — Montblanc Meisterstück 149 Fountain Pen")
+{{< img-link offer="montblanc-149" caption="Best status fountain pen" >}}
 
 ## Living with it
 

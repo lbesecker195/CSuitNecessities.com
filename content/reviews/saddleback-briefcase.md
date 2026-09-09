@@ -34,7 +34,7 @@ Most "luxury" bags are thin, corrected leather glued over cardboard stiffeners. 
 
 Zippers are the first thing to die on a briefcase, usually mid-trip. This design has none. The main flap closes under two leather straps and buckles; the front pocket is open-access for a phone and passport. Fewer moving parts means fewer failure points on the one day you can't afford a bag failure. Frequent flyers tend to {{< buy "saddleback-briefcase" >}}grab the current Amazon listing{{< /buy >}} the moment they understand that.
 
-![Saddleback Leather Thin Front Pocket Briefcase](/img/products/saddleback-briefcase.svg "Best buy-it-once executive bag — Saddleback Leather Thin Front Pocket Briefcase")
+{{< img-link offer="saddleback-briefcase" caption="Best buy-it-once executive bag" >}}
 
 ## Load, carry, and the airport test
 

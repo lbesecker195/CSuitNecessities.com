@@ -34,7 +34,7 @@ Modern offices recirculate air, and CO2 and VOC build-up through the afternoon i
 
 It reads the air continuously and spins up when someone runs a vacuum outside your door or sprays cleaner nearby, then settles back down. You set it and forget it. Executives in interior offices {{< buy "coway-airmega-400s" >}}buy the 400S on Amazon{{< /buy >}}.
 
-![Coway Airmega 400S Smart Air Purifier](/img/products/coway-airmega-400s.svg "Best air purifier for a private office — Coway Airmega 400S Smart Air Purifier")
+{{< img-link offer="coway-airmega-400s" caption="Best air purifier for a private office" >}}
 
 ## Noise, filters, running cost
 

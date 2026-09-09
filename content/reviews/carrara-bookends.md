@@ -34,7 +34,7 @@ A hollow metal L-bracket slides the moment you pull a book. Solid marble at 5+ p
 
 Carrara marble has the grey veining you recognize from good architecture. On a shelf of legal volumes or annual reports, they read as considered. People furnishing a proper office {{< buy "carrara-bookends" >}}buy a pair on Amazon{{< /buy >}}.
 
-![Solid Carrara Marble Bookends](/img/products/carrara-bookends.svg "Best heavy bookends — Solid Carrara Marble Bookends")
+{{< img-link offer="carrara-bookends" caption="Best heavy bookends" >}}
 
 ## The practical details
 

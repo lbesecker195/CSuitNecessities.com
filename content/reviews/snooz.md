@@ -34,7 +34,7 @@ Looped digital noise has a repeating signature your ear learns to tune out — a
 
 The housing rotates to shift the tone from deep to airy, and the volume range is wide. Set it once for your door gap and room and it does its job. Executives with corner offices and confidential calendars {{< buy "snooz" >}}order one on Amazon{{< /buy >}} and forget about it.
 
-![SNOOZ Real-Fan White Noise Machine](/img/products/snooz.svg "Best office sound-masking device — SNOOZ Real-Fan White Noise Machine")
+{{< img-link offer="snooz" caption="Best office sound-masking device" >}}
 
 ## Footprint and control
 

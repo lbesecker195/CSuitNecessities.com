@@ -45,7 +45,7 @@ bellroy-tokyo:
   rating: '4.6'
   tagline: The minimalist's board-meeting-to-boarding-gate bag
   cta: Check Price on Amazon
-  image: /img/products/bellroy-tokyo.svg
+  image: https://images.unsplash.com/photo-1528976915572-6a0cf746802e?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Y2FudmFzJTIwbWVzc2VuZ2VyJTIwYmFnJTIwY29tbXV0ZXJ8ZW58MXwwfHx8MTc4ODg5OTU1Mnww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Weather-resistant leather with a clean, low-profile silhouette
   - Dedicated slots for two phones, cables and a charger
@@ -58,6 +58,10 @@ bellroy-tokyo:
     Warranty: 3 years
     Rating: 4.6 / 5
   reviewRef: /reviews/bellroy-tokyo
+  imageAlt: Beige sling bag
+  photoCredit: Larry George II
+  photoCreditUrl: https://unsplash.com/@itslarryg?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: s6M63HPGb5E
 leatherology-padfolio:
   name: Leatherology Zip-Around Executive Padfolio
   brand: Leatherology
@@ -67,7 +71,7 @@ leatherology-padfolio:
   rating: '4.7'
   tagline: Full-grain Italian leather for device-free rooms
   cta: Check Price on Amazon
-  image: /img/products/leatherology-padfolio.svg
+  image: https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8bGVhdGhlciUyMG5vdGVib29rJTIwcGVuJTIwZGVza3xlbnwxfDB8fHwxNzg4OTExMTc5fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Full-grain leather that ages into a personal patina
   - Gusset expands for pitch decks; fits letter or A4 pads
@@ -81,6 +85,10 @@ leatherology-padfolio:
     Rating: 4.7 / 5
   deal: Free monogramming on most orders
   reviewRef: /reviews/leatherology-padfolio
+  imageAlt: A notebook with a pen on top of it
+  photoCredit: Nifty Leather
+  photoCreditUrl: https://unsplash.com/@niftyleather?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: MfWvsEUb9Xs
 shinola-valet-tray:
   name: Shinola Detroit Large Leather Catchall Tray
   brand: Shinola
@@ -116,7 +124,7 @@ tumi-alpha3-brief:
   rating: '4.7'
   tagline: Ballistic-nylon brief with technical pockets everywhere
   cta: Check Price on Amazon
-  image: /img/products/tumi-alpha3-brief.svg
+  image: https://images.unsplash.com/photo-1643033998438-38b4211fa2d5?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8YnVzaW5lc3MlMjBsYXB0b3AlMjBiYWd8ZW58MXwwfHx8MTc4ODg5OTU1M3ww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - FXT ballistic nylon shrugs off airport abuse
   - Add-a-bag sleeve and dedicated tech organization
@@ -129,6 +137,10 @@ tumi-alpha3-brief:
     Warranty: 5 years
     Rating: 4.7 / 5
   deal: Tumi Tracer registration included
+  imageAlt: A man holding a briefcase on a train platform
+  photoCredit: Neffaa Adams
+  photoCreditUrl: https://unsplash.com/@neffaa?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: gi1h-3YwcEE
 montblanc-149:
   name: Montblanc Meisterstück 149 Fountain Pen
   brand: Montblanc
@@ -320,7 +332,7 @@ jabra-speak2-75:
   rating: '4.6'
   tagline: Turns any hotel room into a boardroom
   cta: Check Price on Amazon
-  image: /img/products/jabra-speak2-75.svg
+  image: https://images.unsplash.com/photo-1617143182876-2f05a7227363?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8aG90ZWwlMjByb29tJTIwZGVzayUyMGxhcHRvcCUyMGNhbGx8ZW58MXwwfHx8MTc4ODg5OTU1NHww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Full-duplex — nobody gets clipped when two people talk
   - Acoustic voice-leveling normalizes near/far speakers
@@ -333,6 +345,10 @@ jabra-speak2-75:
     Multipoint: USB + BT
     Rating: 4.6 / 5
   reviewRef: /reviews/jabra-speak2-75
+  imageAlt: Black and silver ip desk phone on brown wooden desk
+  photoCredit: Tomeo Sonner
+  photoCreditUrl: https://unsplash.com/@sonnertomeo?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: 1xeNyHmam8E
 snooz:
   name: SNOOZ Real-Fan White Noise Machine
   brand: SNOOZ
@@ -342,7 +358,7 @@ snooz:
   rating: '4.6'
   tagline: Sound-masking so hallway ears hear nothing
   cta: Check Price on Amazon
-  image: /img/products/snooz.svg
+  image: https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Y2xvc2VkJTIwb2ZmaWNlJTIwZG9vciUyMGhhbGx3YXl8ZW58MXwwfHx8MTc4ODg5OTU1Nnww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Real mechanical fan — no looping digital hiss
   - Tunable tone and volume; app schedules
@@ -355,6 +371,10 @@ snooz:
     Multipoint: n/a
     Rating: 4.6 / 5
   reviewRef: /reviews/snooz
+  imageAlt: Hallway between glass-panel doors
+  photoCredit: Nastuh Abootalebi
+  photoCreditUrl: https://unsplash.com/@sunday_digital?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: yWwob8kwOCk
 airpods-max:
   name: Apple AirPods Max
   brand: Apple
@@ -364,7 +384,7 @@ airpods-max:
   rating: '4.7'
   tagline: Seamless in an all-Apple executive stack
   cta: Check Price on Amazon
-  image: /img/products/airpods-max.svg
+  image: https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8Mnx8d2hpdGUlMjBvdmVyJTIwZWFyJTIwaGVhZHBob25lc3xlbnwxfDB8fHwxNzg4ODk5NTU3fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Instant switching across iPhone, iPad and Mac
   - Excellent ANC and build; heavier on the head
@@ -376,6 +396,10 @@ airpods-max:
     Battery: ~20 hr
     Multipoint: Apple devices
     Rating: 4.7 / 5
+  imageAlt: Pink and white wireless headphones
+  photoCredit: Ervo Rocks
+  photoCreditUrl: https://unsplash.com/@ervorocks?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: Zam8TvEgN5o
 sennheiser-momentum-4:
   name: Sennheiser Momentum 4 Wireless
   brand: Sennheiser
@@ -410,7 +434,7 @@ herman-miller-aeron:
   rating: '4.7'
   tagline: The corner-office standard for 12-hour days
   cta: Check Price on Amazon
-  image: /img/products/herman-miller-aeron.svg
+  image: https://images.unsplash.com/photo-1781720077891-4e90c15b972c?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8bWVzaCUyMHRhc2slMjBjaGFpciUyMG9mZmljZXxlbnwxfDB8fHwxNzg4ODk5NTU4fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - 8Z Pellicle mesh — no sweat build-up over long sessions
   - PostureFit SL stabilizes the sacrum and lumbar together
@@ -424,6 +448,10 @@ herman-miller-aeron:
     Rating: 4.7 / 5
   deal: Certified-refurb units on Amazon cost far less
   reviewRef: /reviews/herman-miller-aeron
+  imageAlt: Two ergonomic office chairs, dark and light, facing each other
+  photoCredit: Sou Jest
+  photoCreditUrl: https://unsplash.com/@soujest?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: IqND6s1rXAo
 steelcase-gesture:
   name: Steelcase Gesture Office Chair
   brand: Steelcase
@@ -433,7 +461,7 @@ steelcase-gesture:
   rating: '4.7'
   tagline: Arms that follow you to every device
   cta: Check Price on Amazon
-  image: /img/products/steelcase-gesture.svg
+  image: https://images.unsplash.com/photo-1748721566880-9e8636f3e5c6?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8YmxhY2slMjBleGVjdXRpdmUlMjBvZmZpY2UlMjBjaGFpcnxlbnwxfDB8fHwxNzg4ODk5NTU5fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - 360° arms support phone, tablet and keyboard postures
   - Deep recline with weight-activated tracking
@@ -446,6 +474,10 @@ steelcase-gesture:
     Warranty: 12 years
     Rating: 4.7 / 5
   reviewRef: /reviews/steelcase-gesture
+  imageAlt: A comfortable office chair is shown in an office
+  photoCredit: Royaloak India
+  photoCreditUrl: https://unsplash.com/@royaloakindia123?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: L0vgUvFhtLc
 ergotron-hx:
   name: Ergotron HX Heavy-Duty Monitor Arm
   brand: Ergotron
@@ -455,7 +487,7 @@ ergotron-hx:
   rating: '4.7'
   tagline: Holds a 49-inch ultrawide with zero sag
   cta: Check Price on Amazon
-  image: /img/products/ergotron-hx.svg
+  image: https://images.unsplash.com/photo-1585362028211-dee1aba5fdd3?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Y3VydmVkJTIwbW9uaXRvciUyMG9mZmljZSUyMHdvcmtzcGFjZXxlbnwxfDB8fHwxNzg4ODk5NTYwfDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Rated for large, heavy panels up to ~42 lb
   - CF (Constant Force) lift repositions with a fingertip
@@ -468,6 +500,10 @@ ergotron-hx:
     Warranty: 10 years
     Rating: 4.7 / 5
   reviewRef: /reviews/ergotron-hx
+  imageAlt: Black flat screen computer monitor on brown wooden desk
+  photoCredit: Luke Peters
+  photoCreditUrl: https://unsplash.com/@lukepeters?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: rDxfSzXyBqU
 flexispot-e7-pro:
   name: FlexiSpot E7 Pro Standing Desk
   brand: FlexiSpot
@@ -658,7 +694,7 @@ briggs-riley-baseline:
   rating: '4.8'
   tagline: The 'if it breaks we fix it, forever' bag
   cta: Check Price on Amazon
-  image: /img/products/briggs-riley-baseline.svg
+  image: https://images.unsplash.com/photo-1648737967037-96967e9151b5?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8YmxhY2slMjBzdWl0Y2FzZSUyMGJ1c2luZXNzJTIwdHJhdmVsfGVufDF8MHx8fDE3ODg4OTk1NjF8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Unconditional lifetime repair — even airline damage
   - Outsider handle frees up all interior space
@@ -670,6 +706,10 @@ briggs-riley-baseline:
     Warranty: Lifetime, unconditional
     Wheels: Dual spinner
     Rating: 4.8 / 5
+  imageAlt: An overhead view of a person packing a suitcase
+  photoCredit: Surface
+  photoCreditUrl: https://unsplash.com/@surface?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: C-o9HNzQ_rA
 insta360-link2:
   name: Insta360 Link 2 4K AI Webcam
   brand: Insta360
@@ -679,7 +719,7 @@ insta360-link2:
   rating: '4.6'
   tagline: A camera operator that follows you to the whiteboard
   cta: Check Price on Amazon
-  image: /img/products/insta360-link2.svg
+  image: https://images.unsplash.com/photo-1758874572744-26aa02a8f5c0?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8d2ViY2FtJTIwdmlkZW8lMjBjYWxsJTIwZGVza3xlbnwxfDB8fHwxNzg4ODk5NTYyfDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - 1/2-inch sensor with real optical-look depth
   - Physical 2-axis gimbal tracks you across the room
@@ -692,6 +732,10 @@ insta360-link2:
     Setup: Plug-and-play
     Rating: 4.6 / 5
   reviewRef: /reviews/insta360-link2
+  imageAlt: Man with dreadlocks talking on video call
+  photoCredit: Vitaly Gariev
+  photoCreditUrl: https://unsplash.com/@silverkblack?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: I7UEeMMDxTs
 benq-screenbar-pro:
   name: BenQ ScreenBar Pro Monitor Light
   brand: BenQ
@@ -701,7 +745,7 @@ benq-screenbar-pro:
   rating: '4.7'
   tagline: Desk light with zero screen glare
   cta: Check Price on Amazon
-  image: /img/products/benq-screenbar-pro.svg
+  image: https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8ZGVzayUyMGxhbXAlMjBtb25pdG9yJTIwbGlnaHR8ZW58MXwwfHx8MTc4ODg5OTU2M3ww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Asymmetric optics put light on the desk, not the panel
   - Auto-dims to ambient; auto color temperature
@@ -714,6 +758,10 @@ benq-screenbar-pro:
     Setup: Clip-on
     Rating: 4.7 / 5
   reviewRef: /reviews/benq-screenbar-pro
+  imageAlt: Silver imac on brown wooden table
+  photoCredit: Clay Banks
+  photoCreditUrl: https://unsplash.com/@claybanks?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: TQYTWfN1b7M
 caldigit-ts4:
   name: CalDigit TS4 Thunderbolt 4 Dock
   brand: CalDigit
@@ -723,7 +771,7 @@ caldigit-ts4:
   rating: '4.6'
   tagline: 'One cable: dual displays, 10GbE-class LAN, 98W'
   cta: Check Price on Amazon
-  image: /img/products/caldigit-ts4.svg
+  image: https://images.unsplash.com/photo-1589362281138-e3f7ebe47f1a?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8bGFwdG9wJTIwZG9ja2luZyUyMHN0YXRpb24lMjBkZXNrfGVufDF8MHx8fDE3ODg4OTk1NjR8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - 18 ports including 2.5GbE and front SD/USB
   - 98W charging drives a 16-inch laptop under load
@@ -736,6 +784,10 @@ caldigit-ts4:
     Setup: 1 cable
     Rating: 4.6 / 5
   reviewRef: /reviews/caldigit-ts4
+  imageAlt: Macbook pro on brown wooden table
+  photoCredit: Minh Pham
+  photoCreditUrl: https://unsplash.com/@minhphamdesign?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: IisDPFNUS4k
 remarkable-paper-pro:
   name: reMarkable Paper Pro
   brand: reMarkable
@@ -745,7 +797,7 @@ remarkable-paper-pro:
   rating: '4.4'
   tagline: PDF markup and strategy drafts with no notifications
   cta: Check Price on Amazon
-  image: /img/products/remarkable-paper-pro.svg
+  image: https://images.unsplash.com/photo-1502404768591-f24d06b7a366?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8ZSUyMGluayUyMHRhYmxldCUyMHN0eWx1cyUyMG5vdGVzfGVufDF8MHx8fDE3ODg4OTk1NjZ8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Color e-ink with a frontlight for any room
   - Very low pen latency; paper-like drag
@@ -758,6 +810,10 @@ remarkable-paper-pro:
     Setup: Account + sync
     Rating: 4.4 / 5
   reviewRef: /reviews/remarkable-paper-pro
+  imageAlt: Person holding white stylus pen
+  photoCredit: Dose Media
+  photoCreditUrl: https://unsplash.com/@dose?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: 3R3sNikjVnA
 obsbot-tiny-2:
   name: OBSBOT Tiny 2 AI Webcam
   brand: OBSBOT
@@ -767,7 +823,7 @@ obsbot-tiny-2:
   rating: '4.4'
   tagline: Gesture-controlled AI PTZ with a big sensor
   cta: Check Price on Amazon
-  image: /img/products/obsbot-tiny-2.svg
+  image: https://images.unsplash.com/photo-1623949556303-b0d17d198863?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8d2ViY2FtJTIwb24lMjBtb25pdG9yfGVufDF8MHx8fDE3ODg4OTk1Njd8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - 1/1.5-inch sensor; strong low light
   - Gesture control for zoom and tracking
@@ -779,6 +835,10 @@ obsbot-tiny-2:
     Mic: Dual
     Setup: App recommended
     Rating: 4.4 / 5
+  imageAlt: Black and silver speaker on white table
+  photoCredit: Emiliano Cicero
+  photoCreditUrl: https://unsplash.com/@emilianocicero?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: lq87UxGSiEQ
 logitech-brio-4k:
   name: Logitech Brio 4K Webcam
   brand: Logitech
@@ -788,7 +848,7 @@ logitech-brio-4k:
   rating: '4.4'
   tagline: The safe fixed-lens 4K default
   cta: Check Price on Amazon
-  image: /img/products/logitech-brio-4k.svg
+  image: https://images.unsplash.com/photo-1759752394757-323a0adc0d62?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8dmlkZW8lMjBjb25mZXJlbmNlJTIwaG9tZSUyMG9mZmljZXxlbnwxfDB8fHwxNzg4ODk5NTY4fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Reliable 4K with HDR in backlit offices
   - No moving parts to fail
@@ -800,6 +860,10 @@ logitech-brio-4k:
     Mic: Dual
     Setup: Plug-and-play
     Rating: 4.4 / 5
+  imageAlt: Man on laptop participating in a video conference call
+  photoCredit: Bluestonex
+  photoCreditUrl: https://unsplash.com/@bluestonex_apphaus?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: 9Pqp6CUaIu4
 ember-mug-2:
   name: Ember Temperature Control Smart Mug 2 (14 oz)
   brand: Ember
@@ -809,7 +873,7 @@ ember-mug-2:
   rating: '4.5'
   tagline: Coffee held at your exact temperature for 90 minutes
   cta: Check Price on Amazon
-  image: /img/products/ember-mug-2.svg
+  image: https://images.unsplash.com/photo-1757447247562-31dd79dc4f0a?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Y29mZmVlJTIwbXVnJTIwb24lMjBkZXNrJTIwbGFwdG9wfGVufDF8MHx8fDE3ODg4OTk1Njl8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Set a precise temp; it holds there on the coaster
   - ~80 min battery off the coaster
@@ -822,6 +886,10 @@ ember-mug-2:
     Battery: ~80 min
     Rating: 4.5 / 5
   reviewRef: /reviews/ember-mug-2
+  imageAlt: Espresso cup next to a closed laptop on white table
+  photoCredit: ubeyonroad
+  photoCreditUrl: https://unsplash.com/@ubeyonroad?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: zR21hlc5gC8
 nespresso-creatista-pro:
   name: Nespresso Creatista Pro by Breville
   brand: Breville
@@ -831,7 +899,7 @@ nespresso-creatista-pro:
   rating: '4.6'
   tagline: Barista-grade flat whites in under two minutes
   cta: Check Price on Amazon
-  image: /img/products/nespresso-creatista-pro.svg
+  image: https://images.unsplash.com/photo-1637665691265-3d653ffd7c77?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8ZXNwcmVzc28lMjBtYWNoaW5lJTIwb2ZmaWNlJTIwa2l0Y2hlbnxlbnwxfDB8fHwxNzg4ODk5NTcwfDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - ThermoJet heats in ~3 seconds
   - Automatic steam wand textures real microfoam
@@ -844,6 +912,10 @@ nespresso-creatista-pro:
     Battery: AC
     Rating: 4.6 / 5
   reviewRef: /reviews/nespresso-creatista-pro
+  imageAlt: A kitchen with black cabinets and a white counter top
+  photoCredit: Craig Lovelidge
+  photoCreditUrl: https://unsplash.com/@craigology?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: OI6D_VKxSMw
 fellow-stagg-ekg-pro:
   name: Fellow Stagg EKG Pro Electric Kettle
   brand: Fellow
@@ -853,7 +925,7 @@ fellow-stagg-ekg-pro:
   rating: '4.7'
   tagline: Design-object kettle with to-the-degree control
   cta: Check Price on Amazon
-  image: /img/products/fellow-stagg-ekg-pro.svg
+  image: https://images.unsplash.com/photo-1650940925927-f4a30c930a4d?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Z29vc2VuZWNrJTIwa2V0dGxlJTIwcG91ciUyMG92ZXJ8ZW58MXwwfHx8MTc4ODg5OTU3MXww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Variable temperature with a 60-minute hold
   - Restricted gooseneck spout for a controlled pour
@@ -866,6 +938,10 @@ fellow-stagg-ekg-pro:
     Battery: AC
     Rating: 4.7 / 5
   reviewRef: /reviews/fellow-stagg-ekg-pro
+  imageAlt: A coffee maker on a table
+  photoCredit: Paul Esch-Laurent
+  photoCreditUrl: https://unsplash.com/@pinjasaur?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: tVeVHHWCfHM
 zojirushi-sm-khe48:
   name: Zojirushi SM-KHE48 Vacuum Insulated Mug (16 oz)
   brand: Zojirushi
@@ -875,7 +951,7 @@ zojirushi-sm-khe48:
   rating: '4.7'
   tagline: Passive vacuum insulation that just refuses to quit
   cta: Check Price on Amazon
-  image: /img/products/zojirushi-sm-khe48.svg
+  image: https://images.unsplash.com/photo-1588793076577-4c2b666452d3?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8c3RhaW5sZXNzJTIwc3RlZWwlMjB0cmF2ZWwlMjBtdWd8ZW58MXwwfHx8MTc4ODg5OTU3Mnww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Holds heat for hours with no battery
   - Flip-lock lid — genuinely leakproof in a bag
@@ -888,6 +964,10 @@ zojirushi-sm-khe48:
     Battery: None
     Rating: 4.7 / 5
   reviewRef: /reviews/zojirushi-sm-khe48
+  imageAlt: Silver starbucks travel mug on brown wooden table
+  photoCredit: Luis Soto
+  photoCreditUrl: https://unsplash.com/@sixthmanlou?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: ri5s9joIZXI
 cauldryn-coffee:
   name: Cauldryn Coffee Pro Heated Bottle
   brand: Cauldryn
@@ -897,7 +977,7 @@ cauldryn-coffee:
   rating: '4.2'
   tagline: Battery mug that can actually boil water
   cta: Check Price on Amazon
-  image: /img/products/cauldryn-coffee.svg
+  image: https://images.unsplash.com/photo-1580214968663-b607346c209c?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8aW5zdWxhdGVkJTIwdHJhdmVsJTIwZmxhc2t8ZW58MXwwfHx8MTc4ODg5OTU3M3ww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Heats and re-boils on the go with swappable batteries
   - Bulky; more thermos than mug
@@ -909,6 +989,10 @@ cauldryn-coffee:
     Cleaning: Hand wash
     Battery: Swappable
     Rating: 4.2 / 5
+  imageAlt: Woman in black knit sweater holding blue ceramic mug
+  photoCredit: Roman Poberezhnik
+  photoCreditUrl: https://unsplash.com/@fogrei?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: GKPyxGjJccc
 fellow-carter-move:
   name: Fellow Carter Move Mug
   brand: Fellow
@@ -918,7 +1002,7 @@ fellow-carter-move:
   rating: '4.6'
   tagline: The nicest-drinking passive travel mug
   cta: Check Price on Amazon
-  image: /img/products/fellow-carter-move.svg
+  image: https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Y2VyYW1pYyUyMHRyYXZlbCUyMGNvZmZlZSUyMG11Z3xlbnwxfDB8fHwxNzg4ODk5NTc1fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Ceramic-coated interior — no metallic taste
   - Splash-safe lid, tapered to fit cup holders
@@ -930,6 +1014,10 @@ fellow-carter-move:
     Cleaning: Easy
     Battery: None
     Rating: 4.6 / 5
+  imageAlt: Standing whit and black disposable cup
+  photoCredit: Samia Liamani
+  photoCreditUrl: https://unsplash.com/@mialiamani?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: 3DhS00cyC9A
 theragun-pro-plus:
   name: Theragun PRO Plus Multi-Therapy Device
   brand: Therabody
@@ -939,7 +1027,7 @@ theragun-pro-plus:
   rating: '4.5'
   tagline: Melts neck and upper-back tension between meetings
   cta: Check Price on Amazon
-  image: /img/products/theragun-pro-plus.svg
+  image: https://images.unsplash.com/photo-1732605548318-b6d80dfa72a3?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8bWFzc2FnZSUyMGd1biUyMHJlY292ZXJ5fGVufDF8MHx8fDE3ODg4OTk1NzZ8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - 16 mm stroke reaches deep muscle, not just surface
   - Near-infrared and heat/vibration modes built in
@@ -952,6 +1040,10 @@ theragun-pro-plus:
     Data: Basic app
     Rating: 4.5 / 5
   reviewRef: /reviews/theragun-pro-plus
+  imageAlt: A person sitting on the floor with a laptop in a suit case
+  photoCredit: Neakasa
+  photoCreditUrl: https://unsplash.com/@neakasa?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: ws0hv7mgnj8
 kingsmith-walkingpad-x21:
   name: KingSmith WalkingPad X21 Under-Desk Treadmill
   brand: KingSmith
@@ -961,7 +1053,7 @@ kingsmith-walkingpad-x21:
   rating: '4.4'
   tagline: Folds flat behind a credenza; 10k steps on calls
   cta: Check Price on Amazon
-  image: /img/products/kingsmith-walkingpad-x21.svg
+  image: https://images.unsplash.com/photo-1590693058087-0aef5a71ed67?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8d2Fsa2luZyUyMHRyZWFkbWlsbCUyMGhvbWUlMjBvZmZpY2V8ZW58MXwwfHx8MTc4ODg5OTU3N3ww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Double-fold design stores in a slim gap
   - Quiet motor — fine on a muted video call
@@ -974,6 +1066,10 @@ kingsmith-walkingpad-x21:
     Data: App steps
     Rating: 4.4 / 5
   reviewRef: /reviews/kingsmith-walkingpad-x21
+  imageAlt: Black flat screen tv on white and pink table
+  photoCredit: Hillary Black
+  photoCreditUrl: https://unsplash.com/@internethillary?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: fvHJDX_sb98
 gunnar-vertex:
   name: Gunnar Optiks Vertex Computer Glasses
   brand: Gunnar
@@ -983,7 +1079,7 @@ gunnar-vertex:
   rating: '4.5'
   tagline: Cuts glare and dry-eye on 12-hour screen days
   cta: Check Price on Amazon
-  image: /img/products/gunnar-vertex.svg
+  image: https://images.unsplash.com/photo-1534844978-b859e5a09ad6?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Z2xhc3NlcyUyMGNvbXB1dGVyJTIwc2NyZWVuJTIwZGVza3xlbnwxfDB8fHwxNzg4ODk5NTc4fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Blocks a high share of artificial blue light
   - Distortion-free lens; subtle tint on camera
@@ -996,6 +1092,10 @@ gunnar-vertex:
     Data: None
     Rating: 4.5 / 5
   reviewRef: /reviews/gunnar-vertex
+  imageAlt: Eyeglasses on white table
+  photoCredit: Jess Bailey
+  photoCreditUrl: https://unsplash.com/@jessbaileydesigns?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: WeCoLo0Rxp4
 coway-airmega-400s:
   name: Coway Airmega 400S Smart Air Purifier
   brand: Coway
@@ -1005,7 +1105,7 @@ coway-airmega-400s:
   rating: '4.7'
   tagline: Keeps a sealed office at near-zero PM2.5
   cta: Check Price on Amazon
-  image: /img/products/coway-airmega-400s.svg
+  image: https://images.unsplash.com/photo-1762856490803-8e200418973a?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8YWlyJTIwcHVyaWZpZXIlMjBtb2Rlcm4lMjByb29tfGVufDF8MHx8fDE3ODg4OTk1Nzl8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Covers a large private office / suite
   - Real-time sensor ramps up for cleaning-spray VOCs
@@ -1018,6 +1118,10 @@ coway-airmega-400s:
     Data: App AQI
     Rating: 4.7 / 5
   reviewRef: /reviews/coway-airmega-400s
+  imageAlt: A modern nightstand next to a sofa and potted plant
+  photoCredit: Puscas Adryan
+  photoCreditUrl: https://unsplash.com/@adryan_studio?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: F15bs8uuo0I
 hyperice-hypervolt-2-pro:
   name: Hyperice Hypervolt 2 Pro
   brand: Hyperice
@@ -1027,7 +1131,7 @@ hyperice-hypervolt-2-pro:
   rating: '4.6'
   tagline: Lighter percussion gun with more top-end power
   cta: Check Price on Amazon
-  image: /img/products/hyperice-hypervolt-2-pro.svg
+  image: https://images.unsplash.com/photo-1755255020813-1cdb6a4bd9b0?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8cGVyY3Vzc2lvbiUyMG1hc3NhZ2UlMjBkZXZpY2V8ZW58MXwwfHx8MTc4ODkwNTM4NHww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - 5 speeds, strong stall force, lighter in hand
   - Bluetooth guided routines
@@ -1039,6 +1143,10 @@ hyperice-hypervolt-2-pro:
     Noise: Moderate
     Data: App routines
     Rating: 4.6 / 5
+  imageAlt: A black handheld power drill on a tan background
+  photoCredit: Kedibone Isaac Makhumisane
+  photoCreditUrl: https://unsplash.com/@isaax_the_artist?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: evh3_T7G_YA
 oura-ring-horizon:
   name: Oura Ring Horizon (Gen 3)
   brand: Oura
@@ -1048,7 +1156,7 @@ oura-ring-horizon:
   rating: '4.2'
   tagline: Invisible sleep and readiness tracking
   cta: Check Price on Amazon
-  image: /img/products/oura-ring-horizon.svg
+  image: https://images.unsplash.com/photo-1744697307482-0f55e2e0c1b6?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8c21hcnQlMjByaW5nJTIwd2VhcmFibGV8ZW58MXwwfHx8MTc4ODkwNTM4Nnww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Sleep, HRV and readiness with no wrist device
   - Week-plus battery
@@ -1061,6 +1169,10 @@ oura-ring-horizon:
     Data: Deep, subscription
     Rating: 4.2 / 5
   deal: Requires a membership
+  imageAlt: A hand is holding a smart ring
+  photoCredit: Amanz
+  photoCreditUrl: https://unsplash.com/@amanz?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: uK91A7QR-_c
 whoop-4:
   name: WHOOP 4.0
   brand: WHOOP
@@ -1070,7 +1182,7 @@ whoop-4:
   rating: '4.1'
   tagline: Strain and recovery coaching, screenless
   cta: Check Price on Amazon
-  image: /img/products/whoop-4.svg
+  image: https://images.unsplash.com/photo-1576243345690-4e4b79b63288?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Zml0bmVzcyUyMHRyYWNrZXIlMjB3cmlzdCUyMGJhbmR8ZW58MXwwfHx8MTc4ODkwNTM4N3ww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Continuous strain / recovery / sleep coaching
   - No screen; wear it anywhere
@@ -1083,6 +1195,10 @@ whoop-4:
     Data: Deep, subscription
     Rating: 4.1 / 5
   deal: Membership-based
+  imageAlt: Black xiaomi mi fitness tracker
+  photoCredit: Nikita Kostrykin
+  photoCreditUrl: https://unsplash.com/@chilinik?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: 5--lSW0MiE0
 howard-miller-burton:
   name: Howard Miller Burton Mantel Clock
   brand: Howard Miller
@@ -1092,7 +1208,7 @@ howard-miller-burton:
   rating: '4.7'
   tagline: Traditional gravitas for a credenza
   cta: Check Price on Amazon
-  image: /img/products/howard-miller-burton.svg
+  image: https://images.unsplash.com/photo-1764522913183-fc99fd64ae7d?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8YW50aXF1ZSUyMGNsb2NrJTIwc2hlbGZ8ZW58MXwwfHx8MTc4ODkxMTIwMXww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Warm hardwood case with brass accents
   - Dual chime with an automatic night shut-off
@@ -1105,6 +1221,10 @@ howard-miller-burton:
     Statement level: High
     Rating: 4.7 / 5
   reviewRef: /reviews/howard-miller-burton
+  imageAlt: Hand holding an antique clock on a shelf
+  photoCredit: Christian Agbede
+  photoCreditUrl: https://unsplash.com/@chriscreations__?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: MZ1Ftv3TXvQ
 dalvey-grand-sedan:
   name: Dalvey Grand Sedan Desk Clock
   brand: Dalvey
@@ -1114,7 +1234,7 @@ dalvey-grand-sedan:
   rating: '4.6'
   tagline: Scottish pocket-watch engineering, shrunk
   cta: Check Price on Amazon
-  image: /img/products/dalvey-grand-sedan.svg
+  image: https://images.unsplash.com/photo-1591952585168-8a2090121733?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8YnJhc3MlMjBkZXNrJTIwY2xvY2t8ZW58MXwwfHx8MTc4ODkwNTM4OXww&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Convex glass, spun metal dial, jewel-like scale
   - Weighted base sits firm on a leather blotter
@@ -1127,6 +1247,10 @@ dalvey-grand-sedan:
     Statement level: Medium
     Rating: 4.6 / 5
   reviewRef: /reviews/dalvey-grand-sedan
+  imageAlt: Gold and white analog alarm clock
+  photoCredit: Wilhelm Gunkel
+  photoCreditUrl: https://unsplash.com/@wilhelmgunkel?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: BhnW1v1Jl7I
 authentic-models-sandtimer:
   name: Authentic Models 60-Minute Brass Sand Timer
   brand: Authentic Models
@@ -1136,7 +1260,7 @@ authentic-models-sandtimer:
   rating: '4.6'
   tagline: A silent, tactile deep-work timer
   cta: Check Price on Amazon
-  image: /img/products/authentic-models-sandtimer.svg
+  image: https://images.unsplash.com/photo-1499377193864-82682aefed04?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8aG91cmdsYXNzJTIwc2FuZCUyMHRpbWVyJTIwZGVza3xlbnwxfDB8fHwxNzg4OTA1MzkwfDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Flip it to start a distraction-free work block
   - Heavy brass frame; no phone, no beep
@@ -1149,6 +1273,10 @@ authentic-models-sandtimer:
     Statement level: Medium
     Rating: 4.6 / 5
   reviewRef: /reviews/authentic-models-sandtimer
+  imageAlt: Clear hour glass with brown frame
+  photoCredit: Quilia
+  photoCreditUrl: https://unsplash.com/@heyquilia?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: KYxXMTpTzek
 carrara-bookends:
   name: Solid Carrara Marble Bookends
   brand: Craftsman
@@ -1158,7 +1286,7 @@ carrara-bookends:
   rating: '4.7'
   tagline: 5+ lb of stone that never lets a binder lean
   cta: Check Price on Amazon
-  image: /img/products/carrara-bookends.svg
+  image: https://images.unsplash.com/photo-1543248939-4296e1fea89b?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Ym9va3MlMjBvbiUyMHNoZWxmJTIwbWluaW1hbGlzdHxlbnwxfDB8fHwxNzg4OTExMjAyfDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Each block is heavy enough for hardbound volumes
   - Felt base protects the shelf and stops slipping
@@ -1171,6 +1299,10 @@ carrara-bookends:
     Statement level: Medium
     Rating: 4.7 / 5
   reviewRef: /reviews/carrara-bookends
+  imageAlt: Books on shelf
+  photoCredit: Vladimir Mokry
+  photoCreditUrl: https://unsplash.com/@vmokry?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: G-4wX5tZNuE
 jaeger-atmos-homage:
   name: Luxury Glass Mechanical Mantel Clock
   brand: (various)
@@ -1180,7 +1312,7 @@ jaeger-atmos-homage:
   rating: '4.3'
   tagline: Kinetic mechanical theater on the shelf
   cta: Check Price on Amazon
-  image: /img/products/jaeger-atmos-homage.svg
+  image: https://images.unsplash.com/photo-1446937179942-7fcfab24fb81?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8Z2xhc3MlMjBza2VsZXRvbiUyMGNsb2NrfGVufDF8MHx8fDE3ODg5MDUzOTJ8MA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Visible mechanical movement as a talking piece
   - Far cheaper than a real Atmos
@@ -1192,6 +1324,10 @@ jaeger-atmos-homage:
     Noise: Soft tick
     Statement level: High
     Rating: 4.3 / 5
+  imageAlt: Close-up photography of white and black clock
+  photoCredit: Jeanne Rouillard
+  photoCreditUrl: https://unsplash.com/@quillofspirit?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: txVwsCuWC94
 yubikey-5c-nfc:
   name: Yubico YubiKey 5C NFC
   brand: Yubico
@@ -1201,7 +1337,7 @@ yubikey-5c-nfc:
   rating: '4.8'
   tagline: A phishing-proof lock for executive email
   cta: Check Price on Amazon
-  image: /img/products/yubikey-5c-nfc.svg
+  image: https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8c2VjdXJpdHklMjBrZXklMjB1c2IlMjBhdXRoZW50aWNhdGlvbnxlbnwxfDB8fHwxNzg4OTA1MzkzfDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - FIDO2 / WebAuthn stops credential phishing cold
   - USB-C plus NFC tap for phones
@@ -1215,6 +1351,10 @@ yubikey-5c-nfc:
     Rating: 4.8 / 5
   deal: Buy two — one primary, one backup
   reviewRef: /reviews/yubikey-5c-nfc
+  imageAlt: Red padlock on black computer keyboard
+  photoCredit: FlyD
+  photoCreditUrl: https://unsplash.com/@flyd2069?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: mT7lXZPjk7U
 3m-gold-privacy-filter:
   name: 3M Gold Privacy Filter
   brand: 3M
@@ -1224,7 +1364,7 @@ yubikey-5c-nfc:
   rating: '4.6'
   tagline: Blacks out your screen for the seat next to you
   cta: Check Price on Amazon
-  image: /img/products/3m-gold-privacy-filter.svg
+  image: https://images.unsplash.com/photo-1606642857018-a0efd3b9555a?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8bGFwdG9wJTIwc2NyZWVuJTIwYWlycG9ydCUyMGxvdW5nZXxlbnwxfDB8fHwxNzg4OTA1Mzk0fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Gold micro-louvers — sharper cutoff than matte film
   - Screen stays bright and clear head-on
@@ -1237,6 +1377,10 @@ yubikey-5c-nfc:
     Travel: Fits in the sleeve
     Rating: 4.6 / 5
   reviewRef: /reviews/3m-gold-privacy-filter
+  imageAlt: Silhouette of people sitting on chair near body of water during daytime
+  photoCredit: Mohamad Ilham Fauzan
+  photoCreditUrl: https://unsplash.com/@ilhamfzn?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: bSPh_zQbHkM
 mission-darkness-faraday:
   name: Mission Darkness Dry Shield Faraday Laptop Bag
   brand: Mission Darkness
@@ -1246,7 +1390,7 @@ mission-darkness-faraday:
   rating: '4.7'
   tagline: True RF isolation for hostile-jurisdiction travel
   cta: Check Price on Amazon
-  image: /img/products/mission-darkness-faraday.svg
+  image: https://images.unsplash.com/photo-1681334922271-0054c7848a5f?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8YmxhY2slMjB0YWN0aWNhbCUyMGxhcHRvcCUyMGJhZ3xlbnwxfDB8fHwxNzg4OTA1Mzk1fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Blocks cellular, Wi-Fi, Bluetooth and GPS
   - Waterproof roll-top; rugged exterior
@@ -1259,6 +1403,10 @@ mission-darkness-faraday:
     Travel: Purpose-built
     Rating: 4.7 / 5
   reviewRef: /reviews/mission-darkness-faraday
+  imageAlt: A black and white photo of a backpack
+  photoCredit: Erik Mclean
+  photoCreditUrl: https://unsplash.com/@introspectivedsgn?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: 6lnXAnUxIfg
 fellowes-99ci:
   name: Fellowes Powershred 99Ci Micro-Cut Shredder
   brand: Fellowes
@@ -1268,7 +1416,7 @@ fellowes-99ci:
   rating: '4.7'
   tagline: Turns M&A printouts into confetti, jam-free
   cta: Check Price on Amazon
-  image: /img/products/fellowes-99ci.svg
+  image: https://images.unsplash.com/photo-1715522594847-67c90b5b8667?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8cGFwZXIlMjBzaHJlZGRlciUyMG9mZmljZSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzg4OTA1Mzk3fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - 100% jam-proof feed for mixed stacks
   - Micro-cut particles — effectively unreconstructable
@@ -1281,6 +1429,10 @@ fellowes-99ci:
     Travel: No (desk-side)
     Rating: 4.7 / 5
   reviewRef: /reviews/fellowes-99ci
+  imageAlt: A pile of white shredded paper sitting on top of a table
+  photoCredit: Mahen Rin
+  photoCreditUrl: https://unsplash.com/@mahenrin?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: DQHT-HrfiiQ
 kingston-ironkey-vp80:
   name: Kingston IronKey Vault Privacy 80 Encrypted SSD
   brand: Kingston
@@ -1290,7 +1442,7 @@ kingston-ironkey-vp80:
   rating: '4.5'
   tagline: FIPS-grade encrypted drive with an on-device PIN
   cta: Check Price on Amazon
-  image: /img/products/kingston-ironkey-vp80.svg
+  image: https://images.unsplash.com/photo-1655036387197-566206c80980?ixid=M3wxMDU5NjUwfDB8MXxzZWFyY2h8MXx8ZW5jcnlwdGVkJTIwZXh0ZXJuYWwlMjBzc2QlMjBkcml2ZXxlbnwxfDB8fHwxNzg4OTA1Mzk4fDA&ixlib=rb-4.1.0&w=1200&h=750&fit=crop&crop=entropy&q=80&fm=jpg
   bullets:
   - Hardware AES-256, on-screen PIN pad — no host software
   - Brute-force lockout and BadUSB defense
@@ -1302,3 +1454,7 @@ kingston-ironkey-vp80:
     Daily friction: Medium
     Travel: Pocket SSD
     Rating: 4.5 / 5
+  imageAlt: A laptop and a computer
+  photoCredit: Rohan
+  photoCreditUrl: https://unsplash.com/@rohanphoto?utm_source=C-Suit%20Necessities&utm_medium=referral
+  photoId: ZoXCoH7tja0

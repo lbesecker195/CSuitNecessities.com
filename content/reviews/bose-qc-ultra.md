@@ -34,7 +34,7 @@ On a long flight, clamp pressure is the difference between arriving rested and a
 
 Mic performance is very good if a step behind the Sony for transmit clarity in loud spaces. Where it pulls ahead is the immersive-audio mode for group calls — voices get a sense of place, which reduces the fatigue of a long panel. Frequent flyers {{< buy "bose-qc-ultra" >}}buy these on Amazon{{< /buy >}} for the comfort and keep a wired option for critical calls.
 
-![Bose QuietComfort Ultra Headphones](/img/products/bose-qc-ultra.svg "Best for travel comfort — Bose QuietComfort Ultra Headphones")
+{{< img-link offer="bose-qc-ultra" caption="Best for travel comfort" >}}
 
 ## Packing and battery
 

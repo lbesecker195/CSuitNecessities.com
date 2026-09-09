@@ -34,7 +34,7 @@ You sit down, plug in one Thunderbolt cable, and your laptop has two monitors, w
 
 Run dual 4K/6K, copy from an external NVMe array, and stay on a 2.5GbE line — the TS4 has the bandwidth headroom to do all of it without stutter. Power users {{< buy "caldigit-ts4" >}}buy the TS4 on Amazon{{< /buy >}} and never think about it again.
 
-![CalDigit TS4 Thunderbolt 4 Dock](/img/products/caldigit-ts4.svg "Best Thunderbolt 4 dock — CalDigit TS4 Thunderbolt 4 Dock")
+{{< img-link offer="caldigit-ts4" caption="Best Thunderbolt 4 dock" >}}
 
 ## Audio, charging, compatibility
 

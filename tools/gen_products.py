@@ -658,6 +658,13 @@ banner = (
 "#  Fill in asin values as you confirm them; nothing else needs to change.\n"
 "# =============================================================================\n"
 )
+# Preserve fields that were added AFTER generation (asin edits, Unsplash photos).
+_prev = {}
+_path = os.path.join(SITE, "data/offers.yaml")
+if os.path.exists(_path):
+    _prev = yaml.safe_load(open(_path)) or {}
+_KEEP = ("asin", "image", "imageAlt", "photoCredit", "photoCreditUrl", "photoId")
+
 out = {}
 for k, v in P.items():
     d = {"name": v["name"], "brand": v["brand"], "domain": "amazon.com",
@@ -668,11 +675,15 @@ for k, v in P.items():
         d["deal"] = v["deal"]
     if v["target"]:
         d["reviewRef"] = f"/reviews/{k}"
+    for f in _KEEP:                       # don't clobber later manual/fetched edits
+        if _prev.get(k, {}).get(f):
+            d[f] = _prev[k][f]
     out[k] = d
-with open(os.path.join(SITE, "data/offers.yaml"), "w") as f:
+with open(_path, "w") as f:
     f.write(banner + "\n")
     yaml.safe_dump(out, f, sort_keys=False, allow_unicode=True, width=100)
-print("offers.yaml:", len(out), "products")
+print("offers.yaml:", len(out), "products",
+      f"({sum(1 for d in out.values() if d.get('photoId'))} kept their Unsplash photo)")
 
 # ---------------------------------------------------------------------------
 #  product placeholder SVGs
@@ -709,7 +720,7 @@ print("images:", len(P), "svgs ->", IMGDIR)
 
 # expose catalog for the content generator
 import json
-with open("/private/tmp/claude-501/-Users-logan-Documents-businesses-C-Suit-Reccuring-Affiliate/ad900b6b-0d6d-40ab-a72c-343857693d26/scratchpad/catalog.json","w") as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "catalog.json"), "w") as f:
     json.dump({"cats":{k:list(v) for k,v in CATS.items()}, "rows":CAT_ROWS,
                "products":{k:{"name":v["name"],"category":v["category"],"target":v["target"]} for k,v in P.items()}}, f, indent=1)
 print("wrote catalog.json")

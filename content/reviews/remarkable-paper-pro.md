@@ -34,7 +34,7 @@ An iPad can mark up a PDF — and also show you Slack, email and the news. The P
 
 Pen latency is low enough that handwriting and margin notes feel natural, and the color layer lets you actually highlight and flag. Marked-up copies sync back out as standard PDFs. People drowning in documents {{< buy "remarkable-paper-pro" >}}buy it on Amazon{{< /buy >}}.
 
-![reMarkable Paper Pro](/img/products/remarkable-paper-pro.svg "Best distraction-free document tablet — reMarkable Paper Pro")
+{{< img-link offer="remarkable-paper-pro" caption="Best distraction-free document tablet" >}}
 
 ## Battery, sync, the subscription question
 

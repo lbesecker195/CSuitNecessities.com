@@ -34,7 +34,7 @@ A traditional machine makes a great coffee once you've learned it. The Creatista
 
 Most capsule machines give you a milk frother that makes stiff foam. This has a real automatic steam wand that produces the silky microfoam a flat white needs, to a temperature you set. Offices upgrading from a pod-and-frother setup {{< buy "nespresso-creatista-pro" >}}buy it on Amazon{{< /buy >}}.
 
-![Nespresso Creatista Pro by Breville](/img/products/nespresso-creatista-pro.svg "Best office espresso machine — Nespresso Creatista Pro by Breville")
+{{< img-link offer="nespresso-creatista-pro" caption="Best office espresso machine" >}}
 
 ## Cleaning and upkeep
 

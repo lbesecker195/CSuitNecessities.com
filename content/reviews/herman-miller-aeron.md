@@ -34,7 +34,7 @@ Cushioned chairs get hot and compress over the years; the Aeron's suspension mes
 
 Most chairs push on your lumbar. The Aeron's PostureFit SL also stabilizes the sacrum — the base of the spine — which is the mechanism that keeps you from slumping without thinking about it. It's the single feature worth paying for. Executives with a history of back pain {{< buy "herman-miller-aeron" >}}buy the loaded config on Amazon{{< /buy >}}.
 
-![Herman Miller Aeron (PostureFit SL)](/img/products/herman-miller-aeron.svg "Best all-day executive chair — Herman Miller Aeron (PostureFit SL)")
+{{< img-link offer="herman-miller-aeron" caption="Best all-day executive chair" >}}
 
 ## Size and the refurb route
 

@@ -34,7 +34,7 @@ Without a landing zone, your watch and keys scatter across the desk every evenin
 
 Drop a steel dive-watch bracelet into a wooden or metal tray and you'll hear it — and eventually see the micro-scratches. The veg-tan leather floor here is soft enough to be a safe home for a mechanical watch every night. Collectors tend to {{< buy "shinola-valet-tray" >}}buy one on Amazon{{< /buy >}} for exactly that reason.
 
-![Shinola Detroit Large Leather Catchall Tray](/img/products/shinola-valet-tray.svg "Best desk valet tray — Shinola Detroit Large Leather Catchall Tray")
+{{< img-link offer="shinola-valet-tray" caption="Best desk valet tray" >}}
 
 ## Footprint and finish
 

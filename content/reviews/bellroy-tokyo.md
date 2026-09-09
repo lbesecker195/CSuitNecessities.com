@@ -34,7 +34,7 @@ The Tokyo assumes your day has three modes — desk, meeting, flight — and non
 
 If you run a personal and a work phone, this is one of the few briefs that gives each a home, plus a stretch pocket sized for a GaN charger and a coiled cable. Everything has a place, so packing takes seconds and nothing prints through the leather. Executives who carry two devices tend to {{< buy "bellroy-tokyo" >}}order it after seeing that layout{{< /buy >}}.
 
-![Bellroy Tokyo Work Bag (Premium)](/img/products/bellroy-tokyo.svg "Best slim modern brief — Bellroy Tokyo Work Bag (Premium)")
+{{< img-link offer="bellroy-tokyo" caption="Best slim modern brief" >}}
 
 ## Strap and pass-through
 

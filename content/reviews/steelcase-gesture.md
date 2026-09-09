@@ -34,7 +34,7 @@ You spend hours a day with an arm raised, holding or tapping a device. Most chai
 
 Instead of hunting for the right tension, the Gesture's mechanism responds to your body weight and tracks smoothly as you lean back to think and forward to type. Add the headrest for calls where you lean back. Executives who never sit still {{< buy "steelcase-gesture" >}}order it on Amazon{{< /buy >}}.
 
-![Steelcase Gesture Office Chair](/img/products/steelcase-gesture.svg "Best chair for device-switching — Steelcase Gesture Office Chair")
+{{< img-link offer="steelcase-gesture" caption="Best chair for device-switching" >}}
 
 ## Seat, materials, longevity
 

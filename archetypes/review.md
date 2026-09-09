@@ -8,11 +8,10 @@ weight = 50
 categories = ['Executive Leather']
 tags = []
 keywords = []
-# Placeholder card in static/img/products/ — swap for a real product photo.
-image = '/img/products/{{ .File.ContentBaseName }}.svg'
-imageAlt = ''
-# Key into data/offers.yaml. Drives the hero link, sidebar, sticky bar, final CTA
-# and every otherwise-unlinked image on the page.
+# Key into data/offers.yaml. Drives the lead photo, hero link, sidebar, sticky bar,
+# final CTA and every otherwise-unlinked image on the page. The photo itself comes
+# from that product's `image` field (set by tools/fetch_unsplash.py). Only set an
+# `image = "..."` here to override it for this one page.
 offer = '{{ .File.ContentBaseName }}'
 verdict = ''
 cardCue = 'Read the review →'
@@ -40,7 +39,7 @@ Open with the problem, not the product. End the paragraph with a money link:
 
 The differentiating feature. Another money link with different anchor text.
 
-![Descriptive alt text](/img/products/OFFER_KEY.svg "Caption — auto-links to the product")
+{{</* img-link offer="OFFER_KEY" caption="One-line verdict" */>}}
 
 ## Third section
 

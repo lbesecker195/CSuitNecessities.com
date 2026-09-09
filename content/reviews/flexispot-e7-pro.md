@@ -34,7 +34,7 @@ Every sit-stand desk is stable when it's low. The question is what happens at st
 
 The motors are quiet enough that raising the desk mid-meeting doesn't announce itself. Presets are accurate to the millimeter, so your sit and stand positions are one tap away. People who actually alternate sitting and standing {{< buy "flexispot-e7-pro" >}}buy the frame on Amazon{{< /buy >}} and add their own top.
 
-![FlexiSpot E7 Pro Standing Desk](/img/products/flexispot-e7-pro.svg "Best value shake-free standing desk — FlexiSpot E7 Pro Standing Desk")
+{{< img-link offer="flexispot-e7-pro" caption="Best value shake-free standing desk" >}}
 
 ## Range, safety, cables
 

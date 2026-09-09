@@ -34,7 +34,7 @@ A 49-inch curved panel is heavy and has a lot of leverage. Put it on a mid-range
 
 Ergotron's Constant-Force lift is tuned so a heavy display feels weightless through its range and stays exactly where you leave it — no knobs. For a shared or hot-desk setup where people reposition constantly, that's the feature. Setup-obsessives {{< buy "ergotron-hx" >}}buy the HX on Amazon{{< /buy >}}.
 
-![Ergotron HX Heavy-Duty Monitor Arm](/img/products/ergotron-hx.svg "Best arm for heavy ultrawides — Ergotron HX Heavy-Duty Monitor Arm")
+{{< img-link offer="ergotron-hx" caption="Best arm for heavy ultrawides" >}}
 
 ## Mounting and cables
 

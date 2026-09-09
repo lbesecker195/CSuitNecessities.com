@@ -34,7 +34,7 @@ Hours at a screen load the upper traps and the base of the neck, and by mid-afte
 
 The Plus folds in near-infrared light and a heated head, which the traps and neck respond to well, plus a breath/heart-rate feature in the app. If you're buying one for recovery between meetings, the extras are the point. People with chronic desk tension {{< buy "theragun-pro-plus" >}}buy the Plus on Amazon{{< /buy >}}.
 
-![Theragun PRO Plus Multi-Therapy Device](/img/products/theragun-pro-plus.svg "Best percussive therapy device — Theragun PRO Plus Multi-Therapy Device")
+{{< img-link offer="theragun-pro-plus" caption="Best percussive therapy device" >}}
 
 ## Noise, battery, ergonomics
 
