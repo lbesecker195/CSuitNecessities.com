@@ -1,0 +1,171 @@
+{{- /* ============================================================================
+     Chrome-free affiliate landing page: no site header or footer nav, so nothing
+     competes with the one action. All copy lives in the page's front matter (see
+     content/mcp-server-optimization-book.md and LAYOUT.md → "Landing pages");
+     this template only lays it out.
+
+     EVERY button, image and text link on the page goes to ONE destination:
+       1. front matter `affiliateUrl`  (e.g. an Amazon SiteStripe amzn.to short link —
+          the tag is already inside it), else
+       2. https://www.amazon.com/dp/<asin>?tag=<[params].amazonTag>
+     ============================================================================ */ -}}
+
+{{ define "head_extra" }}
+{{ $css := resources.Get "css/landing.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ end }}
+
+{{/* NOTE: this override must be non-empty. Go silently ignores an EMPTY define and keeps
+     baseof's default, so the site header would still render. The HTML comment (stripped by
+     the minifier) is what makes it a real override. */}}
+{{ define "header" }}<!-- chrome-free landing page: no site header -->{{ end }}
+
+{{ define "main" }}
+{{- $url   := partial "amzn.html" (dict "url" .Params.affiliateUrl "asin" .Params.asin) -}}
+{{- $name  := .Params.productName | default .Title -}}
+{{- $cta   := .Params.ctaText | default site.Params.ctaText -}}
+{{- $tgt   := cond site.Params.affiliateNewTab "_blank" "_self" -}}
+{{- $rel   := site.Params.affiliateRel -}}
+{{- $img   := .Params.image | default "" -}}
+{{- $alt   := .Params.imageAlt | default $name -}}
+{{- $w     := .Params.imageWidth | default 1000 -}}
+{{- $h     := .Params.imageHeight | default 1000 -}}
+{{- $assoc := site.Params.associateStatement | default "As an Amazon Associate I earn from qualifying purchases." -}}
+
+<div class="lp">
+
+  {{/* ---------- HERO ---------- */}}
+  <section class="lp-hero">
+    <div class="wrap lp-hero-grid">
+
+      <div class="lp-hero-copy">
+        {{ with .Params.eyebrow }}<p class="lp-eyebrow">{{ . }}</p>{{ end }}
+        <h1>{{ .Params.headline | default .Title }}</h1>
+        {{ with .Params.subhead }}<p class="lp-sub">{{ . }}</p>{{ end }}
+        <div class="lp-cta">
+          <a class="btn btn-primary btn-xl is-pulse" href="{{ $url | safeURL }}" target="{{ $tgt }}" rel="{{ $rel }}" data-affiliate="{{ $name }}" data-cta="lp-hero-button">{{ $cta }}<span aria-hidden="true">→</span></a>
+          {{ with .Params.ctaNote }}<p class="lp-cta-note">{{ . }}</p>{{ end }}
+        </div>
+        <p class="lp-disclosure">Affiliate link · {{ $assoc }}</p>
+      </div>
+
+      {{ if $img }}
+      <figure class="content-fig is-linked lp-cover">
+        <a class="fig-link aff" href="{{ $url | safeURL }}" target="{{ $tgt }}" rel="{{ $rel }}" data-affiliate="{{ $name }}" data-cta="lp-hero-image" aria-label="{{ $name }} — {{ $cta }}">
+          <img src="{{ $img | relURL }}" alt="{{ $alt }}" width="{{ $w }}" height="{{ $h }}" fetchpriority="high" decoding="async">
+          <span class="fig-cue">{{ $cta }} →</span>
+        </a>
+      </figure>
+      {{ end }}
+
+    </div>
+  </section>
+
+  {{/* ---------- PROBLEM + PILLARS ---------- */}}
+  {{ with .Params.pillars }}
+  <section class="lp-section">
+    <div class="wrap">
+      <div class="lp-intro">
+        {{ with $.Params.problemTitle }}<h2>{{ . }}</h2>{{ end }}
+        {{ with $.Params.problemBody }}<p class="lp-lead">{{ . }}</p>{{ end }}
+      </div>
+      <div class="lp-pillars">
+        {{ range . }}
+        <div class="lp-pillar">
+          <span class="lp-ico" aria-hidden="true">
+            {{- if eq .icon "search" -}}
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            {{- else if eq .icon "shield" -}}
+              <svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 2.9 7.5 7 9 4.1-1.5 7-4.6 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            {{- else -}}
+              <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+            {{- end -}}
+          </span>
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+      {{ with $.Params.inlineCta }}
+      <p class="lp-inline-cta">{{ $.Params.inlineLead }} <a class="lp-link" href="{{ $url | safeURL }}" target="{{ $tgt }}" rel="{{ $rel }}" data-affiliate="{{ $name }}" data-cta="lp-inline-link">{{ . }}<svg class="out-ico" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------- AUDIENCE ---------- */}}
+  {{ with .Params.audience }}
+  <section class="lp-section lp-alt">
+    <div class="wrap lp-audience">
+      <h2>{{ $.Params.audienceTitle | default "Who it's for" }}</h2>
+      <ul class="lp-checks">
+        {{ range . }}<li>{{ . }}</li>{{ end }}
+      </ul>
+      <a class="btn btn-primary btn-lg" href="{{ $url | safeURL }}" target="{{ $tgt }}" rel="{{ $rel }}" data-affiliate="{{ $name }}" data-cta="lp-audience-button">{{ $cta }}<span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------- OPTIONAL FREE-FORM BODY (the markdown under the front matter) ---------- */}}
+  {{ with .Content }}
+  <section class="lp-section"><div class="wrap prose">{{ . }}</div></section>
+  {{ end }}
+
+  {{/* ---------- FAQ ---------- */}}
+  {{ with .Params.faq }}
+  <section class="lp-section">
+    <div class="wrap lp-faq">
+      <h2>{{ $.Params.faqTitle | default "Quick answers" }}</h2>
+      <div class="faq">
+        {{ range . }}<details class="faq-item"><summary>{{ .q }}</summary><div class="faq-a">{{ $.RenderString .a }}</div></details>{{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------- FINAL CTA ---------- */}}
+  <section class="lp-final">
+    <div class="wrap lp-final-grid">
+      {{ if $img }}
+      <figure class="content-fig is-linked lp-cover lp-cover-sm">
+        <a class="fig-link aff" href="{{ $url | safeURL }}" target="{{ $tgt }}" rel="{{ $rel }}" data-affiliate="{{ $name }}" data-cta="lp-final-image" aria-label="{{ $name }} — {{ $cta }}">
+          <img src="{{ $img | relURL }}" alt="{{ $alt }}" width="{{ $w }}" height="{{ $h }}" loading="lazy" decoding="async">
+          <span class="fig-cue">{{ $cta }} →</span>
+        </a>
+      </figure>
+      {{ end }}
+      <div class="lp-final-copy">
+        <h2>{{ .Params.finalTitle | default .Params.headline }}</h2>
+        {{ with .Params.finalText }}<p>{{ . }}</p>{{ end }}
+        <div class="lp-cta">
+          <a class="btn btn-primary btn-xl is-pulse" href="{{ $url | safeURL }}" target="{{ $tgt }}" rel="{{ $rel }}" data-affiliate="{{ $name }}" data-cta="lp-final-button">{{ $cta }}<span aria-hidden="true">→</span></a>
+          {{ with .Params.ctaNote }}<p class="lp-cta-note">{{ . }}</p>{{ end }}
+        </div>
+        <p class="lp-disclosure">Affiliate link · {{ $assoc }}</p>
+      </div>
+    </div>
+  </section>
+
+  {{/* ---------- STICKY BAR (revealed by assets/js/engagement.js after N% scroll) ---------- */}}
+  <div id="sticky-cta" hidden>
+    <div class="wrap sticky-cta-inner">
+      {{ if $img }}<a class="sticky-cta-thumb" href="{{ $url | safeURL }}" target="{{ $tgt }}" rel="{{ $rel }}" data-affiliate="{{ $name }}" data-cta="lp-sticky-image" tabindex="-1" aria-hidden="true"><img src="{{ $img | relURL }}" alt="" width="34" height="34" loading="lazy"></a>{{ end }}
+      <div class="sticky-cta-copy">
+        <strong>{{ $name }}</strong>
+        {{ with .Params.stickyTagline }}<span class="muted">{{ . }}</span>{{ end }}
+      </div>
+      <a class="btn btn-primary" href="{{ $url | safeURL }}" target="{{ $tgt }}" rel="{{ $rel }}" data-affiliate="{{ $name }}" data-cta="lp-sticky">{{ $cta }}</a>
+    </div>
+  </div>
+
+</div>
+{{ end }}
+
+{{ define "footer" }}
+<footer class="lp-footer">
+  <div class="wrap">
+    <p>{{ site.Params.associateStatement | default "As an Amazon Associate I earn from qualifying purchases." }} {{ site.Params.disclosure }}</p>
+    <p>© {{ now.Year }} <a href="{{ "/" | relURL }}">{{ site.Params.brand }}</a></p>
+  </div>
+</footer>
+{{ end }}

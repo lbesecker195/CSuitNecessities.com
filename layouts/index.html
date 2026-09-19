@@ -18,20 +18,29 @@
   <h2 class="section-head">This month's picks</h2>
   <div class="picks-grid">
     {{ range . }}
-      {{ $o := index hugo.Data.offers (string .) }}
-      {{ with $o }}
-      {{ $url := partial "amzn.html" . }}
+      {{- /* Each entry in `topPicks` is EITHER a product key from data/offers.yaml, OR a "/path" to a
+             landing page (its affiliate link, image and copy come from that page's front matter).
+             Both are normalised into one dict `$p` so there's a single card template below. */ -}}
+      {{ $p := dict }}
+      {{ if strings.HasPrefix (string .) "/" }}
+        {{ with site.GetPage . }}{{ $p = partial "page-affiliate.html" . }}{{ end }}
+      {{ else }}
+        {{ with index hugo.Data.offers (string .) }}
+          {{ $p = dict "name" .name "url" (partial "amzn.html" .) "image" .image "tagline" .tagline "rating" .rating "cta" (.cta | default site.Params.ctaText) "reviewRef" .reviewRef }}
+        {{ end }}
+      {{ end }}
+      {{ with $p }}
       <div class="pick">
-        <a class="pick-media" href="{{ $url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="home-pick-image" aria-hidden="true" tabindex="-1">
-          {{ with .image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}
-          <span class="pick-cue">{{ .cta | default site.Params.ctaText }} →</span>
+        <a class="pick-media" href="{{ .url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="home-pick-image" aria-hidden="true" tabindex="-1">
+          {{ with .image }}<img src="{{ . | relURL }}" alt="" loading="lazy"{{ with $p.position }} style="object-position:{{ . }}"{{ end }}>{{ end }}
+          {{ if not .hideCue }}<span class="pick-cue">{{ .cta }} →</span>{{ end }}
         </a>
         <div class="pick-body">
           <p class="pick-name">{{ .name }}</p>
           {{ with .rating }}<span class="rating">★ {{ . }}</span>{{ end }}
           {{ with .tagline }}<p class="muted">{{ . }}</p>{{ end }}
-          <a class="btn btn-primary btn-block" href="{{ $url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="home-pick-button">{{ .cta | default site.Params.ctaText }}</a>
-          {{ with .reviewRef }}{{ with $.Site.GetPage . }}<a class="pick-review-link" href="{{ .RelPermalink }}" data-cta="home-pick-review">Read the full {{ $o.name }} review →</a>{{ end }}{{ end }}
+          <a class="btn btn-primary btn-block" href="{{ .url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ .name }}" data-cta="home-pick-button">{{ .cta }}</a>
+          {{ with .reviewRef }}{{ with $.Site.GetPage . }}<a class="pick-review-link" href="{{ .RelPermalink }}" data-cta="home-pick-review">Read the full {{ $p.name }} review →</a>{{ end }}{{ end }}
         </div>
       </div>
       {{ end }}

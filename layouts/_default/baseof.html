@@ -1,17 +1,20 @@
 <!DOCTYPE html>
+<html lang="{{ or site.Language.Locale "en" }}" class="dark">
 <head>
   {{ partial "head.html" . }}
+  {{ block "head_extra" . }}{{ end }}
 </head>
 <body class="page-{{ .Kind }}{{ with .Type }} type-{{ . }}{{ end }}">
   {{ if site.Params.readingProgressBar }}<div id="read-progress" aria-hidden="true"><span></span></div>{{ end }}
 
-  {{ partial "header.html" . }}
+  {{/* header/footer are overridable so chrome-free layouts (e.g. landing.html) can drop them */}}
+  {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
 
   <main id="content">
     {{ block "main" . }}{{ end }}
   </main>
 
-  {{ partial "footer.html" . }}
+  {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 
   {{ partial "sticky-cta.html" . }}
 

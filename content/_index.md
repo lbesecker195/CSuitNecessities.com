@@ -3,7 +3,8 @@ title = "C-Suit Necessities"
 description = "Hands-on reviews of the leather, pens, audio, chairs, luggage and desk gear that belong in an executive's daily kit."
 heroTitle = "The gear that earns its place on an executive's desk."
 heroDek = "Forty products, ten categories, one question each time: is it worth what they're asking? Straight answers and a link to the current Amazon price."
-topPicks = ["saddleback-briefcase", "sony-xm5", "yubikey-5c-nfc", "herman-miller-aeron"]
+# A plain key is a product from data/offers.yaml; a "/path" is a landing page (links straight to its affiliate URL).
+topPicks = ["/mcp-server-optimization-book", "saddleback-briefcase", "sony-xm5", "yubikey-5c-nfc", "herman-miller-aeron"]
 categoryNav = [
   "Executive Leather",
   "Writing Instruments",

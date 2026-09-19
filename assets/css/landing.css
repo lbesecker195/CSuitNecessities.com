@@ -1,0 +1,106 @@
+/* =========================================================================
+   Landing pages — layouts/_default/landing.html
+   Loaded ONLY on landing pages. Relies on the design tokens and shared
+   components (.btn, .fig-link/.fig-cue, .faq, #sticky-cta) in main.css.
+   ========================================================================= */
+.lp{--lp-gap:clamp(48px,7vw,88px);overflow-x:clip}
+.lp h2{margin:0 0 .5em;font-size:clamp(1.55rem,1.2rem + 1.6vw,2.15rem)}
+.lp h3{margin:.2em 0 .4em;font-size:1.15rem}
+
+/* ---------- hero ---------- */
+.lp-hero{
+  padding:clamp(20px,4vw,56px) 0 clamp(36px,6vw,72px);
+  background:
+    radial-gradient(900px 420px at 85% 8%,color-mix(in srgb,var(--brand) 26%,transparent),transparent),
+    radial-gradient(700px 380px at 0% 0%,color-mix(in srgb,var(--accent) 10%,transparent),transparent),
+    var(--bg-2);
+  border-bottom:1px solid var(--border);
+}
+.lp-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,64px);align-items:center}
+.lp-eyebrow{
+  display:inline-block;margin:0 0 1em;padding:.42em .95em;border-radius:999px;
+  background:#19b5d8;color:#04202a;font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;
+}
+.lp h1{margin:0 0 .45em;font-size:clamp(2rem,1.25rem + 3.2vw,3.35rem);line-height:1.08;letter-spacing:-.03em}
+.lp-sub{margin:0 0 1.5em;font-size:clamp(1.05rem,1rem + .4vw,1.25rem);color:var(--muted);max-width:34em}
+
+.lp-cta{display:flex;flex-direction:column;align-items:flex-start;gap:.7em}
+.btn-xl{padding:1.15em 1.9em;font-size:1.12rem;border-radius:12px}
+.lp-cta-note{margin:0;font-size:.86rem;color:var(--muted)}
+.lp-disclosure{margin:1.2em 0 0;font-size:.78rem;color:var(--muted);opacity:.85}
+
+/* gentle attention pulse on the primary buttons (off for prefers-reduced-motion via main.css) */
+@keyframes lp-pulse{
+  0%,100%{box-shadow:var(--shadow-cta)}
+  50%{box-shadow:0 0 0 9px color-mix(in srgb,var(--accent) 22%,transparent),var(--shadow-cta)}
+}
+.btn.is-pulse{animation:lp-pulse 2.6s ease-in-out infinite}
+.btn.is-pulse:hover{animation:none}
+
+/* the clickable cover image (hover zoom + cue pill come from main.css) */
+.lp-cover{margin:0;width:100%;max-width:520px;justify-self:center}
+.lp .content-fig.is-linked .fig-link{border-radius:18px;box-shadow:0 30px 70px -28px rgba(0,0,0,.65)}
+.lp-cover img{display:block;width:100%;height:auto;aspect-ratio:1/1}
+.lp-cover-sm{max-width:340px}
+
+/* ---------- sections ---------- */
+.lp-section{padding:var(--lp-gap) 0}
+.lp-alt{background:var(--bg-2);border-block:1px solid var(--border)}
+.lp-intro{max-width:44rem;margin:0 auto clamp(28px,4vw,44px);text-align:center}
+.lp-lead{margin:0;font-size:1.15rem;color:var(--muted)}
+
+.lp-pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.lp-pillar{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px 22px}
+.lp-pillar p{margin:0;color:var(--muted);font-size:.98rem;line-height:1.6}
+.lp-ico{display:inline-grid;place-items:center;width:46px;height:46px;margin-bottom:.6em;border-radius:12px;background:color-mix(in srgb,var(--brand) 18%,transparent);color:var(--brand-2)}
+.lp-ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.lp-inline-cta{margin:clamp(24px,4vw,40px) 0 0;text-align:center;font-size:1.08rem}
+.lp-link{
+  color:var(--heading);font-weight:800;padding:.05em .3em;border-radius:4px;
+  background:color-mix(in srgb,var(--accent) 26%,transparent);
+  text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:3px;
+}
+.lp-link:hover{background:color-mix(in srgb,var(--accent) 40%,transparent)}
+.lp-link .out-ico{margin-left:.3em}
+
+.lp-audience{max-width:46rem}
+.lp-checks{display:grid;gap:.75em;margin:0 0 1.7em;padding:0;list-style:none}
+.lp-checks li{position:relative;padding-left:2.1em;font-size:1.05rem}
+.lp-checks li::before{
+  content:"✓";position:absolute;left:0;top:.2em;display:grid;place-items:center;width:1.45em;height:1.45em;
+  border-radius:50%;background:color-mix(in srgb,var(--good) 22%,transparent);color:var(--good);font-size:.85em;font-weight:900;
+}
+
+.lp-faq{max-width:46rem}
+.lp-faq .faq{margin:1em 0 0}
+
+/* ---------- final CTA ---------- */
+.lp-final{
+  padding:var(--lp-gap) 0;border-top:1px solid var(--border);
+  background:radial-gradient(800px 380px at 15% 50%,color-mix(in srgb,var(--brand) 22%,transparent),transparent),var(--bg-2);
+}
+.lp-final-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,56px);align-items:center}
+.lp-final-copy h2{margin-top:0}
+.lp-final-copy > p{color:var(--muted)}
+
+/* sticky bar: crop the 34px thumbnail to the centre of the cover so it isn't an illegible smear */
+.lp .sticky-cta-thumb img{transform:scale(2.3);object-position:50% 52%}
+
+/* ---------- footer ---------- */
+.lp-footer{padding:36px 0 112px;border-top:1px solid var(--border);font-size:.85rem;color:var(--muted)}
+.lp-footer p{margin:0 0 .5em}
+.lp-footer a{color:var(--muted);text-decoration:underline}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .lp-hero-grid,.lp-final-grid{grid-template-columns:1fr}
+  .lp-cover{order:-1;max-width:460px}          /* cover first on phones: it's the click target */
+  .lp-cover-sm{max-width:300px}
+  .lp-pillars{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .lp .btn-xl,.lp .btn-lg{width:100%}
+  .lp-cta{align-items:stretch}
+  .lp-cta-note{text-align:center}
+}

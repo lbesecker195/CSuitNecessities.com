@@ -3,7 +3,17 @@
     <a class="brand" href="{{ "/" | relURL }}" aria-label="{{ site.Params.brand }} — home">{{ partial "brand.html" . }}</a>
     <nav class="main-nav" aria-label="Primary">
       {{ range site.Menus.main }}
-        <a href="{{ .PageRef | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{ if .Params.affiliate }}
+          {{/* Affiliate entry: shows the menu name but links STRAIGHT to the affiliate URL of the landing
+               page named by `pageRef` (read from that page's front matter — one place to change it). */}}
+          {{ $e := . }}
+          {{ with site.GetPage .PageRef }}
+            {{ $a := partial "page-affiliate.html" . }}
+            <a class="nav-affiliate" href="{{ $a.url | safeURL }}" target="{{ cond site.Params.affiliateNewTab "_blank" "_self" }}" rel="{{ site.Params.affiliateRel }}" data-affiliate="{{ $a.name }}" data-cta="nav-affiliate">{{ $e.Name }}<svg class="out-ico" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          {{ end }}
+        {{ else }}
+          <a href="{{ .PageRef | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{ end }}
       {{ end }}
     </nav>
     {{ with site.GetPage "/compare" }}

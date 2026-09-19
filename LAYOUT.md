@@ -15,7 +15,7 @@ across 10 categories. All products are on Amazon.
 ```toml
 # hugo.toml
 [params]
-  amazonTag = "csuitnec-20"      # ← change this. That's the whole job.
+  amazonTag = "loganbesecker-20"      # ← change this. That's the whole job.
 ```
 
 Every button, text link, product image, comparison-table cell, sidebar card and
@@ -23,6 +23,10 @@ sticky bar builds its URL through [`layouts/partials/amzn.html`](layouts/partial
 which reads `amazonTag`. Nothing else references a tag. Even a bare
 `https://www.amazon.com/...` link pasted into markdown gets the tag appended
 automatically by the link render hook.
+
+**One exception:** an `amzn.to` SiteStripe short link (as used by the landing page in
+[§10](#10-landing-pages)) has its tag baked in by Amazon, so `amazonTag` does not touch it.
+Change those by editing the link itself.
 
 ## 2. Products: `data/offers.yaml`
 
@@ -160,3 +164,54 @@ fallback SVGs and all 50 articles. The markdown and YAML are the source of truth
 **re-running overwrites them**, though `gen_products.py` preserves `asin`, `image` and
 the `photo*` fields so a re-run won't wipe your fetched photos. Kept as a template for
 bulk-adding a category.
+
+## 10. Landing pages
+
+A chrome-free, single-goal page: no site header or footer nav, so nothing competes with the
+click. Live example: [`content/mcp-server-optimization-book.md`](content/mcp-server-optimization-book.md)
+→ `/mcp-server-optimization-book/`.
+
+**To make another one:** copy that file, change the front matter, done. Nothing to add to
+the layout. Set `layout = "landing"` and:
+
+| front matter | what it does |
+|---|---|
+| `affiliateUrl` | **The one link** behind every button, image and text link. An `amzn.to` short link works as-is. Delete it to fall back to `amazon.com/dp/<asin>?tag=<amazonTag>` |
+| `asin` | Used only for that fallback |
+| `image`, `imageAlt`, `imageWidth/Height` | The clickable hero + final-CTA image, the sticky-bar thumbnail, and `og:image`. Put the file in `static/img/` |
+| `eyebrow`, `headline`, `subhead`, `ctaText`, `ctaNote` | Hero copy and the button label |
+| `problemTitle`, `problemBody`, `pillars[]` (`icon` = `search`\|`shield`\|`bolt`), `inlineLead`, `inlineCta` | The three-card section and the highlighted text link under it |
+| `audienceTitle`, `audience[]` | Checklist section (has its own button) |
+| `faqTitle`, `faq[]` | Accordion; also emits FAQ schema |
+| `finalTitle`, `finalText`, `stickyTagline` | Bottom CTA block and the sticky bar |
+| `pageTitle` | Overrides the `<title>`/`og:title` (otherwise `Title · <site name>`) |
+
+Markdown under the front matter is rendered as an extra free-form section (empty = skipped).
+
+**Promoting it elsewhere (links go STRAIGHT to Amazon, not to the landing page):**
+
+- **Homepage "This month's picks":** in `content/_index.md`, add the page path to `topPicks`
+  (`"/mcp-server-optimization-book"`). A plain key is a product from `offers.yaml`; a `/path` is a
+  landing page. The card's image and button both use the page's `affiliateUrl`.
+- **Top menu:** in `hugo.toml`, a `[[menus.main]]` entry with `pageRef = "<page path>"` and
+  `[menus.main.params] affiliate = true` shows the entry's `name` as the anchor text but links
+  to that page's `affiliateUrl` (new tab, `sponsored`). The nav is hidden below 960px by the
+  site's responsive CSS, so on phones only the homepage card is visible.
+- Both are resolved by `layouts/partials/page-affiliate.html`, so **changing `affiliateUrl` in the
+  landing page's front matter updates the landing page, the card and the menu at once.**
+- Card tuning in the landing front matter: `pickTagline`, `pickImagePosition` (CSS
+  `object-position` for the 16:10 crop), `pickHideCue = true` (drops the "…on Amazon →" pill,
+  which is always visible on touch screens and would otherwise cover text baked into the image).
+
+**Tracking:** each link carries a `data-cta` slot (`lp-hero-image`, `lp-hero-button`,
+`lp-inline-link`, `lp-audience-button`, `lp-final-image`, `lp-final-button`, `lp-sticky-image`,
+`lp-sticky`), so `affiliate_click` events say which one earned the click and whether it was an
+`image` or `text` surface.
+
+**Compliance:** the exact Amazon statement ("As an Amazon Associate I earn from qualifying
+purchases.") sits directly under the hero and final buttons and in the footer. Override the
+wording site-wide with `[params].associateStatement`.
+
+**Gotcha (this bit us):** the layout drops the site header via a `{{ define "header" }}` override,
+and Go silently ignores an *empty* `define`, so the override must contain something (it holds an
+HTML comment). Mind this if you add more overridable blocks to `baseof.html`.
