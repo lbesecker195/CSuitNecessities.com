@@ -1,6 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{ $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
+
+<!-- Simple Analytics — loads on every page (home, lists, categories, reviews) -->
+<script src="https://seriouslysimpleanalytics.com/wa.js" data-site="acct_ssl8gfuynd" defer></script>
+{{ $title := cond .IsHome site.Title (or .Params.pageTitle (printf "%s · %s" .Title site.Title)) }}
 <title>{{ $title }}</title>
 <meta name="description" content="{{ with .Params.dek }}{{ . | plainify | truncate 155 }}{{ else }}{{ with .Description }}{{ . | plainify | truncate 155 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">

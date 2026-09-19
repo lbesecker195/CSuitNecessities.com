@@ -1,0 +1,22 @@
+{{- /* ============================================================================
+     partials/page-affiliate.html
+
+     Resolve a LANDING page's affiliate destination and display data straight from
+     its front matter, so everything that promotes it (the homepage "picks" card,
+     the top-nav link) stays in lock-step with the page itself: change `affiliateUrl`
+     in ONE place and all of them follow.
+
+     Takes a Page. Returns: { url, name, image, position, tagline, cta }
+       url       affiliateUrl (e.g. an amzn.to short link), else amazon.com/dp/<asin>?tag=<amazonTag>
+       position  optional CSS object-position for the 16:10 picks-card crop (pickImagePosition)
+     ============================================================================ */ -}}
+{{- $pg := . -}}
+{{- return (dict
+      "url"      (partial "amzn.html" (dict "url" $pg.Params.affiliateUrl "asin" $pg.Params.asin))
+      "name"     ($pg.Params.productName | default $pg.Title)
+      "image"    ($pg.Params.image | default "")
+      "position" ($pg.Params.pickImagePosition | default "")
+      "hideCue"  ($pg.Params.pickHideCue | default false)
+      "tagline"  ($pg.Params.pickTagline | default $pg.Params.stickyTagline | default "")
+      "cta"      ($pg.Params.ctaText | default site.Params.ctaText)
+) -}}

@@ -54,7 +54,7 @@ enableGitInfo = false
   logo = "img/logo3.png"                                 # asset path; .svg is inlined + theme-aware. Unset -> brand shows as text.
 
   # ►►► AFFILIATE ID — change this ONE value to swap the Amazon Associates tag site-wide.
-  amazonTag = "csuitnec-20"
+  amazonTag = "loganbesecker-20"
 
   # Affiliate / outbound link behaviour
   affiliateRel = "sponsored nofollow noopener"       # rel applied to outbound money links
@@ -93,3 +93,11 @@ enableGitInfo = false
     name = "Categories"
     pageRef = "/categories"
     weight = 30
+  # Affiliate entry: shows this name but links STRAIGHT to the Amazon affiliate URL set in the
+  # landing page's front matter (affiliateUrl) — not to the on-site page. See header.html.
+  [[menus.main]]
+    name = "MCP Server Optimization"
+    pageRef = "/mcp-server-optimization-book"
+    weight = 40
+    [menus.main.params]
+      affiliate = true
